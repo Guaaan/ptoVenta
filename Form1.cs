@@ -16,5 +16,22 @@ namespace ptoVenta
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            alternarColorData(dgvLista);
+        }
+        public void alternarColorData(DataGridView dgv)
+        {
+            dgv.RowsDefaultCellStyle.BackColor = Color.LightBlue;
+            dgv.AlternatingRowsDefaultCellStyle.BackColor = Color.White;
+        }
+
+        private void btnTicketsEmitidos_Click(object sender, EventArgs e)
+        {
+            ticketsEmitidos abrirTicketsE = new ticketsEmitidos();
+            abrirTicketsE.Show();
+
+        }
     }
 }
