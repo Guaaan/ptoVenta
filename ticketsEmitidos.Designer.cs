@@ -52,14 +52,15 @@ namespace ptoVenta
             // 
             this.btnFecha1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(195)))), ((int)(((byte)(93)))));
             this.btnFecha1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnFecha1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnFecha1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
+            this.btnFecha1.FlatAppearance.BorderSize = 3;
             this.btnFecha1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFecha1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFecha1.ForeColor = System.Drawing.Color.White;
-            this.btnFecha1.Location = new System.Drawing.Point(1292, 19);
+            this.btnFecha1.Location = new System.Drawing.Point(1331, 19);
             this.btnFecha1.Margin = new System.Windows.Forms.Padding(4);
             this.btnFecha1.Name = "btnFecha1";
-            this.btnFecha1.Size = new System.Drawing.Size(168, 60);
+            this.btnFecha1.Size = new System.Drawing.Size(129, 53);
             this.btnFecha1.TabIndex = 3;
             this.btnFecha1.Text = "Fecha";
             this.btnFecha1.UseVisualStyleBackColor = false;

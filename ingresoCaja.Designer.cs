@@ -32,6 +32,7 @@ namespace ptoVenta
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ingresoCaja));
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.txtCaja = new System.Windows.Forms.TextBox();
@@ -39,6 +40,10 @@ namespace ptoVenta
             this.txtNumero = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.txtChequeClave = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.txtTransferencia = new System.Windows.Forms.TextBox();
             this.txtDepositoBanco = new System.Windows.Forms.TextBox();
@@ -70,13 +75,8 @@ namespace ptoVenta
             this.label4 = new System.Windows.Forms.Label();
             this.txtConcepto1 = new System.Windows.Forms.TextBox();
             this.txtConcepto2 = new System.Windows.Forms.TextBox();
-            this.txtChequeClave = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
             this.btnSalirIngreso = new System.Windows.Forms.Button();
             this.btnAceptarIngreso = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -104,6 +104,14 @@ namespace ptoVenta
             this.groupBox1.Size = new System.Drawing.Size(444, 99);
             this.groupBox1.TabIndex = 22;
             this.groupBox1.TabStop = false;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(132, 56);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(299, 26);
+            this.dateTimePicker1.TabIndex = 58;
             // 
             // label6
             // 
@@ -203,6 +211,44 @@ namespace ptoVenta
             this.groupBox3.Size = new System.Drawing.Size(1035, 575);
             this.groupBox3.TabIndex = 25;
             this.groupBox3.TabStop = false;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(713, 353);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(91, 29);
+            this.label19.TabIndex = 57;
+            this.label19.Text = "Clave:";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(544, 353);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(117, 29);
+            this.label18.TabIndex = 56;
+            this.label18.Text = "Número:";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(375, 353);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(98, 29);
+            this.label17.TabIndex = 55;
+            this.label17.Text = "Banco:";
+            // 
+            // txtChequeClave
+            // 
+            this.txtChequeClave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtChequeClave.Location = new System.Drawing.Point(718, 385);
+            this.txtChequeClave.Name = "txtChequeClave";
+            this.txtChequeClave.Size = new System.Drawing.Size(163, 26);
+            this.txtChequeClave.TabIndex = 54;
             // 
             // label16
             // 
@@ -479,49 +525,12 @@ namespace ptoVenta
             this.txtConcepto2.Size = new System.Drawing.Size(163, 26);
             this.txtConcepto2.TabIndex = 23;
             // 
-            // txtChequeClave
-            // 
-            this.txtChequeClave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtChequeClave.Location = new System.Drawing.Point(718, 385);
-            this.txtChequeClave.Name = "txtChequeClave";
-            this.txtChequeClave.Size = new System.Drawing.Size(163, 26);
-            this.txtChequeClave.TabIndex = 54;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(375, 353);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(98, 29);
-            this.label17.TabIndex = 55;
-            this.label17.Text = "Banco:";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(544, 353);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(117, 29);
-            this.label18.TabIndex = 56;
-            this.label18.Text = "Número:";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(713, 353);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(91, 29);
-            this.label19.TabIndex = 57;
-            this.label19.Text = "Clave:";
-            // 
             // btnSalirIngreso
             // 
             this.btnSalirIngreso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
             this.btnSalirIngreso.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnSalirIngreso.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnSalirIngreso.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.btnSalirIngreso.FlatAppearance.BorderSize = 3;
             this.btnSalirIngreso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalirIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalirIngreso.ForeColor = System.Drawing.Color.White;
@@ -538,7 +547,8 @@ namespace ptoVenta
             // 
             this.btnAceptarIngreso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(195)))), ((int)(((byte)(93)))));
             this.btnAceptarIngreso.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnAceptarIngreso.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnAceptarIngreso.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
+            this.btnAceptarIngreso.FlatAppearance.BorderSize = 3;
             this.btnAceptarIngreso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAceptarIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAceptarIngreso.ForeColor = System.Drawing.Color.White;
@@ -549,14 +559,6 @@ namespace ptoVenta
             this.btnAceptarIngreso.TabIndex = 28;
             this.btnAceptarIngreso.Text = "Aceptar";
             this.btnAceptarIngreso.UseVisualStyleBackColor = false;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(132, 56);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(299, 26);
-            this.dateTimePicker1.TabIndex = 58;
             // 
             // ingresoCaja
             // 

@@ -34,6 +34,11 @@ namespace ptoVenta
             this.btnAceptarIngreso = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.txtNControl = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.txtNFactura = new System.Windows.Forms.TextBox();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
@@ -79,11 +84,6 @@ namespace ptoVenta
             this.label7 = new System.Windows.Forms.Label();
             this.txtCaja = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.txtNControl = new System.Windows.Forms.TextBox();
-            this.txtNFactura = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -94,7 +94,8 @@ namespace ptoVenta
             // 
             this.btnSalirIngreso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
             this.btnSalirIngreso.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnSalirIngreso.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnSalirIngreso.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.btnSalirIngreso.FlatAppearance.BorderSize = 4;
             this.btnSalirIngreso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalirIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalirIngreso.ForeColor = System.Drawing.Color.White;
@@ -110,7 +111,8 @@ namespace ptoVenta
             // 
             this.btnAceptarIngreso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(195)))), ((int)(((byte)(93)))));
             this.btnAceptarIngreso.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnAceptarIngreso.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnAceptarIngreso.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
+            this.btnAceptarIngreso.FlatAppearance.BorderSize = 4;
             this.btnAceptarIngreso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAceptarIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAceptarIngreso.ForeColor = System.Drawing.Color.White;
@@ -179,6 +181,52 @@ namespace ptoVenta
             this.groupBox4.Size = new System.Drawing.Size(450, 189);
             this.groupBox4.TabIndex = 34;
             this.groupBox4.TabStop = false;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(13, 143);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(147, 29);
+            this.label21.TabIndex = 59;
+            this.label21.Text = "Control N°:";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(13, 100);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(151, 29);
+            this.label22.TabIndex = 58;
+            this.label22.Text = "Factura N°:";
+            // 
+            // txtNControl
+            // 
+            this.txtNControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNControl.Location = new System.Drawing.Point(225, 148);
+            this.txtNControl.Name = "txtNControl";
+            this.txtNControl.Size = new System.Drawing.Size(208, 26);
+            this.txtNControl.TabIndex = 59;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(6, 21);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(226, 29);
+            this.label20.TabIndex = 58;
+            this.label20.Text = "Fecha de Factura";
+            // 
+            // txtNFactura
+            // 
+            this.txtNFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNFactura.Location = new System.Drawing.Point(225, 105);
+            this.txtNFactura.Name = "txtNFactura";
+            this.txtNFactura.Size = new System.Drawing.Size(208, 26);
+            this.txtNFactura.TabIndex = 58;
             // 
             // dateTimePicker2
             // 
@@ -586,52 +634,6 @@ namespace ptoVenta
             this.label1.Size = new System.Drawing.Size(344, 48);
             this.label1.TabIndex = 30;
             this.label1.Text = "Engreso de Caja";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(6, 21);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(226, 29);
-            this.label20.TabIndex = 58;
-            this.label20.Text = "Fecha de Factura";
-            // 
-            // txtNControl
-            // 
-            this.txtNControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNControl.Location = new System.Drawing.Point(225, 148);
-            this.txtNControl.Name = "txtNControl";
-            this.txtNControl.Size = new System.Drawing.Size(208, 26);
-            this.txtNControl.TabIndex = 59;
-            // 
-            // txtNFactura
-            // 
-            this.txtNFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNFactura.Location = new System.Drawing.Point(225, 105);
-            this.txtNFactura.Name = "txtNFactura";
-            this.txtNFactura.Size = new System.Drawing.Size(208, 26);
-            this.txtNFactura.TabIndex = 58;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(13, 143);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(147, 29);
-            this.label21.TabIndex = 59;
-            this.label21.Text = "Control N°:";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(13, 100);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(151, 29);
-            this.label22.TabIndex = 58;
-            this.label22.Text = "Factura N°:";
             // 
             // egresoCaja
             // 

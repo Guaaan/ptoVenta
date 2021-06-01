@@ -30,18 +30,18 @@ namespace ptoVenta
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(descripcionFarmacologica));
-            this.dgvLista1 = new System.Windows.Forms.DataGridView();
+            this.dgvDescripcionFarmacologica = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtBoletaFactura = new System.Windows.Forms.TextBox();
-            this.txtNotaCredito = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.btnBuscarCredito = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtTexto = new System.Windows.Forms.TextBox();
+            this.btnBuscarDescripcion = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.cmbAsignar = new System.Windows.Forms.ComboBox();
@@ -49,23 +49,23 @@ namespace ptoVenta
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtReg = new System.Windows.Forms.TextBox();
             this.btnSalirIngreso = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvLista1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDescripcionFarmacologica)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dgvLista1
+            // dgvDescripcionFarmacologica
             // 
-            this.dgvLista1.BackgroundColor = System.Drawing.Color.White;
-            this.dgvLista1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvLista1.Location = new System.Drawing.Point(12, 184);
-            this.dgvLista1.Name = "dgvLista1";
-            this.dgvLista1.RowHeadersWidth = 51;
-            this.dgvLista1.RowTemplate.Height = 24;
-            this.dgvLista1.Size = new System.Drawing.Size(1486, 652);
-            this.dgvLista1.TabIndex = 21;
+            this.dgvDescripcionFarmacologica.BackgroundColor = System.Drawing.Color.White;
+            this.dgvDescripcionFarmacologica.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDescripcionFarmacologica.Location = new System.Drawing.Point(12, 184);
+            this.dgvDescripcionFarmacologica.Name = "dgvDescripcionFarmacologica";
+            this.dgvDescripcionFarmacologica.RowHeadersWidth = 51;
+            this.dgvDescripcionFarmacologica.RowTemplate.Height = 24;
+            this.dgvDescripcionFarmacologica.Size = new System.Drawing.Size(1486, 652);
+            this.dgvDescripcionFarmacologica.TabIndex = 21;
             // 
             // label1
             // 
@@ -87,21 +87,21 @@ namespace ptoVenta
             this.label3.TabIndex = 26;
             this.label3.Text = "Nombre:";
             // 
-            // txtBoletaFactura
+            // txtNombre
             // 
-            this.txtBoletaFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoletaFactura.Location = new System.Drawing.Point(147, 71);
-            this.txtBoletaFactura.Name = "txtBoletaFactura";
-            this.txtBoletaFactura.Size = new System.Drawing.Size(188, 26);
-            this.txtBoletaFactura.TabIndex = 25;
+            this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.Location = new System.Drawing.Point(147, 71);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(188, 26);
+            this.txtNombre.TabIndex = 25;
             // 
-            // txtNotaCredito
+            // txtCodigo
             // 
-            this.txtNotaCredito.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNotaCredito.Location = new System.Drawing.Point(147, 33);
-            this.txtNotaCredito.Name = "txtNotaCredito";
-            this.txtNotaCredito.Size = new System.Drawing.Size(188, 26);
-            this.txtNotaCredito.TabIndex = 24;
+            this.txtCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCodigo.Location = new System.Drawing.Point(147, 33);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(188, 26);
+            this.txtCodigo.TabIndex = 24;
             // 
             // label2
             // 
@@ -116,9 +116,9 @@ namespace ptoVenta
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.txtBoletaFactura);
+            this.groupBox1.Controls.Add(this.txtNombre);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.txtNotaCredito);
+            this.groupBox1.Controls.Add(this.txtCodigo);
             this.groupBox1.Location = new System.Drawing.Point(12, 60);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(350, 118);
@@ -129,30 +129,12 @@ namespace ptoVenta
             // 
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.txtTexto);
             this.groupBox2.Location = new System.Drawing.Point(378, 60);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(496, 118);
             this.groupBox2.TabIndex = 28;
             this.groupBox2.TabStop = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(6, 39);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(117, 29);
-            this.label4.TabIndex = 28;
-            this.label4.Text = "Nombre:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(6, 71);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(188, 26);
-            this.textBox1.TabIndex = 27;
             // 
             // label5
             // 
@@ -164,26 +146,45 @@ namespace ptoVenta
             this.label5.TabIndex = 29;
             this.label5.Text = "Incluya datos de TEXTO\r\naplicando doble click en el\r\ncampo que desee llenar";
             // 
-            // btnBuscarCredito
+            // label4
             // 
-            this.btnBuscarCredito.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
-            this.btnBuscarCredito.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnBuscarCredito.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnBuscarCredito.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarCredito.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarCredito.ForeColor = System.Drawing.Color.White;
-            this.btnBuscarCredito.Location = new System.Drawing.Point(881, 67);
-            this.btnBuscarCredito.Margin = new System.Windows.Forms.Padding(4);
-            this.btnBuscarCredito.Name = "btnBuscarCredito";
-            this.btnBuscarCredito.Size = new System.Drawing.Size(115, 43);
-            this.btnBuscarCredito.TabIndex = 29;
-            this.btnBuscarCredito.Text = "Buscar";
-            this.btnBuscarCredito.UseVisualStyleBackColor = false;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(6, 39);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(88, 29);
+            this.label4.TabIndex = 28;
+            this.label4.Text = "Texto:";
+            // 
+            // txtTexto
+            // 
+            this.txtTexto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTexto.Location = new System.Drawing.Point(6, 71);
+            this.txtTexto.Name = "txtTexto";
+            this.txtTexto.Size = new System.Drawing.Size(188, 26);
+            this.txtTexto.TabIndex = 27;
+            // 
+            // btnBuscarDescripcion
+            // 
+            this.btnBuscarDescripcion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
+            this.btnBuscarDescripcion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnBuscarDescripcion.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.btnBuscarDescripcion.FlatAppearance.BorderSize = 3;
+            this.btnBuscarDescripcion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarDescripcion.ForeColor = System.Drawing.Color.White;
+            this.btnBuscarDescripcion.Location = new System.Drawing.Point(880, 94);
+            this.btnBuscarDescripcion.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBuscarDescripcion.Name = "btnBuscarDescripcion";
+            this.btnBuscarDescripcion.Size = new System.Drawing.Size(115, 43);
+            this.btnBuscarDescripcion.TabIndex = 29;
+            this.btnBuscarDescripcion.Text = "Buscar";
+            this.btnBuscarDescripcion.UseVisualStyleBackColor = false;
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(881, 118);
+            this.checkBox1.Location = new System.Drawing.Point(880, 145);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(18, 17);
             this.checkBox1.TabIndex = 30;
@@ -192,7 +193,7 @@ namespace ptoVenta
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(1003, 67);
+            this.checkBox2.Location = new System.Drawing.Point(1002, 94);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(152, 21);
             this.checkBox2.TabIndex = 31;
@@ -204,7 +205,7 @@ namespace ptoVenta
             this.cmbAsignar.AllowDrop = true;
             this.cmbAsignar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbAsignar.FormattingEnabled = true;
-            this.cmbAsignar.Location = new System.Drawing.Point(1003, 118);
+            this.cmbAsignar.Location = new System.Drawing.Point(1002, 145);
             this.cmbAsignar.Name = "cmbAsignar";
             this.cmbAsignar.Size = new System.Drawing.Size(163, 28);
             this.cmbAsignar.TabIndex = 32;
@@ -212,7 +213,7 @@ namespace ptoVenta
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(1196, 131);
+            this.checkBox3.Location = new System.Drawing.Point(1195, 145);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(18, 17);
             this.checkBox3.TabIndex = 33;
@@ -221,7 +222,7 @@ namespace ptoVenta
             // checkBox4
             // 
             this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(1172, 131);
+            this.checkBox4.Location = new System.Drawing.Point(1171, 145);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(18, 17);
             this.checkBox4.TabIndex = 34;
@@ -230,7 +231,7 @@ namespace ptoVenta
             // checkBox5
             // 
             this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(1258, 129);
+            this.checkBox5.Location = new System.Drawing.Point(1258, 143);
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(96, 21);
             this.checkBox5.TabIndex = 35;
@@ -241,25 +242,26 @@ namespace ptoVenta
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(1196, 70);
+            this.label6.Location = new System.Drawing.Point(1171, 84);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(103, 26);
+            this.label6.Size = new System.Drawing.Size(69, 26);
             this.label6.TabIndex = 31;
-            this.label6.Text = "Nombre:";
+            this.label6.Text = "Reg.:";
             // 
-            // textBox2
+            // txtReg
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(1196, 102);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(188, 23);
-            this.textBox2.TabIndex = 30;
+            this.txtReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtReg.Location = new System.Drawing.Point(1171, 116);
+            this.txtReg.Name = "txtReg";
+            this.txtReg.Size = new System.Drawing.Size(188, 23);
+            this.txtReg.TabIndex = 30;
             // 
             // btnSalirIngreso
             // 
             this.btnSalirIngreso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
             this.btnSalirIngreso.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnSalirIngreso.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnSalirIngreso.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.btnSalirIngreso.FlatAppearance.BorderSize = 3;
             this.btnSalirIngreso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalirIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalirIngreso.ForeColor = System.Drawing.Color.White;
@@ -280,21 +282,21 @@ namespace ptoVenta
             this.Controls.Add(this.btnSalirIngreso);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.checkBox5);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtReg);
             this.Controls.Add(this.checkBox4);
             this.Controls.Add(this.checkBox3);
             this.Controls.Add(this.cmbAsignar);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.btnBuscarCredito);
+            this.Controls.Add(this.btnBuscarDescripcion);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dgvLista1);
+            this.Controls.Add(this.dgvDescripcionFarmacologica);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "descripcionFarmacologica";
-            this.Text = " ";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvLista1)).EndInit();
+            this.Text = " Descripción Farmacológica";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDescripcionFarmacologica)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -306,18 +308,18 @@ namespace ptoVenta
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgvLista1;
+        private System.Windows.Forms.DataGridView dgvDescripcionFarmacologica;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtBoletaFactura;
-        private System.Windows.Forms.TextBox txtNotaCredito;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button btnBuscarCredito;
+        private System.Windows.Forms.TextBox txtTexto;
+        private System.Windows.Forms.Button btnBuscarDescripcion;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.ComboBox cmbAsignar;
@@ -325,7 +327,7 @@ namespace ptoVenta
         private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.CheckBox checkBox5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtReg;
         private System.Windows.Forms.Button btnSalirIngreso;
     }
 }

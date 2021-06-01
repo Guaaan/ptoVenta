@@ -86,5 +86,23 @@ namespace ptoVenta
             Buscar abrirBuscar = new Buscar();
             abrirBuscar.Show();
         }
+
+        private void btnProductoFaltante_Click(object sender, EventArgs e)
+        {
+            productoFaltante abrirProductoFaltante = new productoFaltante();
+            abrirProductoFaltante.Show();
+        }
+
+        private void btnProductosnoVendidos_Click(object sender, EventArgs e)
+        {
+            productosNoVendidos abrirNoVendidos = new productosNoVendidos();
+            abrirNoVendidos.Show();
+        }
+
+        private void btnVentas_Click(object sender, EventArgs e)
+        {
+            ventas abrirVentas = new ventas();
+            abrirVentas.Show();
+        }
     }
 }

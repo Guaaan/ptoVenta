@@ -29,6 +29,7 @@ namespace ptoVenta
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(cambiarPrecio));
             this.label1 = new System.Windows.Forms.Label();
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -41,8 +42,8 @@ namespace ptoVenta
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label22 = new System.Windows.Forms.Label();
             this.txtNuevoPrecio = new System.Windows.Forms.TextBox();
-            this.btnAceptarIngreso = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnPrecioMinimo = new System.Windows.Forms.Button();
+            this.btnRestablecer = new System.Windows.Forms.Button();
             this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -166,46 +167,48 @@ namespace ptoVenta
             this.txtNuevoPrecio.Size = new System.Drawing.Size(208, 32);
             this.txtNuevoPrecio.TabIndex = 58;
             // 
-            // btnAceptarIngreso
+            // btnPrecioMinimo
             // 
-            this.btnAceptarIngreso.AllowDrop = true;
-            this.btnAceptarIngreso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
-            this.btnAceptarIngreso.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnAceptarIngreso.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnAceptarIngreso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAceptarIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAceptarIngreso.ForeColor = System.Drawing.Color.White;
-            this.btnAceptarIngreso.Location = new System.Drawing.Point(623, 136);
-            this.btnAceptarIngreso.Margin = new System.Windows.Forms.Padding(4);
-            this.btnAceptarIngreso.Name = "btnAceptarIngreso";
-            this.btnAceptarIngreso.Size = new System.Drawing.Size(142, 57);
-            this.btnAceptarIngreso.TabIndex = 41;
-            this.btnAceptarIngreso.Text = "F9- Precio minimo";
-            this.btnAceptarIngreso.UseVisualStyleBackColor = false;
+            this.btnPrecioMinimo.AllowDrop = true;
+            this.btnPrecioMinimo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
+            this.btnPrecioMinimo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnPrecioMinimo.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.btnPrecioMinimo.FlatAppearance.BorderSize = 3;
+            this.btnPrecioMinimo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrecioMinimo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrecioMinimo.ForeColor = System.Drawing.Color.White;
+            this.btnPrecioMinimo.Location = new System.Drawing.Point(623, 136);
+            this.btnPrecioMinimo.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPrecioMinimo.Name = "btnPrecioMinimo";
+            this.btnPrecioMinimo.Size = new System.Drawing.Size(142, 57);
+            this.btnPrecioMinimo.TabIndex = 41;
+            this.btnPrecioMinimo.Text = "F9- Precio minimo";
+            this.btnPrecioMinimo.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnRestablecer
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(195)))), ((int)(((byte)(93)))));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(623, 201);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(142, 57);
-            this.button1.TabIndex = 42;
-            this.button1.Text = "F8- Restablecer";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnRestablecer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(195)))), ((int)(((byte)(93)))));
+            this.btnRestablecer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnRestablecer.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
+            this.btnRestablecer.FlatAppearance.BorderSize = 3;
+            this.btnRestablecer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRestablecer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRestablecer.ForeColor = System.Drawing.Color.White;
+            this.btnRestablecer.Location = new System.Drawing.Point(623, 201);
+            this.btnRestablecer.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRestablecer.Name = "btnRestablecer";
+            this.btnRestablecer.Size = new System.Drawing.Size(142, 57);
+            this.btnRestablecer.TabIndex = 42;
+            this.btnRestablecer.Text = "F8- Restablecer";
+            this.btnRestablecer.UseVisualStyleBackColor = false;
             // 
             // cambiarPrecio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 342);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.btnAceptarIngreso);
+            this.Controls.Add(this.btnRestablecer);
+            this.Controls.Add(this.btnPrecioMinimo);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -216,8 +219,9 @@ namespace ptoVenta
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.label2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "cambiarPrecio";
-            this.Text = "cambiarPrecio";
+            this.Text = "Cambiar Precio";
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
@@ -239,7 +243,7 @@ namespace ptoVenta
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.TextBox txtNuevoPrecio;
-        private System.Windows.Forms.Button btnAceptarIngreso;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnPrecioMinimo;
+        private System.Windows.Forms.Button btnRestablecer;
     }
 }

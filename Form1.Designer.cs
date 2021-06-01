@@ -73,9 +73,11 @@ namespace ptoVenta
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.btnDelivery = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.cmbAsignar = new System.Windows.Forms.ComboBox();
+            this.drdVendedor = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.btnVentas = new System.Windows.Forms.Button();
+            this.btnProductosnoVendidos = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -84,11 +86,12 @@ namespace ptoVenta
             // btnSalir
             // 
             this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
-            this.btnSalir.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnSalir.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.btnSalir.FlatAppearance.BorderSize = 3;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.White;
-            this.btnSalir.Location = new System.Drawing.Point(1431, 13);
+            this.btnSalir.Location = new System.Drawing.Point(1420, 13);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(80, 46);
@@ -101,7 +104,8 @@ namespace ptoVenta
             // 
             this.btnRdeIngreso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
             this.btnRdeIngreso.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnRdeIngreso.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnRdeIngreso.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.btnRdeIngreso.FlatAppearance.BorderSize = 3;
             this.btnRdeIngreso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRdeIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRdeIngreso.ForeColor = System.Drawing.Color.White;
@@ -118,7 +122,8 @@ namespace ptoVenta
             // 
             this.btnGuardarDocumento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
             this.btnGuardarDocumento.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnGuardarDocumento.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnGuardarDocumento.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.btnGuardarDocumento.FlatAppearance.BorderSize = 3;
             this.btnGuardarDocumento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardarDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarDocumento.ForeColor = System.Drawing.Color.White;
@@ -134,7 +139,8 @@ namespace ptoVenta
             // 
             this.btnDevoluciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
             this.btnDevoluciones.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnDevoluciones.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnDevoluciones.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.btnDevoluciones.FlatAppearance.BorderSize = 3;
             this.btnDevoluciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDevoluciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDevoluciones.ForeColor = System.Drawing.Color.White;
@@ -151,7 +157,8 @@ namespace ptoVenta
             // 
             this.btnTicketsEmitidos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
             this.btnTicketsEmitidos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnTicketsEmitidos.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnTicketsEmitidos.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.btnTicketsEmitidos.FlatAppearance.BorderSize = 3;
             this.btnTicketsEmitidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTicketsEmitidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTicketsEmitidos.ForeColor = System.Drawing.Color.White;
@@ -168,7 +175,8 @@ namespace ptoVenta
             // 
             this.btnEgresoCaja.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
             this.btnEgresoCaja.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnEgresoCaja.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnEgresoCaja.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.btnEgresoCaja.FlatAppearance.BorderSize = 3;
             this.btnEgresoCaja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEgresoCaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEgresoCaja.ForeColor = System.Drawing.Color.White;
@@ -185,7 +193,8 @@ namespace ptoVenta
             // 
             this.btnCambiarPrecio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
             this.btnCambiarPrecio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnCambiarPrecio.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnCambiarPrecio.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.btnCambiarPrecio.FlatAppearance.BorderSize = 3;
             this.btnCambiarPrecio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCambiarPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCambiarPrecio.ForeColor = System.Drawing.Color.White;
@@ -202,7 +211,8 @@ namespace ptoVenta
             // 
             this.btnCargarDocumento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
             this.btnCargarDocumento.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnCargarDocumento.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnCargarDocumento.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.btnCargarDocumento.FlatAppearance.BorderSize = 3;
             this.btnCargarDocumento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCargarDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCargarDocumento.ForeColor = System.Drawing.Color.White;
@@ -218,7 +228,8 @@ namespace ptoVenta
             // 
             this.btnSistema.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
             this.btnSistema.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnSistema.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnSistema.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.btnSistema.FlatAppearance.BorderSize = 3;
             this.btnSistema.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSistema.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSistema.ForeColor = System.Drawing.Color.White;
@@ -234,7 +245,8 @@ namespace ptoVenta
             // btnDescripcionFarmacologica
             // 
             this.btnDescripcionFarmacologica.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(195)))), ((int)(((byte)(93)))));
-            this.btnDescripcionFarmacologica.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnDescripcionFarmacologica.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
+            this.btnDescripcionFarmacologica.FlatAppearance.BorderSize = 3;
             this.btnDescripcionFarmacologica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDescripcionFarmacologica.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDescripcionFarmacologica.ForeColor = System.Drawing.Color.White;
@@ -249,7 +261,8 @@ namespace ptoVenta
             // btnExistenciaenLocales
             // 
             this.btnExistenciaenLocales.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(195)))), ((int)(((byte)(93)))));
-            this.btnExistenciaenLocales.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnExistenciaenLocales.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
+            this.btnExistenciaenLocales.FlatAppearance.BorderSize = 3;
             this.btnExistenciaenLocales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExistenciaenLocales.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExistenciaenLocales.ForeColor = System.Drawing.Color.White;
@@ -264,7 +277,8 @@ namespace ptoVenta
             // btnBuscar
             // 
             this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(195)))), ((int)(((byte)(93)))));
-            this.btnBuscar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnBuscar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
+            this.btnBuscar.FlatAppearance.BorderSize = 3;
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.ForeColor = System.Drawing.Color.White;
@@ -395,7 +409,8 @@ namespace ptoVenta
             // 
             this.btnCotizacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(195)))), ((int)(((byte)(93)))));
             this.btnCotizacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnCotizacion.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnCotizacion.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
+            this.btnCotizacion.FlatAppearance.BorderSize = 3;
             this.btnCotizacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCotizacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCotizacion.ForeColor = System.Drawing.Color.White;
@@ -411,7 +426,8 @@ namespace ptoVenta
             // 
             this.btnAbrirCajon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
             this.btnAbrirCajon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnAbrirCajon.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnAbrirCajon.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.btnAbrirCajon.FlatAppearance.BorderSize = 3;
             this.btnAbrirCajon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAbrirCajon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAbrirCajon.ForeColor = System.Drawing.Color.White;
@@ -427,7 +443,8 @@ namespace ptoVenta
             // 
             this.btnAperturaCaja.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
             this.btnAperturaCaja.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnAperturaCaja.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnAperturaCaja.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.btnAperturaCaja.FlatAppearance.BorderSize = 3;
             this.btnAperturaCaja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAperturaCaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAperturaCaja.ForeColor = System.Drawing.Color.White;
@@ -443,7 +460,8 @@ namespace ptoVenta
             // 
             this.btnCotizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(195)))), ((int)(((byte)(93)))));
             this.btnCotizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnCotizar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnCotizar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
+            this.btnCotizar.FlatAppearance.BorderSize = 3;
             this.btnCotizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCotizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCotizar.ForeColor = System.Drawing.Color.White;
@@ -459,7 +477,8 @@ namespace ptoVenta
             // 
             this.btnProductoFaltante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(195)))), ((int)(((byte)(93)))));
             this.btnProductoFaltante.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnProductoFaltante.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnProductoFaltante.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
+            this.btnProductoFaltante.FlatAppearance.BorderSize = 3;
             this.btnProductoFaltante.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProductoFaltante.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProductoFaltante.ForeColor = System.Drawing.Color.White;
@@ -470,6 +489,7 @@ namespace ptoVenta
             this.btnProductoFaltante.TabIndex = 31;
             this.btnProductoFaltante.Text = "Producto Faltante";
             this.btnProductoFaltante.UseVisualStyleBackColor = false;
+            this.btnProductoFaltante.Click += new System.EventHandler(this.btnProductoFaltante_Click);
             // 
             // groupBox1
             // 
@@ -601,11 +621,12 @@ namespace ptoVenta
             // 
             this.btnDelivery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(195)))), ((int)(((byte)(93)))));
             this.btnDelivery.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnDelivery.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnDelivery.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
+            this.btnDelivery.FlatAppearance.BorderSize = 3;
             this.btnDelivery.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelivery.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelivery.ForeColor = System.Drawing.Color.White;
-            this.btnDelivery.Location = new System.Drawing.Point(782, 741);
+            this.btnDelivery.Location = new System.Drawing.Point(782, 742);
             this.btnDelivery.Margin = new System.Windows.Forms.Padding(4);
             this.btnDelivery.Name = "btnDelivery";
             this.btnDelivery.Size = new System.Drawing.Size(121, 42);
@@ -613,24 +634,14 @@ namespace ptoVenta
             this.btnDelivery.Text = "Delivery";
             this.btnDelivery.UseVisualStyleBackColor = false;
             // 
-            // pictureBox1
+            // drdVendedor
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-18, -67);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(322, 220);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
-            // 
-            // cmbAsignar
-            // 
-            this.cmbAsignar.AllowDrop = true;
-            this.cmbAsignar.FormattingEnabled = true;
-            this.cmbAsignar.Location = new System.Drawing.Point(902, 218);
-            this.cmbAsignar.Name = "cmbAsignar";
-            this.cmbAsignar.Size = new System.Drawing.Size(163, 24);
-            this.cmbAsignar.TabIndex = 39;
+            this.drdVendedor.AllowDrop = true;
+            this.drdVendedor.FormattingEnabled = true;
+            this.drdVendedor.Location = new System.Drawing.Point(902, 218);
+            this.drdVendedor.Name = "drdVendedor";
+            this.drdVendedor.Size = new System.Drawing.Size(163, 24);
+            this.drdVendedor.TabIndex = 39;
             // 
             // label5
             // 
@@ -643,14 +654,62 @@ namespace ptoVenta
             this.label5.TabIndex = 40;
             this.label5.Text = "Vendedor:";
             // 
+            // btnVentas
+            // 
+            this.btnVentas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(195)))), ((int)(((byte)(93)))));
+            this.btnVentas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnVentas.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
+            this.btnVentas.FlatAppearance.BorderSize = 3;
+            this.btnVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVentas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVentas.ForeColor = System.Drawing.Color.White;
+            this.btnVentas.Location = new System.Drawing.Point(1156, 4);
+            this.btnVentas.Margin = new System.Windows.Forms.Padding(4);
+            this.btnVentas.Name = "btnVentas";
+            this.btnVentas.Size = new System.Drawing.Size(145, 55);
+            this.btnVentas.TabIndex = 42;
+            this.btnVentas.Text = "Ventas";
+            this.btnVentas.UseVisualStyleBackColor = false;
+            this.btnVentas.Click += new System.EventHandler(this.btnVentas_Click);
+            // 
+            // btnProductosnoVendidos
+            // 
+            this.btnProductosnoVendidos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
+            this.btnProductosnoVendidos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnProductosnoVendidos.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.btnProductosnoVendidos.FlatAppearance.BorderSize = 3;
+            this.btnProductosnoVendidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProductosnoVendidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProductosnoVendidos.ForeColor = System.Drawing.Color.White;
+            this.btnProductosnoVendidos.Location = new System.Drawing.Point(1003, 4);
+            this.btnProductosnoVendidos.Margin = new System.Windows.Forms.Padding(4);
+            this.btnProductosnoVendidos.Name = "btnProductosnoVendidos";
+            this.btnProductosnoVendidos.Size = new System.Drawing.Size(145, 55);
+            this.btnProductosnoVendidos.TabIndex = 41;
+            this.btnProductosnoVendidos.Text = "Productos no Vendidos";
+            this.btnProductosnoVendidos.UseVisualStyleBackColor = false;
+            this.btnProductosnoVendidos.Click += new System.EventHandler(this.btnProductosnoVendidos_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(-18, -67);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(322, 220);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.GhostWhite;
             this.ClientSize = new System.Drawing.Size(1524, 796);
+            this.Controls.Add(this.btnVentas);
+            this.Controls.Add(this.btnProductosnoVendidos);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.cmbAsignar);
+            this.Controls.Add(this.drdVendedor);
             this.Controls.Add(this.btnDelivery);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label9);
@@ -750,8 +809,10 @@ namespace ptoVenta
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button btnDelivery;
-        private System.Windows.Forms.ComboBox cmbAsignar;
+        private System.Windows.Forms.ComboBox drdVendedor;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnVentas;
+        private System.Windows.Forms.Button btnProductosnoVendidos;
     }
 }
 

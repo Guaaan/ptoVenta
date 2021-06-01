@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace ptoVenta
 {
-    public partial class existenciaLocales : Form
+    public partial class productosNoVendidos : Form
     {
-        public existenciaLocales()
+        public productosNoVendidos()
         {
             InitializeComponent();
         }
 
-        private void btnSalir_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
             this.Close();
         }

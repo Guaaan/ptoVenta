@@ -30,18 +30,18 @@ namespace ptoVenta
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(existenciaLocales));
-            this.txtPrecio = new System.Windows.Forms.TextBox();
+            this.txtConsultar = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnSalirIngreso = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // txtPrecio
+            // txtConsultar
             // 
-            this.txtPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrecio.Location = new System.Drawing.Point(210, 13);
-            this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(316, 36);
-            this.txtPrecio.TabIndex = 33;
+            this.txtConsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtConsultar.Location = new System.Drawing.Point(210, 13);
+            this.txtConsultar.Name = "txtConsultar";
+            this.txtConsultar.Size = new System.Drawing.Size(316, 36);
+            this.txtConsultar.TabIndex = 33;
             // 
             // label2
             // 
@@ -53,30 +53,31 @@ namespace ptoVenta
             this.label2.TabIndex = 34;
             this.label2.Text = "Consultar:";
             // 
-            // btnSalirIngreso
+            // btnSalir
             // 
-            this.btnSalirIngreso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
-            this.btnSalirIngreso.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnSalirIngreso.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnSalirIngreso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalirIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalirIngreso.ForeColor = System.Drawing.Color.White;
-            this.btnSalirIngreso.Location = new System.Drawing.Point(1275, 617);
-            this.btnSalirIngreso.Margin = new System.Windows.Forms.Padding(4);
-            this.btnSalirIngreso.Name = "btnSalirIngreso";
-            this.btnSalirIngreso.Size = new System.Drawing.Size(107, 44);
-            this.btnSalirIngreso.TabIndex = 35;
-            this.btnSalirIngreso.Text = "Atrás";
-            this.btnSalirIngreso.UseVisualStyleBackColor = false;
-            this.btnSalirIngreso.Click += new System.EventHandler(this.btnSalirIngreso_Click);
+            this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
+            this.btnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnSalir.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.btnSalir.FlatAppearance.BorderSize = 3;
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.ForeColor = System.Drawing.Color.White;
+            this.btnSalir.Location = new System.Drawing.Point(1275, 617);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(107, 44);
+            this.btnSalir.TabIndex = 35;
+            this.btnSalir.Text = "Atrás";
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // existenciaLocales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1395, 674);
-            this.Controls.Add(this.btnSalirIngreso);
-            this.Controls.Add(this.txtPrecio);
+            this.Controls.Add(this.btnSalir);
+            this.Controls.Add(this.txtConsultar);
             this.Controls.Add(this.label2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "existenciaLocales";
@@ -88,8 +89,8 @@ namespace ptoVenta
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtPrecio;
+        private System.Windows.Forms.TextBox txtConsultar;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnSalirIngreso;
+        private System.Windows.Forms.Button btnSalir;
     }
 }

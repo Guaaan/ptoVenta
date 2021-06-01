@@ -31,7 +31,7 @@ namespace ptoVenta
         {
             this.label3 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtRut = new System.Windows.Forms.TextBox();
+            this.txtParamBusqueda = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label3
@@ -56,13 +56,13 @@ namespace ptoVenta
             this.label7.TabIndex = 39;
             this.label7.Text = "Introduzca Parámetro de Busqueda";
             // 
-            // txtRut
+            // txtParamBusqueda
             // 
-            this.txtRut.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRut.Location = new System.Drawing.Point(105, 97);
-            this.txtRut.Name = "txtRut";
-            this.txtRut.Size = new System.Drawing.Size(427, 26);
-            this.txtRut.TabIndex = 38;
+            this.txtParamBusqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtParamBusqueda.Location = new System.Drawing.Point(105, 97);
+            this.txtParamBusqueda.Name = "txtParamBusqueda";
+            this.txtParamBusqueda.Size = new System.Drawing.Size(427, 26);
+            this.txtParamBusqueda.TabIndex = 38;
             // 
             // abrirCajon
             // 
@@ -70,7 +70,7 @@ namespace ptoVenta
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(633, 150);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.txtRut);
+            this.Controls.Add(this.txtParamBusqueda);
             this.Controls.Add(this.label3);
             this.Name = "abrirCajon";
             this.Text = "abrirCajon";
@@ -83,6 +83,6 @@ namespace ptoVenta
 
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtRut;
+        private System.Windows.Forms.TextBox txtParamBusqueda;
     }
 }
