@@ -33,5 +33,58 @@ namespace ptoVenta
             abrirTicketsE.Show();
 
         }
+
+        private void btnDevoluciones_Click(object sender, EventArgs e)
+        {
+            devoluciones abrirDevoluciones = new devoluciones();
+            abrirDevoluciones.Show();
+        }
+
+        private void btnRdeIngreso_Click(object sender, EventArgs e)
+        {
+            ingresoCaja abrirIngreso = new ingresoCaja();
+            abrirIngreso.Show();
+        }
+
+        private void btnEgresoCaja_Click(object sender, EventArgs e)
+        {
+            egresoCaja abrirEgreso = new egresoCaja();
+            abrirEgreso.Show();
+        }
+
+        private void btnCambiarPrecio_Click(object sender, EventArgs e)
+        {
+            cambiarPrecio abrirCambiarPrecio = new cambiarPrecio();
+            abrirCambiarPrecio.Show();
+        }
+
+        private void btnSistema_Click(object sender, EventArgs e)
+        {
+            sistema abrirSistema = new sistema();
+            abrirSistema.Show();
+        }
+
+        private void btnExistenciaenLocales_Click(object sender, EventArgs e)
+        {
+            existenciaLocales abrirExistencia = new existenciaLocales();
+            abrirExistencia.Show();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnDescripcionFarmacologica_Click(object sender, EventArgs e)
+        {
+            descripcionFarmacologica abrirDescripción = new descripcionFarmacologica();
+            abrirDescripción.Show();
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            Buscar abrirBuscar = new Buscar();
+            abrirBuscar.Show();
+        }
     }
 }

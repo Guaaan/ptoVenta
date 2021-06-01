@@ -10,13 +10,16 @@ using System.Windows.Forms;
 
 namespace ptoVenta
 {
-    public partial class ticketsEmitidos : Form
+    public partial class Buscar : Form
     {
-        public ticketsEmitidos()
+        public Buscar()
         {
             InitializeComponent();
         }
 
-       
+        private void btnProductoFaltante_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

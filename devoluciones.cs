@@ -10,13 +10,13 @@ using System.Windows.Forms;
 
 namespace ptoVenta
 {
-    public partial class ticketsEmitidos : Form
+    public partial class devoluciones : Form
     {
-        public ticketsEmitidos()
+        public devoluciones()
         {
             InitializeComponent();
         }
 
-       
+        
     }
 }

@@ -10,13 +10,16 @@ using System.Windows.Forms;
 
 namespace ptoVenta
 {
-    public partial class ticketsEmitidos : Form
+    public partial class descripcionFarmacologica : Form
     {
-        public ticketsEmitidos()
+        public descripcionFarmacologica()
         {
             InitializeComponent();
         }
 
-       
+        private void btnSalirIngreso_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
