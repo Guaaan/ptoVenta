@@ -41,18 +41,20 @@ namespace ptoVenta
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label7.Location = new System.Drawing.Point(17, 20);
+            this.label7.Location = new System.Drawing.Point(13, 16);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(351, 25);
+            this.label7.Size = new System.Drawing.Size(294, 20);
             this.label7.TabIndex = 35;
             this.label7.Text = "Introduzca Parámetro de Busqueda";
             // 
             // txtRut
             // 
             this.txtRut.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRut.Location = new System.Drawing.Point(22, 48);
+            this.txtRut.Location = new System.Drawing.Point(16, 39);
+            this.txtRut.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtRut.Name = "txtRut";
-            this.txtRut.Size = new System.Drawing.Size(427, 26);
+            this.txtRut.Size = new System.Drawing.Size(321, 23);
             this.txtRut.TabIndex = 34;
             // 
             // btnCancelar
@@ -64,10 +66,9 @@ namespace ptoVenta
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
-            this.btnCancelar.Location = new System.Drawing.Point(456, 81);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCancelar.Location = new System.Drawing.Point(342, 66);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(117, 39);
+            this.btnCancelar.Size = new System.Drawing.Size(88, 32);
             this.btnCancelar.TabIndex = 37;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
@@ -82,24 +83,24 @@ namespace ptoVenta
             this.btnOk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOk.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOk.ForeColor = System.Drawing.Color.White;
-            this.btnOk.Location = new System.Drawing.Point(331, 81);
-            this.btnOk.Margin = new System.Windows.Forms.Padding(4);
+            this.btnOk.Location = new System.Drawing.Point(248, 66);
             this.btnOk.Name = "btnOk";
-            this.btnOk.Size = new System.Drawing.Size(117, 36);
+            this.btnOk.Size = new System.Drawing.Size(88, 32);
             this.btnOk.TabIndex = 36;
             this.btnOk.Text = "Ok";
             this.btnOk.UseVisualStyleBackColor = false;
             // 
             // Buscar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(597, 142);
+            this.ClientSize = new System.Drawing.Size(448, 115);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtRut);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Buscar";
             this.Text = "Buscar";
             this.ResumeLayout(false);

@@ -52,6 +52,12 @@
     <Compile Include="abrirCajon.Designer.cs">
       <DependentUpon>abrirCajon.cs</DependentUpon>
     </Compile>
+    <Compile Include="boton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="boton.Designer.cs">
+      <DependentUpon>boton.cs</DependentUpon>
+    </Compile>
     <Compile Include="Buscar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,12 @@
     <Compile Include="ticketsEmitidos.Designer.cs">
       <DependentUpon>ticketsEmitidos.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
     <Compile Include="ventas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +146,9 @@
     </Compile>
     <EmbeddedResource Include="abrirCajon.resx">
       <DependentUpon>abrirCajon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="boton.resx">
+      <DependentUpon>boton.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Buscar.resx">
       <DependentUpon>Buscar.cs</DependentUpon>
@@ -180,6 +195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ticketsEmitidos.resx">
       <DependentUpon>ticketsEmitidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ventas.resx">
       <DependentUpon>ventas.cs</DependentUpon>
