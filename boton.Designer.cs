@@ -56,7 +56,6 @@ namespace ptoVenta
             this.button.Name = "button";
             this.button.Size = new System.Drawing.Size(171, 54);
             this.button.TabIndex = 2;
-            this.button.Text = "boton prueba";
             this.button.UseVisualStyleBackColor = false;
             // 
             // boton

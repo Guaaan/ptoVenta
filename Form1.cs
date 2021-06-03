@@ -64,11 +64,7 @@ namespace ptoVenta
             abrirSistema.Show();
         }
 
-        private void btnExistenciaenLocales_Click(object sender, EventArgs e)
-        {
-            existenciaLocales abrirExistencia = new existenciaLocales();
-            abrirExistencia.Show();
-        }
+        
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
@@ -103,6 +99,11 @@ namespace ptoVenta
         {
             ventas abrirVentas = new ventas();
             abrirVentas.Show();
+        }
+        private void btnExistenciaenLocales_Click_1(object sender, EventArgs e)
+        {
+            existenciaLocales abrirExistencia = new existenciaLocales();
+            abrirExistencia.Show();
         }
     }
 }
