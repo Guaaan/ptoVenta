@@ -61,11 +61,11 @@
     <Compile Include="boton.Designer.cs">
       <DependentUpon>boton.cs</DependentUpon>
     </Compile>
-    <Compile Include="boton1.cs">
-      <SubType>Component</SubType>
+    <Compile Include="botonheredable.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="boton1.Designer.cs">
-      <DependentUpon>boton1.cs</DependentUpon>
+    <Compile Include="botonheredable.Designer.cs">
+      <DependentUpon>botonheredable.cs</DependentUpon>
     </Compile>
     <Compile Include="Buscar.cs">
       <SubType>Form</SubType>
@@ -171,8 +171,8 @@
     <EmbeddedResource Include="boton.resx">
       <DependentUpon>boton.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="boton1.resx">
-      <DependentUpon>boton1.cs</DependentUpon>
+    <EmbeddedResource Include="botonheredable.resx">
+      <DependentUpon>botonheredable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Buscar.resx">
       <DependentUpon>Buscar.cs</DependentUpon>
