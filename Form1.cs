@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace ptoVenta
 {
-    public partial class Form1 : formClass
+    public partial class Form1 : Form
     {
         public Form1()
         {
@@ -41,6 +41,12 @@ namespace ptoVenta
         {
             formClass abrirFormClass = new formClass();
             abrirFormClass.Show();
+        }
+
+        private void btnTicketsEmitidos_Click(object sender, EventArgs e)
+        {
+            ticketsEmitidos abrirTicketsEmitidos = new ticketsEmitidos();
+            abrirTicketsEmitidos.Show();
         }
     }
 }
