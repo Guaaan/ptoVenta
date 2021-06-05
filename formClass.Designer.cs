@@ -46,7 +46,7 @@ namespace ptoVenta
             // 
             // groupBox1
             // 
-            groupBox1.BackColor = System.Drawing.Color.DarkTurquoise;
+            groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(195)))), ((int)(((byte)(217)))));
             groupBox1.Controls.Add(this.label1);
             groupBox1.Controls.Add(this.label2);
             groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -86,7 +86,7 @@ namespace ptoVenta
             // 
             // groupBox2
             // 
-            groupBox2.BackColor = System.Drawing.Color.DarkTurquoise;
+            groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(195)))), ((int)(((byte)(217)))));
             groupBox2.Controls.Add(this.panel15);
             groupBox2.Controls.Add(this.btnExistenciaenLocales);
             groupBox2.Controls.Add(this.label3);
