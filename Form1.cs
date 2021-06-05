@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace ptoVenta
 {
-    public partial class Form1 : Form
+    public partial class Form1 : formClass
     {
         public Form1()
         {
@@ -37,5 +37,10 @@ namespace ptoVenta
             this.Close();
         }
 
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            formClass abrirFormClass = new formClass();
+            abrirFormClass.Show();
+        }
     }
 }

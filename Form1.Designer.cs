@@ -58,16 +58,22 @@ namespace ptoVenta
             this.label5 = new System.Windows.Forms.Label();
             this.txtRut = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnSistema = new FontAwesome.Sharp.IconButton();
+            this.btnReciboIngreso = new FontAwesome.Sharp.IconButton();
+            this.btnCargarDocumento = new FontAwesome.Sharp.IconButton();
+            this.btnGuardarDocumento = new FontAwesome.Sharp.IconButton();
+            this.btnCargarPrecio = new FontAwesome.Sharp.IconButton();
+            this.btnDevoluciones = new FontAwesome.Sharp.IconButton();
+            this.btnEgresoCaja = new FontAwesome.Sharp.IconButton();
+            this.btnTicketsEmitidos = new FontAwesome.Sharp.IconButton();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.panel15 = new System.Windows.Forms.Panel();
             this.panel16 = new System.Windows.Forms.Panel();
             this.panel17 = new System.Windows.Forms.Panel();
             this.btnBuscar = new FontAwesome.Sharp.IconButton();
-            this.btnExistenciaenLocales = new FontAwesome.Sharp.IconButton();
             this.btnDelivery = new FontAwesome.Sharp.IconButton();
             this.btnProductoFaltante = new FontAwesome.Sharp.IconButton();
             this.btnProductosNoVendidos = new FontAwesome.Sharp.IconButton();
@@ -78,24 +84,27 @@ namespace ptoVenta
             this.btnCotizacion = new FontAwesome.Sharp.IconButton();
             this.btnDescripciónFarmacologica = new FontAwesome.Sharp.IconButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnSistema = new FontAwesome.Sharp.IconButton();
-            this.btnReciboIngreso = new FontAwesome.Sharp.IconButton();
-            this.btnCargarDocumento = new FontAwesome.Sharp.IconButton();
-            this.btnGuardarDocumento = new FontAwesome.Sharp.IconButton();
-            this.btnCargarPrecio = new FontAwesome.Sharp.IconButton();
-            this.btnDevoluciones = new FontAwesome.Sharp.IconButton();
-            this.btnEgresoCaja = new FontAwesome.Sharp.IconButton();
-            this.btnTicketsEmitidos = new FontAwesome.Sharp.IconButton();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
+            // btnClases
+            // 
+            this.btnClases.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
+            this.btnClases.FlatAppearance.BorderSize = 3;
+            this.btnClases.Location = new System.Drawing.Point(461, 52);
+            // 
+            // panel155
+            // 
+            this.panel155.Location = new System.Drawing.Point(461, 166);
+            // 
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(120, 137);
+            this.txtNombre.Location = new System.Drawing.Point(122, 239);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(241, 22);
             this.txtNombre.TabIndex = 14;
@@ -103,7 +112,7 @@ namespace ptoVenta
             // txtTelefono
             // 
             this.txtTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefono.Location = new System.Drawing.Point(120, 193);
+            this.txtTelefono.Location = new System.Drawing.Point(122, 295);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(241, 22);
             this.txtTelefono.TabIndex = 16;
@@ -111,7 +120,7 @@ namespace ptoVenta
             // txtDireccion
             // 
             this.txtDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDireccion.Location = new System.Drawing.Point(120, 165);
+            this.txtDireccion.Location = new System.Drawing.Point(122, 267);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(241, 22);
             this.txtDireccion.TabIndex = 15;
@@ -119,7 +128,7 @@ namespace ptoVenta
             // txtCorreo
             // 
             this.txtCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCorreo.Location = new System.Drawing.Point(120, 221);
+            this.txtCorreo.Location = new System.Drawing.Point(122, 323);
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(241, 22);
             this.txtCorreo.TabIndex = 17;
@@ -133,17 +142,17 @@ namespace ptoVenta
             this.dgvLista.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvLista.BackgroundColor = System.Drawing.Color.White;
             this.dgvLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvLista.Location = new System.Drawing.Point(19, 327);
+            this.dgvLista.Location = new System.Drawing.Point(19, 546);
             this.dgvLista.Name = "dgvLista";
             this.dgvLista.RowHeadersWidth = 51;
             this.dgvLista.RowTemplate.Height = 24;
-            this.dgvLista.Size = new System.Drawing.Size(1488, 306);
+            this.dgvLista.Size = new System.Drawing.Size(1488, 87);
             this.dgvLista.TabIndex = 18;
             // 
             // updownPrecio
             // 
             this.updownPrecio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.updownPrecio.Location = new System.Drawing.Point(1338, 304);
+            this.updownPrecio.Location = new System.Drawing.Point(1340, 406);
             this.updownPrecio.Name = "updownPrecio";
             this.updownPrecio.Size = new System.Drawing.Size(90, 22);
             this.updownPrecio.TabIndex = 20;
@@ -155,7 +164,7 @@ namespace ptoVenta
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(1263, 304);
+            this.label1.Location = new System.Drawing.Point(1265, 406);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(69, 20);
             this.label1.TabIndex = 21;
@@ -164,7 +173,7 @@ namespace ptoVenta
             // txtAlmacen
             // 
             this.txtAlmacen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtAlmacen.Location = new System.Drawing.Point(1184, 304);
+            this.txtAlmacen.Location = new System.Drawing.Point(1186, 406);
             this.txtAlmacen.Name = "txtAlmacen";
             this.txtAlmacen.Size = new System.Drawing.Size(54, 22);
             this.txtAlmacen.TabIndex = 22;
@@ -175,7 +184,7 @@ namespace ptoVenta
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(1091, 303);
+            this.label2.Location = new System.Drawing.Point(1093, 405);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(87, 20);
             this.label2.TabIndex = 23;
@@ -288,7 +297,7 @@ namespace ptoVenta
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label7.Location = new System.Drawing.Point(13, 109);
+            this.label7.Location = new System.Drawing.Point(15, 211);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(44, 20);
             this.label7.TabIndex = 33;
@@ -299,7 +308,7 @@ namespace ptoVenta
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label8.Location = new System.Drawing.Point(13, 137);
+            this.label8.Location = new System.Drawing.Point(15, 239);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(80, 20);
             this.label8.TabIndex = 34;
@@ -310,7 +319,7 @@ namespace ptoVenta
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label9.Location = new System.Drawing.Point(13, 193);
+            this.label9.Location = new System.Drawing.Point(15, 295);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(87, 20);
             this.label9.TabIndex = 36;
@@ -321,7 +330,7 @@ namespace ptoVenta
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label10.Location = new System.Drawing.Point(13, 165);
+            this.label10.Location = new System.Drawing.Point(15, 267);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(96, 20);
             this.label10.TabIndex = 35;
@@ -332,7 +341,7 @@ namespace ptoVenta
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label11.Location = new System.Drawing.Point(13, 221);
+            this.label11.Location = new System.Drawing.Point(15, 323);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(72, 20);
             this.label11.TabIndex = 37;
@@ -343,7 +352,7 @@ namespace ptoVenta
             this.drdVendedor.AllowDrop = true;
             this.drdVendedor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.drdVendedor.FormattingEnabled = true;
-            this.drdVendedor.Location = new System.Drawing.Point(908, 303);
+            this.drdVendedor.Location = new System.Drawing.Point(910, 405);
             this.drdVendedor.Name = "drdVendedor";
             this.drdVendedor.Size = new System.Drawing.Size(163, 24);
             this.drdVendedor.TabIndex = 39;
@@ -354,7 +363,7 @@ namespace ptoVenta
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label5.Location = new System.Drawing.Point(809, 304);
+            this.label5.Location = new System.Drawing.Point(811, 406);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(94, 20);
             this.label5.TabIndex = 40;
@@ -363,7 +372,7 @@ namespace ptoVenta
             // txtRut
             // 
             this.txtRut.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRut.Location = new System.Drawing.Point(120, 109);
+            this.txtRut.Location = new System.Drawing.Point(122, 211);
             this.txtRut.Name = "txtRut";
             this.txtRut.Size = new System.Drawing.Size(165, 22);
             this.txtRut.TabIndex = 13;
@@ -380,10 +389,185 @@ namespace ptoVenta
             this.panel1.Controls.Add(this.btnDevoluciones);
             this.panel1.Controls.Add(this.btnEgresoCaja);
             this.panel1.Controls.Add(this.btnTicketsEmitidos);
-            this.panel1.Location = new System.Drawing.Point(807, -2);
+            this.panel1.Location = new System.Drawing.Point(878, 486);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(714, 246);
+            this.panel1.Size = new System.Drawing.Size(721, 246);
             this.panel1.TabIndex = 67;
+            // 
+            // btnSistema
+            // 
+            this.btnSistema.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSistema.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
+            this.btnSistema.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.btnSistema.FlatAppearance.BorderSize = 3;
+            this.btnSistema.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSistema.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSistema.ForeColor = System.Drawing.Color.White;
+            this.btnSistema.IconChar = FontAwesome.Sharp.IconChar.Cog;
+            this.btnSistema.IconColor = System.Drawing.Color.White;
+            this.btnSistema.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnSistema.IconSize = 50;
+            this.btnSistema.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSistema.Location = new System.Drawing.Point(485, 125);
+            this.btnSistema.Name = "btnSistema";
+            this.btnSistema.Size = new System.Drawing.Size(150, 110);
+            this.btnSistema.TabIndex = 55;
+            this.btnSistema.Text = "SIstema";
+            this.btnSistema.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSistema.UseVisualStyleBackColor = false;
+            // 
+            // btnReciboIngreso
+            // 
+            this.btnReciboIngreso.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnReciboIngreso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
+            this.btnReciboIngreso.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.btnReciboIngreso.FlatAppearance.BorderSize = 3;
+            this.btnReciboIngreso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReciboIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReciboIngreso.ForeColor = System.Drawing.Color.White;
+            this.btnReciboIngreso.IconChar = FontAwesome.Sharp.IconChar.Inbox;
+            this.btnReciboIngreso.IconColor = System.Drawing.Color.White;
+            this.btnReciboIngreso.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnReciboIngreso.IconSize = 50;
+            this.btnReciboIngreso.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReciboIngreso.Location = new System.Drawing.Point(485, 3);
+            this.btnReciboIngreso.Name = "btnReciboIngreso";
+            this.btnReciboIngreso.Size = new System.Drawing.Size(150, 110);
+            this.btnReciboIngreso.TabIndex = 54;
+            this.btnReciboIngreso.Text = "Recibo \r\nde Ingreso";
+            this.btnReciboIngreso.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnReciboIngreso.UseVisualStyleBackColor = false;
+            // 
+            // btnCargarDocumento
+            // 
+            this.btnCargarDocumento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCargarDocumento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
+            this.btnCargarDocumento.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.btnCargarDocumento.FlatAppearance.BorderSize = 3;
+            this.btnCargarDocumento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCargarDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCargarDocumento.ForeColor = System.Drawing.Color.White;
+            this.btnCargarDocumento.IconChar = FontAwesome.Sharp.IconChar.FileUpload;
+            this.btnCargarDocumento.IconColor = System.Drawing.Color.White;
+            this.btnCargarDocumento.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCargarDocumento.IconSize = 50;
+            this.btnCargarDocumento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCargarDocumento.Location = new System.Drawing.Point(329, 125);
+            this.btnCargarDocumento.Name = "btnCargarDocumento";
+            this.btnCargarDocumento.Size = new System.Drawing.Size(150, 110);
+            this.btnCargarDocumento.TabIndex = 53;
+            this.btnCargarDocumento.Text = "Cargar \r\nDocumento\r\n\r\n";
+            this.btnCargarDocumento.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCargarDocumento.UseVisualStyleBackColor = false;
+            // 
+            // btnGuardarDocumento
+            // 
+            this.btnGuardarDocumento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnGuardarDocumento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
+            this.btnGuardarDocumento.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.btnGuardarDocumento.FlatAppearance.BorderSize = 3;
+            this.btnGuardarDocumento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardarDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardarDocumento.ForeColor = System.Drawing.Color.White;
+            this.btnGuardarDocumento.IconChar = FontAwesome.Sharp.IconChar.FileDownload;
+            this.btnGuardarDocumento.IconColor = System.Drawing.Color.White;
+            this.btnGuardarDocumento.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnGuardarDocumento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGuardarDocumento.Location = new System.Drawing.Point(329, 3);
+            this.btnGuardarDocumento.Name = "btnGuardarDocumento";
+            this.btnGuardarDocumento.Size = new System.Drawing.Size(150, 110);
+            this.btnGuardarDocumento.TabIndex = 52;
+            this.btnGuardarDocumento.Text = "Guardar \r\nDocumento";
+            this.btnGuardarDocumento.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnGuardarDocumento.UseVisualStyleBackColor = false;
+            // 
+            // btnCargarPrecio
+            // 
+            this.btnCargarPrecio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCargarPrecio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
+            this.btnCargarPrecio.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.btnCargarPrecio.FlatAppearance.BorderSize = 3;
+            this.btnCargarPrecio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCargarPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCargarPrecio.ForeColor = System.Drawing.Color.White;
+            this.btnCargarPrecio.IconChar = FontAwesome.Sharp.IconChar.Tags;
+            this.btnCargarPrecio.IconColor = System.Drawing.Color.White;
+            this.btnCargarPrecio.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCargarPrecio.IconSize = 50;
+            this.btnCargarPrecio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCargarPrecio.Location = new System.Drawing.Point(173, 127);
+            this.btnCargarPrecio.Name = "btnCargarPrecio";
+            this.btnCargarPrecio.Size = new System.Drawing.Size(150, 110);
+            this.btnCargarPrecio.TabIndex = 51;
+            this.btnCargarPrecio.Text = "Cambiar\r\nPrecio\r\n";
+            this.btnCargarPrecio.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCargarPrecio.UseVisualStyleBackColor = false;
+            // 
+            // btnDevoluciones
+            // 
+            this.btnDevoluciones.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDevoluciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
+            this.btnDevoluciones.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.btnDevoluciones.FlatAppearance.BorderSize = 3;
+            this.btnDevoluciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDevoluciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDevoluciones.ForeColor = System.Drawing.Color.White;
+            this.btnDevoluciones.IconChar = FontAwesome.Sharp.IconChar.RedoAlt;
+            this.btnDevoluciones.IconColor = System.Drawing.Color.White;
+            this.btnDevoluciones.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnDevoluciones.IconSize = 50;
+            this.btnDevoluciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDevoluciones.Location = new System.Drawing.Point(173, 3);
+            this.btnDevoluciones.Name = "btnDevoluciones";
+            this.btnDevoluciones.Size = new System.Drawing.Size(150, 110);
+            this.btnDevoluciones.TabIndex = 50;
+            this.btnDevoluciones.Text = "Devoluciones";
+            this.btnDevoluciones.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDevoluciones.UseVisualStyleBackColor = false;
+            // 
+            // btnEgresoCaja
+            // 
+            this.btnEgresoCaja.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEgresoCaja.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
+            this.btnEgresoCaja.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.btnEgresoCaja.FlatAppearance.BorderSize = 3;
+            this.btnEgresoCaja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEgresoCaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEgresoCaja.ForeColor = System.Drawing.Color.White;
+            this.btnEgresoCaja.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckAlt;
+            this.btnEgresoCaja.IconColor = System.Drawing.Color.White;
+            this.btnEgresoCaja.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnEgresoCaja.IconSize = 50;
+            this.btnEgresoCaja.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEgresoCaja.Location = new System.Drawing.Point(17, 125);
+            this.btnEgresoCaja.Name = "btnEgresoCaja";
+            this.btnEgresoCaja.Size = new System.Drawing.Size(150, 110);
+            this.btnEgresoCaja.TabIndex = 49;
+            this.btnEgresoCaja.Text = "Egreso \r\nde Caja";
+            this.btnEgresoCaja.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEgresoCaja.UseVisualStyleBackColor = false;
+            // 
+            // btnTicketsEmitidos
+            // 
+            this.btnTicketsEmitidos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnTicketsEmitidos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
+            this.btnTicketsEmitidos.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.btnTicketsEmitidos.FlatAppearance.BorderSize = 3;
+            this.btnTicketsEmitidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTicketsEmitidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTicketsEmitidos.ForeColor = System.Drawing.Color.White;
+            this.btnTicketsEmitidos.IconChar = FontAwesome.Sharp.IconChar.TicketAlt;
+            this.btnTicketsEmitidos.IconColor = System.Drawing.Color.White;
+            this.btnTicketsEmitidos.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnTicketsEmitidos.IconSize = 50;
+            this.btnTicketsEmitidos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTicketsEmitidos.Location = new System.Drawing.Point(17, 9);
+            this.btnTicketsEmitidos.Name = "btnTicketsEmitidos";
+            this.btnTicketsEmitidos.Size = new System.Drawing.Size(150, 110);
+            this.btnTicketsEmitidos.TabIndex = 48;
+            this.btnTicketsEmitidos.Text = "Tickets \r\nEmitidos\r\n";
+            this.btnTicketsEmitidos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnTicketsEmitidos.UseVisualStyleBackColor = false;
             // 
             // panel10
             // 
@@ -425,18 +609,10 @@ namespace ptoVenta
             // 
             this.panel14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
-            this.panel14.Location = new System.Drawing.Point(551, 304);
+            this.panel14.Location = new System.Drawing.Point(553, 406);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(250, 13);
             this.panel14.TabIndex = 70;
-            // 
-            // panel15
-            // 
-            this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
-            this.panel15.Location = new System.Drawing.Point(553, 147);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(185, 13);
-            this.panel15.TabIndex = 71;
             // 
             // panel16
             // 
@@ -469,7 +645,7 @@ namespace ptoVenta
             this.btnBuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnBuscar.IconSize = 50;
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.Location = new System.Drawing.Point(291, 88);
+            this.btnBuscar.Location = new System.Drawing.Point(293, 190);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.btnBuscar.Size = new System.Drawing.Size(135, 43);
@@ -477,28 +653,6 @@ namespace ptoVenta
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscar.UseVisualStyleBackColor = false;
-            // 
-            // btnExistenciaenLocales
-            // 
-            this.btnExistenciaenLocales.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(173)))), ((int)(((byte)(229)))));
-            this.btnExistenciaenLocales.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
-            this.btnExistenciaenLocales.FlatAppearance.BorderSize = 3;
-            this.btnExistenciaenLocales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExistenciaenLocales.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExistenciaenLocales.ForeColor = System.Drawing.Color.White;
-            this.btnExistenciaenLocales.IconChar = FontAwesome.Sharp.IconChar.NetworkWired;
-            this.btnExistenciaenLocales.IconColor = System.Drawing.Color.White;
-            this.btnExistenciaenLocales.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnExistenciaenLocales.IconSize = 50;
-            this.btnExistenciaenLocales.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.btnExistenciaenLocales.Location = new System.Drawing.Point(553, 37);
-            this.btnExistenciaenLocales.Name = "btnExistenciaenLocales";
-            this.btnExistenciaenLocales.Size = new System.Drawing.Size(185, 116);
-            this.btnExistenciaenLocales.TabIndex = 47;
-            this.btnExistenciaenLocales.Text = "Existencia en Locales";
-            this.btnExistenciaenLocales.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnExistenciaenLocales.UseVisualStyleBackColor = false;
-            this.btnExistenciaenLocales.Click += new System.EventHandler(this.btnExistenciaenLocales_Click_1);
             // 
             // btnDelivery
             // 
@@ -694,7 +848,7 @@ namespace ptoVenta
             this.btnDescripciónFarmacologica.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnDescripciónFarmacologica.IconSize = 50;
             this.btnDescripciónFarmacologica.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDescripciónFarmacologica.Location = new System.Drawing.Point(551, 234);
+            this.btnDescripciónFarmacologica.Location = new System.Drawing.Point(553, 336);
             this.btnDescripciónFarmacologica.Name = "btnDescripciónFarmacologica";
             this.btnDescripciónFarmacologica.Size = new System.Drawing.Size(250, 73);
             this.btnDescripciónFarmacologica.TabIndex = 58;
@@ -705,187 +859,30 @@ namespace ptoVenta
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-18, -67);
+            this.pictureBox1.Location = new System.Drawing.Point(-15, 16);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(322, 220);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
-            // btnSistema
+            // iconButton1
             // 
-            this.btnSistema.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSistema.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
-            this.btnSistema.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
-            this.btnSistema.FlatAppearance.BorderSize = 3;
-            this.btnSistema.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSistema.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSistema.ForeColor = System.Drawing.Color.White;
-            this.btnSistema.IconChar = FontAwesome.Sharp.IconChar.Cog;
-            this.btnSistema.IconColor = System.Drawing.Color.White;
-            this.btnSistema.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnSistema.IconSize = 50;
-            this.btnSistema.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSistema.Location = new System.Drawing.Point(478, 125);
-            this.btnSistema.Name = "btnSistema";
-            this.btnSistema.Size = new System.Drawing.Size(150, 110);
-            this.btnSistema.TabIndex = 55;
-            this.btnSistema.Text = "SIstema";
-            this.btnSistema.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSistema.UseVisualStyleBackColor = false;
-            // 
-            // btnReciboIngreso
-            // 
-            this.btnReciboIngreso.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnReciboIngreso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
-            this.btnReciboIngreso.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
-            this.btnReciboIngreso.FlatAppearance.BorderSize = 3;
-            this.btnReciboIngreso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReciboIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReciboIngreso.ForeColor = System.Drawing.Color.White;
-            this.btnReciboIngreso.IconChar = FontAwesome.Sharp.IconChar.Inbox;
-            this.btnReciboIngreso.IconColor = System.Drawing.Color.White;
-            this.btnReciboIngreso.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnReciboIngreso.IconSize = 50;
-            this.btnReciboIngreso.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReciboIngreso.Location = new System.Drawing.Point(478, 3);
-            this.btnReciboIngreso.Name = "btnReciboIngreso";
-            this.btnReciboIngreso.Size = new System.Drawing.Size(150, 110);
-            this.btnReciboIngreso.TabIndex = 54;
-            this.btnReciboIngreso.Text = "Recibo \r\nde Ingreso";
-            this.btnReciboIngreso.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnReciboIngreso.UseVisualStyleBackColor = false;
-            // 
-            // btnCargarDocumento
-            // 
-            this.btnCargarDocumento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCargarDocumento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
-            this.btnCargarDocumento.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
-            this.btnCargarDocumento.FlatAppearance.BorderSize = 3;
-            this.btnCargarDocumento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCargarDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCargarDocumento.ForeColor = System.Drawing.Color.White;
-            this.btnCargarDocumento.IconChar = FontAwesome.Sharp.IconChar.FileUpload;
-            this.btnCargarDocumento.IconColor = System.Drawing.Color.White;
-            this.btnCargarDocumento.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCargarDocumento.IconSize = 50;
-            this.btnCargarDocumento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCargarDocumento.Location = new System.Drawing.Point(322, 125);
-            this.btnCargarDocumento.Name = "btnCargarDocumento";
-            this.btnCargarDocumento.Size = new System.Drawing.Size(150, 110);
-            this.btnCargarDocumento.TabIndex = 53;
-            this.btnCargarDocumento.Text = "Cargar \r\nDocumento\r\n\r\n";
-            this.btnCargarDocumento.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCargarDocumento.UseVisualStyleBackColor = false;
-            // 
-            // btnGuardarDocumento
-            // 
-            this.btnGuardarDocumento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnGuardarDocumento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
-            this.btnGuardarDocumento.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
-            this.btnGuardarDocumento.FlatAppearance.BorderSize = 3;
-            this.btnGuardarDocumento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardarDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardarDocumento.ForeColor = System.Drawing.Color.White;
-            this.btnGuardarDocumento.IconChar = FontAwesome.Sharp.IconChar.FileDownload;
-            this.btnGuardarDocumento.IconColor = System.Drawing.Color.White;
-            this.btnGuardarDocumento.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnGuardarDocumento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardarDocumento.Location = new System.Drawing.Point(322, 3);
-            this.btnGuardarDocumento.Name = "btnGuardarDocumento";
-            this.btnGuardarDocumento.Size = new System.Drawing.Size(150, 110);
-            this.btnGuardarDocumento.TabIndex = 52;
-            this.btnGuardarDocumento.Text = "Guardar \r\nDocumento";
-            this.btnGuardarDocumento.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnGuardarDocumento.UseVisualStyleBackColor = false;
-            // 
-            // btnCargarPrecio
-            // 
-            this.btnCargarPrecio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCargarPrecio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
-            this.btnCargarPrecio.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
-            this.btnCargarPrecio.FlatAppearance.BorderSize = 3;
-            this.btnCargarPrecio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCargarPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCargarPrecio.ForeColor = System.Drawing.Color.White;
-            this.btnCargarPrecio.IconChar = FontAwesome.Sharp.IconChar.Tags;
-            this.btnCargarPrecio.IconColor = System.Drawing.Color.White;
-            this.btnCargarPrecio.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCargarPrecio.IconSize = 50;
-            this.btnCargarPrecio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCargarPrecio.Location = new System.Drawing.Point(166, 127);
-            this.btnCargarPrecio.Name = "btnCargarPrecio";
-            this.btnCargarPrecio.Size = new System.Drawing.Size(150, 110);
-            this.btnCargarPrecio.TabIndex = 51;
-            this.btnCargarPrecio.Text = "Cambiar\r\nPrecio\r\n";
-            this.btnCargarPrecio.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCargarPrecio.UseVisualStyleBackColor = false;
-            // 
-            // btnDevoluciones
-            // 
-            this.btnDevoluciones.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDevoluciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
-            this.btnDevoluciones.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
-            this.btnDevoluciones.FlatAppearance.BorderSize = 3;
-            this.btnDevoluciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDevoluciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDevoluciones.ForeColor = System.Drawing.Color.White;
-            this.btnDevoluciones.IconChar = FontAwesome.Sharp.IconChar.RedoAlt;
-            this.btnDevoluciones.IconColor = System.Drawing.Color.White;
-            this.btnDevoluciones.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnDevoluciones.IconSize = 50;
-            this.btnDevoluciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDevoluciones.Location = new System.Drawing.Point(166, 3);
-            this.btnDevoluciones.Name = "btnDevoluciones";
-            this.btnDevoluciones.Size = new System.Drawing.Size(150, 110);
-            this.btnDevoluciones.TabIndex = 50;
-            this.btnDevoluciones.Text = "Devoluciones";
-            this.btnDevoluciones.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDevoluciones.UseVisualStyleBackColor = false;
-            // 
-            // btnEgresoCaja
-            // 
-            this.btnEgresoCaja.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEgresoCaja.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
-            this.btnEgresoCaja.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
-            this.btnEgresoCaja.FlatAppearance.BorderSize = 3;
-            this.btnEgresoCaja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEgresoCaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEgresoCaja.ForeColor = System.Drawing.Color.White;
-            this.btnEgresoCaja.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckAlt;
-            this.btnEgresoCaja.IconColor = System.Drawing.Color.White;
-            this.btnEgresoCaja.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnEgresoCaja.IconSize = 50;
-            this.btnEgresoCaja.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEgresoCaja.Location = new System.Drawing.Point(10, 125);
-            this.btnEgresoCaja.Name = "btnEgresoCaja";
-            this.btnEgresoCaja.Size = new System.Drawing.Size(150, 110);
-            this.btnEgresoCaja.TabIndex = 49;
-            this.btnEgresoCaja.Text = "Egreso \r\nde Caja";
-            this.btnEgresoCaja.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnEgresoCaja.UseVisualStyleBackColor = false;
-            // 
-            // btnTicketsEmitidos
-            // 
-            this.btnTicketsEmitidos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnTicketsEmitidos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
-            this.btnTicketsEmitidos.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
-            this.btnTicketsEmitidos.FlatAppearance.BorderSize = 3;
-            this.btnTicketsEmitidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTicketsEmitidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTicketsEmitidos.ForeColor = System.Drawing.Color.White;
-            this.btnTicketsEmitidos.IconChar = FontAwesome.Sharp.IconChar.TicketAlt;
-            this.btnTicketsEmitidos.IconColor = System.Drawing.Color.White;
-            this.btnTicketsEmitidos.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnTicketsEmitidos.IconSize = 50;
-            this.btnTicketsEmitidos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTicketsEmitidos.Location = new System.Drawing.Point(10, 3);
-            this.btnTicketsEmitidos.Name = "btnTicketsEmitidos";
-            this.btnTicketsEmitidos.Size = new System.Drawing.Size(150, 110);
-            this.btnTicketsEmitidos.TabIndex = 48;
-            this.btnTicketsEmitidos.Text = "Tickets \r\nEmitidos\r\n";
-            this.btnTicketsEmitidos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnTicketsEmitidos.UseVisualStyleBackColor = false;
+            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
+            this.iconButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.iconButton1.FlatAppearance.BorderSize = 2;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.ForeColor = System.Drawing.Color.White;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Reply;
+            this.iconButton1.IconColor = System.Drawing.Color.White;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.Location = new System.Drawing.Point(607, 486);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
+            this.iconButton1.Size = new System.Drawing.Size(159, 54);
+            this.iconButton1.TabIndex = 74;
+            this.iconButton1.UseVisualStyleBackColor = false;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // Form1
             // 
@@ -896,16 +893,15 @@ namespace ptoVenta
             this.BackColor = System.Drawing.Color.GhostWhite;
             this.CausesValidation = false;
             this.ClientSize = new System.Drawing.Size(1521, 839);
+            this.Controls.Add(this.iconButton1);
             this.Controls.Add(this.panel12);
             this.Controls.Add(this.panel17);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel16);
             this.Controls.Add(this.panel10);
-            this.Controls.Add(this.panel15);
             this.Controls.Add(this.panel14);
             this.Controls.Add(this.panel13);
             this.Controls.Add(this.btnBuscar);
-            this.Controls.Add(this.btnExistenciaenLocales);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.btnDelivery);
             this.Controls.Add(this.txtRut);
@@ -936,8 +932,8 @@ namespace ptoVenta
             this.Controls.Add(this.txtCorreo);
             this.Controls.Add(this.txtTelefono);
             this.Controls.Add(this.txtDireccion);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pictureBox1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -945,6 +941,49 @@ namespace ptoVenta
             this.Text = "Punto de Venta";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.Controls.SetChildIndex(this.pictureBox1, 0);
+            this.Controls.SetChildIndex(this.btnClases, 0);
+            this.Controls.SetChildIndex(this.panel155, 0);
+            this.Controls.SetChildIndex(this.panel1, 0);
+            this.Controls.SetChildIndex(this.txtDireccion, 0);
+            this.Controls.SetChildIndex(this.txtTelefono, 0);
+            this.Controls.SetChildIndex(this.txtCorreo, 0);
+            this.Controls.SetChildIndex(this.dgvLista, 0);
+            this.Controls.SetChildIndex(this.updownPrecio, 0);
+            this.Controls.SetChildIndex(this.label1, 0);
+            this.Controls.SetChildIndex(this.txtAlmacen, 0);
+            this.Controls.SetChildIndex(this.label2, 0);
+            this.Controls.SetChildIndex(this.txtBuscarProducto, 0);
+            this.Controls.SetChildIndex(this.label3, 0);
+            this.Controls.SetChildIndex(this.txtPrincipioActivo, 0);
+            this.Controls.SetChildIndex(this.groupBox1, 0);
+            this.Controls.SetChildIndex(this.label7, 0);
+            this.Controls.SetChildIndex(this.label8, 0);
+            this.Controls.SetChildIndex(this.label10, 0);
+            this.Controls.SetChildIndex(this.label9, 0);
+            this.Controls.SetChildIndex(this.label11, 0);
+            this.Controls.SetChildIndex(this.drdVendedor, 0);
+            this.Controls.SetChildIndex(this.label5, 0);
+            this.Controls.SetChildIndex(this.btnDescripciónFarmacologica, 0);
+            this.Controls.SetChildIndex(this.btnCotizacion, 0);
+            this.Controls.SetChildIndex(this.btnAbrirCajon, 0);
+            this.Controls.SetChildIndex(this.btnVentas, 0);
+            this.Controls.SetChildIndex(this.btnSalir, 0);
+            this.Controls.SetChildIndex(this.btnAperturaCaja, 0);
+            this.Controls.SetChildIndex(this.btnProductosNoVendidos, 0);
+            this.Controls.SetChildIndex(this.btnProductoFaltante, 0);
+            this.Controls.SetChildIndex(this.txtRut, 0);
+            this.Controls.SetChildIndex(this.btnDelivery, 0);
+            this.Controls.SetChildIndex(this.txtNombre, 0);
+            this.Controls.SetChildIndex(this.btnBuscar, 0);
+            this.Controls.SetChildIndex(this.panel13, 0);
+            this.Controls.SetChildIndex(this.panel14, 0);
+            this.Controls.SetChildIndex(this.panel10, 0);
+            this.Controls.SetChildIndex(this.panel16, 0);
+            this.Controls.SetChildIndex(this.panel11, 0);
+            this.Controls.SetChildIndex(this.panel17, 0);
+            this.Controls.SetChildIndex(this.panel12, 0);
+            this.Controls.SetChildIndex(this.iconButton1, 0);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -983,7 +1022,6 @@ namespace ptoVenta
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ComboBox drdVendedor;
         private System.Windows.Forms.Label label5;
-        private FontAwesome.Sharp.IconButton btnExistenciaenLocales;
         private FontAwesome.Sharp.IconButton btnBuscar;
         private FontAwesome.Sharp.IconButton btnDescripciónFarmacologica;
         private FontAwesome.Sharp.IconButton btnCotizacion;
@@ -1009,9 +1047,9 @@ namespace ptoVenta
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Panel panel17;
+        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }
 
