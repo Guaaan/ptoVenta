@@ -61,6 +61,12 @@
     <Compile Include="boton.Designer.cs">
       <DependentUpon>boton.cs</DependentUpon>
     </Compile>
+    <Compile Include="boton1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="boton1.Designer.cs">
+      <DependentUpon>boton1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Buscar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +78,12 @@
     </Compile>
     <Compile Include="cambiarPrecio.Designer.cs">
       <DependentUpon>cambiarPrecio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clases.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clases.Designer.cs">
+      <DependentUpon>clases.cs</DependentUpon>
     </Compile>
     <Compile Include="descripcionFarmacologica.cs">
       <SubType>Form</SubType>
@@ -153,11 +165,17 @@
     <EmbeddedResource Include="boton.resx">
       <DependentUpon>boton.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="boton1.resx">
+      <DependentUpon>boton1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Buscar.resx">
       <DependentUpon>Buscar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="cambiarPrecio.resx">
       <DependentUpon>cambiarPrecio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clases.resx">
+      <DependentUpon>clases.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="descripcionFarmacologica.resx">
       <DependentUpon>descripcionFarmacologica.cs</DependentUpon>

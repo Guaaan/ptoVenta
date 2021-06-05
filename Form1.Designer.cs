@@ -56,36 +56,8 @@ namespace ptoVenta
             this.label11 = new System.Windows.Forms.Label();
             this.drdVendedor = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnExistenciaenLocales = new FontAwesome.Sharp.IconButton();
-            this.btnBuscar = new FontAwesome.Sharp.IconButton();
-            this.btnDescripciónFarmacologica = new FontAwesome.Sharp.IconButton();
-            this.btnCotizacion = new FontAwesome.Sharp.IconButton();
-            this.btnAbrirCajon = new FontAwesome.Sharp.IconButton();
-            this.btnAperturaCaja = new FontAwesome.Sharp.IconButton();
-            this.btnProductoFaltante = new FontAwesome.Sharp.IconButton();
-            this.btnDelivery = new FontAwesome.Sharp.IconButton();
-            this.btnTicketsEmitidos = new FontAwesome.Sharp.IconButton();
-            this.btnEgresoCaja = new FontAwesome.Sharp.IconButton();
-            this.btnDevoluciones = new FontAwesome.Sharp.IconButton();
-            this.btnCargarPrecio = new FontAwesome.Sharp.IconButton();
-            this.btnGuardarDocumento = new FontAwesome.Sharp.IconButton();
-            this.btnCargarDocumento = new FontAwesome.Sharp.IconButton();
-            this.btnReciboIngreso = new FontAwesome.Sharp.IconButton();
-            this.btnSistema = new FontAwesome.Sharp.IconButton();
-            this.btnVentas = new FontAwesome.Sharp.IconButton();
-            this.btnSalir = new FontAwesome.Sharp.IconButton();
-            this.btnProductosNoVendidos = new FontAwesome.Sharp.IconButton();
             this.txtRut = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
@@ -94,10 +66,30 @@ namespace ptoVenta
             this.panel15 = new System.Windows.Forms.Panel();
             this.panel16 = new System.Windows.Forms.Panel();
             this.panel17 = new System.Windows.Forms.Panel();
+            this.btnBuscar = new FontAwesome.Sharp.IconButton();
+            this.btnExistenciaenLocales = new FontAwesome.Sharp.IconButton();
+            this.btnDelivery = new FontAwesome.Sharp.IconButton();
+            this.btnProductoFaltante = new FontAwesome.Sharp.IconButton();
+            this.btnProductosNoVendidos = new FontAwesome.Sharp.IconButton();
+            this.btnAperturaCaja = new FontAwesome.Sharp.IconButton();
+            this.btnSalir = new FontAwesome.Sharp.IconButton();
+            this.btnVentas = new FontAwesome.Sharp.IconButton();
+            this.btnAbrirCajon = new FontAwesome.Sharp.IconButton();
+            this.btnCotizacion = new FontAwesome.Sharp.IconButton();
+            this.btnDescripciónFarmacologica = new FontAwesome.Sharp.IconButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnSistema = new FontAwesome.Sharp.IconButton();
+            this.btnReciboIngreso = new FontAwesome.Sharp.IconButton();
+            this.btnCargarDocumento = new FontAwesome.Sharp.IconButton();
+            this.btnGuardarDocumento = new FontAwesome.Sharp.IconButton();
+            this.btnCargarPrecio = new FontAwesome.Sharp.IconButton();
+            this.btnDevoluciones = new FontAwesome.Sharp.IconButton();
+            this.btnEgresoCaja = new FontAwesome.Sharp.IconButton();
+            this.btnTicketsEmitidos = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtNombre
@@ -368,436 +360,6 @@ namespace ptoVenta
             this.label5.TabIndex = 40;
             this.label5.Text = "Vendedor:";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-18, -67);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(322, 220);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnExistenciaenLocales
-            // 
-            this.btnExistenciaenLocales.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(195)))), ((int)(((byte)(93)))));
-            this.btnExistenciaenLocales.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
-            this.btnExistenciaenLocales.FlatAppearance.BorderSize = 3;
-            this.btnExistenciaenLocales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExistenciaenLocales.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExistenciaenLocales.ForeColor = System.Drawing.Color.White;
-            this.btnExistenciaenLocales.IconChar = FontAwesome.Sharp.IconChar.NetworkWired;
-            this.btnExistenciaenLocales.IconColor = System.Drawing.Color.White;
-            this.btnExistenciaenLocales.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnExistenciaenLocales.IconSize = 50;
-            this.btnExistenciaenLocales.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.btnExistenciaenLocales.Location = new System.Drawing.Point(553, 37);
-            this.btnExistenciaenLocales.Name = "btnExistenciaenLocales";
-            this.btnExistenciaenLocales.Size = new System.Drawing.Size(185, 116);
-            this.btnExistenciaenLocales.TabIndex = 47;
-            this.btnExistenciaenLocales.Text = "Existencia en Locales";
-            this.btnExistenciaenLocales.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnExistenciaenLocales.UseVisualStyleBackColor = false;
-            this.btnExistenciaenLocales.Click += new System.EventHandler(this.btnExistenciaenLocales_Click_1);
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(195)))), ((int)(((byte)(93)))));
-            this.btnBuscar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
-            this.btnBuscar.FlatAppearance.BorderSize = 3;
-            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.ForeColor = System.Drawing.Color.White;
-            this.btnBuscar.IconChar = FontAwesome.Sharp.IconChar.Eye;
-            this.btnBuscar.IconColor = System.Drawing.Color.White;
-            this.btnBuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnBuscar.IconSize = 50;
-            this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.Location = new System.Drawing.Point(291, 88);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.btnBuscar.Size = new System.Drawing.Size(135, 43);
-            this.btnBuscar.TabIndex = 57;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnBuscar.UseVisualStyleBackColor = false;
-            // 
-            // btnDescripciónFarmacologica
-            // 
-            this.btnDescripciónFarmacologica.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDescripciónFarmacologica.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(195)))), ((int)(((byte)(93)))));
-            this.btnDescripciónFarmacologica.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
-            this.btnDescripciónFarmacologica.FlatAppearance.BorderSize = 3;
-            this.btnDescripciónFarmacologica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDescripciónFarmacologica.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDescripciónFarmacologica.ForeColor = System.Drawing.Color.White;
-            this.btnDescripciónFarmacologica.IconChar = FontAwesome.Sharp.IconChar.Pills;
-            this.btnDescripciónFarmacologica.IconColor = System.Drawing.Color.White;
-            this.btnDescripciónFarmacologica.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnDescripciónFarmacologica.IconSize = 50;
-            this.btnDescripciónFarmacologica.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDescripciónFarmacologica.Location = new System.Drawing.Point(551, 234);
-            this.btnDescripciónFarmacologica.Name = "btnDescripciónFarmacologica";
-            this.btnDescripciónFarmacologica.Size = new System.Drawing.Size(250, 73);
-            this.btnDescripciónFarmacologica.TabIndex = 58;
-            this.btnDescripciónFarmacologica.Text = "Descripción \r\nfarmacológica";
-            this.btnDescripciónFarmacologica.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDescripciónFarmacologica.UseVisualStyleBackColor = false;
-            // 
-            // btnCotizacion
-            // 
-            this.btnCotizacion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnCotizacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(195)))), ((int)(((byte)(93)))));
-            this.btnCotizacion.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
-            this.btnCotizacion.FlatAppearance.BorderSize = 3;
-            this.btnCotizacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCotizacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCotizacion.ForeColor = System.Drawing.Color.White;
-            this.btnCotizacion.IconChar = FontAwesome.Sharp.IconChar.MoneyBillWaveAlt;
-            this.btnCotizacion.IconColor = System.Drawing.Color.White;
-            this.btnCotizacion.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCotizacion.IconSize = 50;
-            this.btnCotizacion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCotizacion.Location = new System.Drawing.Point(553, 639);
-            this.btnCotizacion.Name = "btnCotizacion";
-            this.btnCotizacion.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
-            this.btnCotizacion.Size = new System.Drawing.Size(162, 46);
-            this.btnCotizacion.TabIndex = 60;
-            this.btnCotizacion.Text = "Cotización";
-            this.btnCotizacion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCotizacion.UseVisualStyleBackColor = false;
-            // 
-            // btnAbrirCajon
-            // 
-            this.btnAbrirCajon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnAbrirCajon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
-            this.btnAbrirCajon.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
-            this.btnAbrirCajon.FlatAppearance.BorderSize = 3;
-            this.btnAbrirCajon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAbrirCajon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAbrirCajon.ForeColor = System.Drawing.Color.White;
-            this.btnAbrirCajon.IconChar = FontAwesome.Sharp.IconChar.BoxOpen;
-            this.btnAbrirCajon.IconColor = System.Drawing.Color.White;
-            this.btnAbrirCajon.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnAbrirCajon.IconSize = 50;
-            this.btnAbrirCajon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAbrirCajon.Location = new System.Drawing.Point(553, 700);
-            this.btnAbrirCajon.Name = "btnAbrirCajon";
-            this.btnAbrirCajon.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
-            this.btnAbrirCajon.Size = new System.Drawing.Size(162, 46);
-            this.btnAbrirCajon.TabIndex = 61;
-            this.btnAbrirCajon.Text = "Abrir Cajón";
-            this.btnAbrirCajon.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAbrirCajon.UseVisualStyleBackColor = false;
-            // 
-            // btnAperturaCaja
-            // 
-            this.btnAperturaCaja.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAperturaCaja.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
-            this.btnAperturaCaja.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
-            this.btnAperturaCaja.FlatAppearance.BorderSize = 3;
-            this.btnAperturaCaja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAperturaCaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAperturaCaja.ForeColor = System.Drawing.Color.White;
-            this.btnAperturaCaja.IconChar = FontAwesome.Sharp.IconChar.CashRegister;
-            this.btnAperturaCaja.IconColor = System.Drawing.Color.White;
-            this.btnAperturaCaja.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnAperturaCaja.IconSize = 50;
-            this.btnAperturaCaja.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAperturaCaja.Location = new System.Drawing.Point(802, 759);
-            this.btnAperturaCaja.Name = "btnAperturaCaja";
-            this.btnAperturaCaja.Size = new System.Drawing.Size(237, 56);
-            this.btnAperturaCaja.TabIndex = 63;
-            this.btnAperturaCaja.Text = "Apertura de Caja";
-            this.btnAperturaCaja.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAperturaCaja.UseVisualStyleBackColor = false;
-            // 
-            // btnProductoFaltante
-            // 
-            this.btnProductoFaltante.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnProductoFaltante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(195)))), ((int)(((byte)(93)))));
-            this.btnProductoFaltante.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
-            this.btnProductoFaltante.FlatAppearance.BorderSize = 3;
-            this.btnProductoFaltante.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProductoFaltante.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProductoFaltante.ForeColor = System.Drawing.Color.White;
-            this.btnProductoFaltante.IconChar = FontAwesome.Sharp.IconChar.Times;
-            this.btnProductoFaltante.IconColor = System.Drawing.Color.White;
-            this.btnProductoFaltante.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnProductoFaltante.IconSize = 50;
-            this.btnProductoFaltante.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProductoFaltante.Location = new System.Drawing.Point(878, 639);
-            this.btnProductoFaltante.Name = "btnProductoFaltante";
-            this.btnProductoFaltante.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.btnProductoFaltante.Size = new System.Drawing.Size(162, 56);
-            this.btnProductoFaltante.TabIndex = 64;
-            this.btnProductoFaltante.Text = "Producto Faltante";
-            this.btnProductoFaltante.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnProductoFaltante.UseVisualStyleBackColor = false;
-            // 
-            // btnDelivery
-            // 
-            this.btnDelivery.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDelivery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(195)))), ((int)(((byte)(93)))));
-            this.btnDelivery.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
-            this.btnDelivery.FlatAppearance.BorderSize = 3;
-            this.btnDelivery.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDelivery.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelivery.ForeColor = System.Drawing.Color.White;
-            this.btnDelivery.IconChar = FontAwesome.Sharp.IconChar.Motorcycle;
-            this.btnDelivery.IconColor = System.Drawing.Color.White;
-            this.btnDelivery.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnDelivery.IconSize = 50;
-            this.btnDelivery.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDelivery.Location = new System.Drawing.Point(878, 697);
-            this.btnDelivery.Name = "btnDelivery";
-            this.btnDelivery.Size = new System.Drawing.Size(162, 56);
-            this.btnDelivery.TabIndex = 65;
-            this.btnDelivery.Text = "Delivery";
-            this.btnDelivery.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDelivery.UseVisualStyleBackColor = false;
-            // 
-            // btnTicketsEmitidos
-            // 
-            this.btnTicketsEmitidos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnTicketsEmitidos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
-            this.btnTicketsEmitidos.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
-            this.btnTicketsEmitidos.FlatAppearance.BorderSize = 3;
-            this.btnTicketsEmitidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTicketsEmitidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTicketsEmitidos.ForeColor = System.Drawing.Color.White;
-            this.btnTicketsEmitidos.IconChar = FontAwesome.Sharp.IconChar.TicketAlt;
-            this.btnTicketsEmitidos.IconColor = System.Drawing.Color.White;
-            this.btnTicketsEmitidos.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnTicketsEmitidos.IconSize = 50;
-            this.btnTicketsEmitidos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTicketsEmitidos.Location = new System.Drawing.Point(10, 90);
-            this.btnTicketsEmitidos.Name = "btnTicketsEmitidos";
-            this.btnTicketsEmitidos.Size = new System.Drawing.Size(168, 60);
-            this.btnTicketsEmitidos.TabIndex = 48;
-            this.btnTicketsEmitidos.Text = "Tickets \r\nEmitidos\r\n";
-            this.btnTicketsEmitidos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnTicketsEmitidos.UseVisualStyleBackColor = false;
-            // 
-            // btnEgresoCaja
-            // 
-            this.btnEgresoCaja.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEgresoCaja.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
-            this.btnEgresoCaja.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
-            this.btnEgresoCaja.FlatAppearance.BorderSize = 3;
-            this.btnEgresoCaja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEgresoCaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEgresoCaja.ForeColor = System.Drawing.Color.White;
-            this.btnEgresoCaja.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckAlt;
-            this.btnEgresoCaja.IconColor = System.Drawing.Color.White;
-            this.btnEgresoCaja.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnEgresoCaja.IconSize = 50;
-            this.btnEgresoCaja.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEgresoCaja.Location = new System.Drawing.Point(10, 165);
-            this.btnEgresoCaja.Name = "btnEgresoCaja";
-            this.btnEgresoCaja.Size = new System.Drawing.Size(168, 60);
-            this.btnEgresoCaja.TabIndex = 49;
-            this.btnEgresoCaja.Text = "Egreso \r\nde Caja";
-            this.btnEgresoCaja.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnEgresoCaja.UseVisualStyleBackColor = false;
-            // 
-            // btnDevoluciones
-            // 
-            this.btnDevoluciones.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDevoluciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
-            this.btnDevoluciones.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
-            this.btnDevoluciones.FlatAppearance.BorderSize = 3;
-            this.btnDevoluciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDevoluciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDevoluciones.ForeColor = System.Drawing.Color.White;
-            this.btnDevoluciones.IconChar = FontAwesome.Sharp.IconChar.RedoAlt;
-            this.btnDevoluciones.IconColor = System.Drawing.Color.White;
-            this.btnDevoluciones.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnDevoluciones.IconSize = 50;
-            this.btnDevoluciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDevoluciones.Location = new System.Drawing.Point(184, 90);
-            this.btnDevoluciones.Name = "btnDevoluciones";
-            this.btnDevoluciones.Size = new System.Drawing.Size(168, 60);
-            this.btnDevoluciones.TabIndex = 50;
-            this.btnDevoluciones.Text = "Devoluciones";
-            this.btnDevoluciones.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDevoluciones.UseVisualStyleBackColor = false;
-            // 
-            // btnCargarPrecio
-            // 
-            this.btnCargarPrecio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCargarPrecio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
-            this.btnCargarPrecio.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
-            this.btnCargarPrecio.FlatAppearance.BorderSize = 3;
-            this.btnCargarPrecio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCargarPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCargarPrecio.ForeColor = System.Drawing.Color.White;
-            this.btnCargarPrecio.IconChar = FontAwesome.Sharp.IconChar.Tags;
-            this.btnCargarPrecio.IconColor = System.Drawing.Color.White;
-            this.btnCargarPrecio.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCargarPrecio.IconSize = 50;
-            this.btnCargarPrecio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCargarPrecio.Location = new System.Drawing.Point(184, 165);
-            this.btnCargarPrecio.Name = "btnCargarPrecio";
-            this.btnCargarPrecio.Size = new System.Drawing.Size(168, 60);
-            this.btnCargarPrecio.TabIndex = 51;
-            this.btnCargarPrecio.Text = "Cambiar\r\nPrecio\r\n";
-            this.btnCargarPrecio.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCargarPrecio.UseVisualStyleBackColor = false;
-            // 
-            // btnGuardarDocumento
-            // 
-            this.btnGuardarDocumento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnGuardarDocumento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
-            this.btnGuardarDocumento.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
-            this.btnGuardarDocumento.FlatAppearance.BorderSize = 3;
-            this.btnGuardarDocumento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardarDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardarDocumento.ForeColor = System.Drawing.Color.White;
-            this.btnGuardarDocumento.IconChar = FontAwesome.Sharp.IconChar.FileDownload;
-            this.btnGuardarDocumento.IconColor = System.Drawing.Color.White;
-            this.btnGuardarDocumento.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnGuardarDocumento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardarDocumento.Location = new System.Drawing.Point(358, 90);
-            this.btnGuardarDocumento.Name = "btnGuardarDocumento";
-            this.btnGuardarDocumento.Size = new System.Drawing.Size(168, 60);
-            this.btnGuardarDocumento.TabIndex = 52;
-            this.btnGuardarDocumento.Text = "Guardar \r\nDocumento";
-            this.btnGuardarDocumento.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnGuardarDocumento.UseVisualStyleBackColor = false;
-            // 
-            // btnCargarDocumento
-            // 
-            this.btnCargarDocumento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCargarDocumento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
-            this.btnCargarDocumento.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
-            this.btnCargarDocumento.FlatAppearance.BorderSize = 3;
-            this.btnCargarDocumento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCargarDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCargarDocumento.ForeColor = System.Drawing.Color.White;
-            this.btnCargarDocumento.IconChar = FontAwesome.Sharp.IconChar.FileUpload;
-            this.btnCargarDocumento.IconColor = System.Drawing.Color.White;
-            this.btnCargarDocumento.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCargarDocumento.IconSize = 50;
-            this.btnCargarDocumento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCargarDocumento.Location = new System.Drawing.Point(358, 165);
-            this.btnCargarDocumento.Name = "btnCargarDocumento";
-            this.btnCargarDocumento.Size = new System.Drawing.Size(168, 60);
-            this.btnCargarDocumento.TabIndex = 53;
-            this.btnCargarDocumento.Text = "Cargar \r\nDocumento\r\n\r\n";
-            this.btnCargarDocumento.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCargarDocumento.UseVisualStyleBackColor = false;
-            // 
-            // btnReciboIngreso
-            // 
-            this.btnReciboIngreso.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnReciboIngreso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
-            this.btnReciboIngreso.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
-            this.btnReciboIngreso.FlatAppearance.BorderSize = 3;
-            this.btnReciboIngreso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReciboIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReciboIngreso.ForeColor = System.Drawing.Color.White;
-            this.btnReciboIngreso.IconChar = FontAwesome.Sharp.IconChar.Inbox;
-            this.btnReciboIngreso.IconColor = System.Drawing.Color.White;
-            this.btnReciboIngreso.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnReciboIngreso.IconSize = 50;
-            this.btnReciboIngreso.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReciboIngreso.Location = new System.Drawing.Point(532, 90);
-            this.btnReciboIngreso.Name = "btnReciboIngreso";
-            this.btnReciboIngreso.Size = new System.Drawing.Size(168, 60);
-            this.btnReciboIngreso.TabIndex = 54;
-            this.btnReciboIngreso.Text = "Recibo \r\nde Ingreso";
-            this.btnReciboIngreso.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnReciboIngreso.UseVisualStyleBackColor = false;
-            // 
-            // btnSistema
-            // 
-            this.btnSistema.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSistema.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
-            this.btnSistema.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
-            this.btnSistema.FlatAppearance.BorderSize = 3;
-            this.btnSistema.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSistema.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSistema.ForeColor = System.Drawing.Color.White;
-            this.btnSistema.IconChar = FontAwesome.Sharp.IconChar.Cog;
-            this.btnSistema.IconColor = System.Drawing.Color.White;
-            this.btnSistema.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnSistema.IconSize = 50;
-            this.btnSistema.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSistema.Location = new System.Drawing.Point(532, 165);
-            this.btnSistema.Name = "btnSistema";
-            this.btnSistema.Size = new System.Drawing.Size(168, 60);
-            this.btnSistema.TabIndex = 55;
-            this.btnSistema.Text = "SIstema";
-            this.btnSistema.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSistema.UseVisualStyleBackColor = false;
-            // 
-            // btnVentas
-            // 
-            this.btnVentas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnVentas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(195)))), ((int)(((byte)(93)))));
-            this.btnVentas.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
-            this.btnVentas.FlatAppearance.BorderSize = 3;
-            this.btnVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVentas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVentas.ForeColor = System.Drawing.Color.White;
-            this.btnVentas.IconChar = FontAwesome.Sharp.IconChar.DollarSign;
-            this.btnVentas.IconColor = System.Drawing.Color.White;
-            this.btnVentas.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnVentas.IconSize = 45;
-            this.btnVentas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVentas.Location = new System.Drawing.Point(358, 11);
-            this.btnVentas.Name = "btnVentas";
-            this.btnVentas.Size = new System.Drawing.Size(153, 64);
-            this.btnVentas.TabIndex = 56;
-            this.btnVentas.Text = "Ventas";
-            this.btnVentas.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnVentas.UseVisualStyleBackColor = false;
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
-            this.btnSalir.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.btnSalir.FlatAppearance.BorderSize = 3;
-            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.ForeColor = System.Drawing.Color.White;
-            this.btnSalir.IconChar = FontAwesome.Sharp.IconChar.PowerOff;
-            this.btnSalir.IconColor = System.Drawing.Color.White;
-            this.btnSalir.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnSalir.IconSize = 50;
-            this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSalir.Location = new System.Drawing.Point(547, 11);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(153, 64);
-            this.btnSalir.TabIndex = 59;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSalir.UseVisualStyleBackColor = false;
-            // 
-            // btnProductosNoVendidos
-            // 
-            this.btnProductosNoVendidos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnProductosNoVendidos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
-            this.btnProductosNoVendidos.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
-            this.btnProductosNoVendidos.FlatAppearance.BorderSize = 3;
-            this.btnProductosNoVendidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProductosNoVendidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProductosNoVendidos.ForeColor = System.Drawing.Color.White;
-            this.btnProductosNoVendidos.IconChar = FontAwesome.Sharp.IconChar.Ban;
-            this.btnProductosNoVendidos.IconColor = System.Drawing.Color.White;
-            this.btnProductosNoVendidos.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnProductosNoVendidos.IconSize = 50;
-            this.btnProductosNoVendidos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProductosNoVendidos.Location = new System.Drawing.Point(199, 11);
-            this.btnProductosNoVendidos.Name = "btnProductosNoVendidos";
-            this.btnProductosNoVendidos.Size = new System.Drawing.Size(153, 64);
-            this.btnProductosNoVendidos.TabIndex = 66;
-            this.btnProductosNoVendidos.Text = "Productos \r\nno Vendidos";
-            this.btnProductosNoVendidos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnProductosNoVendidos.UseVisualStyleBackColor = false;
-            // 
             // txtRut
             // 
             this.txtRut.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -810,20 +372,6 @@ namespace ptoVenta
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
-            this.panel1.Controls.Add(this.panel12);
-            this.panel1.Controls.Add(this.panel11);
-            this.panel1.Controls.Add(this.panel10);
-            this.panel1.Controls.Add(this.panel6);
-            this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.panel7);
-            this.panel1.Controls.Add(this.panel8);
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.panel9);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.btnProductosNoVendidos);
-            this.panel1.Controls.Add(this.btnSalir);
-            this.panel1.Controls.Add(this.btnVentas);
             this.panel1.Controls.Add(this.btnSistema);
             this.panel1.Controls.Add(this.btnReciboIngreso);
             this.panel1.Controls.Add(this.btnCargarDocumento);
@@ -837,83 +385,11 @@ namespace ptoVenta
             this.panel1.Size = new System.Drawing.Size(714, 246);
             this.panel1.TabIndex = 67;
             // 
-            // panel6
-            // 
-            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
-            this.panel6.Location = new System.Drawing.Point(532, 223);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(168, 13);
-            this.panel6.TabIndex = 74;
-            // 
-            // panel5
-            // 
-            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
-            this.panel5.Location = new System.Drawing.Point(184, 223);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(168, 13);
-            this.panel5.TabIndex = 70;
-            // 
-            // panel7
-            // 
-            this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
-            this.panel7.Location = new System.Drawing.Point(532, 149);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(168, 13);
-            this.panel7.TabIndex = 73;
-            // 
-            // panel8
-            // 
-            this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
-            this.panel8.Location = new System.Drawing.Point(358, 223);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(168, 13);
-            this.panel8.TabIndex = 72;
-            // 
-            // panel4
-            // 
-            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
-            this.panel4.Location = new System.Drawing.Point(184, 149);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(168, 13);
-            this.panel4.TabIndex = 69;
-            // 
-            // panel9
-            // 
-            this.panel9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
-            this.panel9.Location = new System.Drawing.Point(358, 149);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(168, 13);
-            this.panel9.TabIndex = 71;
-            // 
-            // panel3
-            // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
-            this.panel3.Location = new System.Drawing.Point(10, 223);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(168, 13);
-            this.panel3.TabIndex = 68;
-            // 
-            // panel2
-            // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
-            this.panel2.Location = new System.Drawing.Point(10, 149);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(168, 13);
-            this.panel2.TabIndex = 67;
-            // 
             // panel10
             // 
             this.panel10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
-            this.panel10.Location = new System.Drawing.Point(199, 71);
+            this.panel10.Location = new System.Drawing.Point(992, 405);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(153, 13);
             this.panel10.TabIndex = 68;
@@ -922,7 +398,7 @@ namespace ptoVenta
             // 
             this.panel11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
-            this.panel11.Location = new System.Drawing.Point(358, 71);
+            this.panel11.Location = new System.Drawing.Point(1151, 405);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(153, 13);
             this.panel11.TabIndex = 69;
@@ -931,7 +407,7 @@ namespace ptoVenta
             // 
             this.panel12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.panel12.Location = new System.Drawing.Point(547, 71);
+            this.panel12.Location = new System.Drawing.Point(1340, 405);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(153, 13);
             this.panel12.TabIndex = 70;
@@ -956,7 +432,7 @@ namespace ptoVenta
             // 
             // panel15
             // 
-            this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
+            this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
             this.panel15.Location = new System.Drawing.Point(553, 147);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(185, 13);
@@ -980,6 +456,437 @@ namespace ptoVenta
             this.panel17.Size = new System.Drawing.Size(162, 13);
             this.panel17.TabIndex = 73;
             // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(195)))), ((int)(((byte)(93)))));
+            this.btnBuscar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
+            this.btnBuscar.FlatAppearance.BorderSize = 3;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.ForeColor = System.Drawing.Color.White;
+            this.btnBuscar.IconChar = FontAwesome.Sharp.IconChar.Eye;
+            this.btnBuscar.IconColor = System.Drawing.Color.White;
+            this.btnBuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnBuscar.IconSize = 50;
+            this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscar.Location = new System.Drawing.Point(291, 88);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.btnBuscar.Size = new System.Drawing.Size(135, 43);
+            this.btnBuscar.TabIndex = 57;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            // 
+            // btnExistenciaenLocales
+            // 
+            this.btnExistenciaenLocales.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(173)))), ((int)(((byte)(229)))));
+            this.btnExistenciaenLocales.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
+            this.btnExistenciaenLocales.FlatAppearance.BorderSize = 3;
+            this.btnExistenciaenLocales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExistenciaenLocales.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExistenciaenLocales.ForeColor = System.Drawing.Color.White;
+            this.btnExistenciaenLocales.IconChar = FontAwesome.Sharp.IconChar.NetworkWired;
+            this.btnExistenciaenLocales.IconColor = System.Drawing.Color.White;
+            this.btnExistenciaenLocales.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnExistenciaenLocales.IconSize = 50;
+            this.btnExistenciaenLocales.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.btnExistenciaenLocales.Location = new System.Drawing.Point(553, 37);
+            this.btnExistenciaenLocales.Name = "btnExistenciaenLocales";
+            this.btnExistenciaenLocales.Size = new System.Drawing.Size(185, 116);
+            this.btnExistenciaenLocales.TabIndex = 47;
+            this.btnExistenciaenLocales.Text = "Existencia en Locales";
+            this.btnExistenciaenLocales.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnExistenciaenLocales.UseVisualStyleBackColor = false;
+            this.btnExistenciaenLocales.Click += new System.EventHandler(this.btnExistenciaenLocales_Click_1);
+            // 
+            // btnDelivery
+            // 
+            this.btnDelivery.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDelivery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(195)))), ((int)(((byte)(93)))));
+            this.btnDelivery.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
+            this.btnDelivery.FlatAppearance.BorderSize = 3;
+            this.btnDelivery.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelivery.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelivery.ForeColor = System.Drawing.Color.White;
+            this.btnDelivery.IconChar = FontAwesome.Sharp.IconChar.Motorcycle;
+            this.btnDelivery.IconColor = System.Drawing.Color.White;
+            this.btnDelivery.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnDelivery.IconSize = 50;
+            this.btnDelivery.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDelivery.Location = new System.Drawing.Point(878, 697);
+            this.btnDelivery.Name = "btnDelivery";
+            this.btnDelivery.Size = new System.Drawing.Size(162, 56);
+            this.btnDelivery.TabIndex = 65;
+            this.btnDelivery.Text = "Delivery";
+            this.btnDelivery.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDelivery.UseVisualStyleBackColor = false;
+            // 
+            // btnProductoFaltante
+            // 
+            this.btnProductoFaltante.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnProductoFaltante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(195)))), ((int)(((byte)(93)))));
+            this.btnProductoFaltante.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
+            this.btnProductoFaltante.FlatAppearance.BorderSize = 3;
+            this.btnProductoFaltante.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProductoFaltante.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProductoFaltante.ForeColor = System.Drawing.Color.White;
+            this.btnProductoFaltante.IconChar = FontAwesome.Sharp.IconChar.Times;
+            this.btnProductoFaltante.IconColor = System.Drawing.Color.White;
+            this.btnProductoFaltante.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnProductoFaltante.IconSize = 50;
+            this.btnProductoFaltante.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProductoFaltante.Location = new System.Drawing.Point(878, 639);
+            this.btnProductoFaltante.Name = "btnProductoFaltante";
+            this.btnProductoFaltante.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.btnProductoFaltante.Size = new System.Drawing.Size(162, 56);
+            this.btnProductoFaltante.TabIndex = 64;
+            this.btnProductoFaltante.Text = "Producto Faltante";
+            this.btnProductoFaltante.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnProductoFaltante.UseVisualStyleBackColor = false;
+            // 
+            // btnProductosNoVendidos
+            // 
+            this.btnProductosNoVendidos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnProductosNoVendidos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
+            this.btnProductosNoVendidos.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.btnProductosNoVendidos.FlatAppearance.BorderSize = 3;
+            this.btnProductosNoVendidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProductosNoVendidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProductosNoVendidos.ForeColor = System.Drawing.Color.White;
+            this.btnProductosNoVendidos.IconChar = FontAwesome.Sharp.IconChar.Ban;
+            this.btnProductosNoVendidos.IconColor = System.Drawing.Color.White;
+            this.btnProductosNoVendidos.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnProductosNoVendidos.IconSize = 50;
+            this.btnProductosNoVendidos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProductosNoVendidos.Location = new System.Drawing.Point(992, 345);
+            this.btnProductosNoVendidos.Name = "btnProductosNoVendidos";
+            this.btnProductosNoVendidos.Size = new System.Drawing.Size(153, 64);
+            this.btnProductosNoVendidos.TabIndex = 66;
+            this.btnProductosNoVendidos.Text = "Productos \r\nno Vendidos";
+            this.btnProductosNoVendidos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnProductosNoVendidos.UseVisualStyleBackColor = false;
+            // 
+            // btnAperturaCaja
+            // 
+            this.btnAperturaCaja.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAperturaCaja.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
+            this.btnAperturaCaja.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.btnAperturaCaja.FlatAppearance.BorderSize = 3;
+            this.btnAperturaCaja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAperturaCaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAperturaCaja.ForeColor = System.Drawing.Color.White;
+            this.btnAperturaCaja.IconChar = FontAwesome.Sharp.IconChar.CashRegister;
+            this.btnAperturaCaja.IconColor = System.Drawing.Color.White;
+            this.btnAperturaCaja.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnAperturaCaja.IconSize = 50;
+            this.btnAperturaCaja.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAperturaCaja.Location = new System.Drawing.Point(802, 759);
+            this.btnAperturaCaja.Name = "btnAperturaCaja";
+            this.btnAperturaCaja.Size = new System.Drawing.Size(237, 56);
+            this.btnAperturaCaja.TabIndex = 63;
+            this.btnAperturaCaja.Text = "Apertura de Caja";
+            this.btnAperturaCaja.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAperturaCaja.UseVisualStyleBackColor = false;
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
+            this.btnSalir.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.btnSalir.FlatAppearance.BorderSize = 3;
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.ForeColor = System.Drawing.Color.White;
+            this.btnSalir.IconChar = FontAwesome.Sharp.IconChar.PowerOff;
+            this.btnSalir.IconColor = System.Drawing.Color.White;
+            this.btnSalir.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnSalir.IconSize = 50;
+            this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSalir.Location = new System.Drawing.Point(1340, 345);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(153, 64);
+            this.btnSalir.TabIndex = 59;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // btnVentas
+            // 
+            this.btnVentas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnVentas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(195)))), ((int)(((byte)(93)))));
+            this.btnVentas.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
+            this.btnVentas.FlatAppearance.BorderSize = 3;
+            this.btnVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVentas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVentas.ForeColor = System.Drawing.Color.White;
+            this.btnVentas.IconChar = FontAwesome.Sharp.IconChar.DollarSign;
+            this.btnVentas.IconColor = System.Drawing.Color.White;
+            this.btnVentas.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnVentas.IconSize = 45;
+            this.btnVentas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnVentas.Location = new System.Drawing.Point(1151, 345);
+            this.btnVentas.Name = "btnVentas";
+            this.btnVentas.Size = new System.Drawing.Size(153, 64);
+            this.btnVentas.TabIndex = 56;
+            this.btnVentas.Text = "Ventas";
+            this.btnVentas.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnVentas.UseVisualStyleBackColor = false;
+            // 
+            // btnAbrirCajon
+            // 
+            this.btnAbrirCajon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnAbrirCajon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
+            this.btnAbrirCajon.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.btnAbrirCajon.FlatAppearance.BorderSize = 3;
+            this.btnAbrirCajon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAbrirCajon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAbrirCajon.ForeColor = System.Drawing.Color.White;
+            this.btnAbrirCajon.IconChar = FontAwesome.Sharp.IconChar.BoxOpen;
+            this.btnAbrirCajon.IconColor = System.Drawing.Color.White;
+            this.btnAbrirCajon.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnAbrirCajon.IconSize = 50;
+            this.btnAbrirCajon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAbrirCajon.Location = new System.Drawing.Point(553, 700);
+            this.btnAbrirCajon.Name = "btnAbrirCajon";
+            this.btnAbrirCajon.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
+            this.btnAbrirCajon.Size = new System.Drawing.Size(162, 46);
+            this.btnAbrirCajon.TabIndex = 61;
+            this.btnAbrirCajon.Text = "Abrir Cajón";
+            this.btnAbrirCajon.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAbrirCajon.UseVisualStyleBackColor = false;
+            // 
+            // btnCotizacion
+            // 
+            this.btnCotizacion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnCotizacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(195)))), ((int)(((byte)(93)))));
+            this.btnCotizacion.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
+            this.btnCotizacion.FlatAppearance.BorderSize = 3;
+            this.btnCotizacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCotizacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCotizacion.ForeColor = System.Drawing.Color.White;
+            this.btnCotizacion.IconChar = FontAwesome.Sharp.IconChar.MoneyBillWaveAlt;
+            this.btnCotizacion.IconColor = System.Drawing.Color.White;
+            this.btnCotizacion.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCotizacion.IconSize = 50;
+            this.btnCotizacion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCotizacion.Location = new System.Drawing.Point(553, 639);
+            this.btnCotizacion.Name = "btnCotizacion";
+            this.btnCotizacion.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
+            this.btnCotizacion.Size = new System.Drawing.Size(162, 46);
+            this.btnCotizacion.TabIndex = 60;
+            this.btnCotizacion.Text = "Cotización";
+            this.btnCotizacion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCotizacion.UseVisualStyleBackColor = false;
+            // 
+            // btnDescripciónFarmacologica
+            // 
+            this.btnDescripciónFarmacologica.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDescripciónFarmacologica.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(195)))), ((int)(((byte)(93)))));
+            this.btnDescripciónFarmacologica.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
+            this.btnDescripciónFarmacologica.FlatAppearance.BorderSize = 3;
+            this.btnDescripciónFarmacologica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDescripciónFarmacologica.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDescripciónFarmacologica.ForeColor = System.Drawing.Color.White;
+            this.btnDescripciónFarmacologica.IconChar = FontAwesome.Sharp.IconChar.Pills;
+            this.btnDescripciónFarmacologica.IconColor = System.Drawing.Color.White;
+            this.btnDescripciónFarmacologica.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnDescripciónFarmacologica.IconSize = 50;
+            this.btnDescripciónFarmacologica.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDescripciónFarmacologica.Location = new System.Drawing.Point(551, 234);
+            this.btnDescripciónFarmacologica.Name = "btnDescripciónFarmacologica";
+            this.btnDescripciónFarmacologica.Size = new System.Drawing.Size(250, 73);
+            this.btnDescripciónFarmacologica.TabIndex = 58;
+            this.btnDescripciónFarmacologica.Text = "Descripción \r\nfarmacológica";
+            this.btnDescripciónFarmacologica.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDescripciónFarmacologica.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(-18, -67);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(322, 220);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnSistema
+            // 
+            this.btnSistema.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSistema.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
+            this.btnSistema.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.btnSistema.FlatAppearance.BorderSize = 3;
+            this.btnSistema.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSistema.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSistema.ForeColor = System.Drawing.Color.White;
+            this.btnSistema.IconChar = FontAwesome.Sharp.IconChar.Cog;
+            this.btnSistema.IconColor = System.Drawing.Color.White;
+            this.btnSistema.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnSistema.IconSize = 50;
+            this.btnSistema.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSistema.Location = new System.Drawing.Point(478, 125);
+            this.btnSistema.Name = "btnSistema";
+            this.btnSistema.Size = new System.Drawing.Size(150, 110);
+            this.btnSistema.TabIndex = 55;
+            this.btnSistema.Text = "SIstema";
+            this.btnSistema.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSistema.UseVisualStyleBackColor = false;
+            // 
+            // btnReciboIngreso
+            // 
+            this.btnReciboIngreso.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnReciboIngreso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
+            this.btnReciboIngreso.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.btnReciboIngreso.FlatAppearance.BorderSize = 3;
+            this.btnReciboIngreso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReciboIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReciboIngreso.ForeColor = System.Drawing.Color.White;
+            this.btnReciboIngreso.IconChar = FontAwesome.Sharp.IconChar.Inbox;
+            this.btnReciboIngreso.IconColor = System.Drawing.Color.White;
+            this.btnReciboIngreso.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnReciboIngreso.IconSize = 50;
+            this.btnReciboIngreso.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReciboIngreso.Location = new System.Drawing.Point(478, 3);
+            this.btnReciboIngreso.Name = "btnReciboIngreso";
+            this.btnReciboIngreso.Size = new System.Drawing.Size(150, 110);
+            this.btnReciboIngreso.TabIndex = 54;
+            this.btnReciboIngreso.Text = "Recibo \r\nde Ingreso";
+            this.btnReciboIngreso.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnReciboIngreso.UseVisualStyleBackColor = false;
+            // 
+            // btnCargarDocumento
+            // 
+            this.btnCargarDocumento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCargarDocumento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
+            this.btnCargarDocumento.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.btnCargarDocumento.FlatAppearance.BorderSize = 3;
+            this.btnCargarDocumento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCargarDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCargarDocumento.ForeColor = System.Drawing.Color.White;
+            this.btnCargarDocumento.IconChar = FontAwesome.Sharp.IconChar.FileUpload;
+            this.btnCargarDocumento.IconColor = System.Drawing.Color.White;
+            this.btnCargarDocumento.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCargarDocumento.IconSize = 50;
+            this.btnCargarDocumento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCargarDocumento.Location = new System.Drawing.Point(322, 125);
+            this.btnCargarDocumento.Name = "btnCargarDocumento";
+            this.btnCargarDocumento.Size = new System.Drawing.Size(150, 110);
+            this.btnCargarDocumento.TabIndex = 53;
+            this.btnCargarDocumento.Text = "Cargar \r\nDocumento\r\n\r\n";
+            this.btnCargarDocumento.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCargarDocumento.UseVisualStyleBackColor = false;
+            // 
+            // btnGuardarDocumento
+            // 
+            this.btnGuardarDocumento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnGuardarDocumento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
+            this.btnGuardarDocumento.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.btnGuardarDocumento.FlatAppearance.BorderSize = 3;
+            this.btnGuardarDocumento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardarDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardarDocumento.ForeColor = System.Drawing.Color.White;
+            this.btnGuardarDocumento.IconChar = FontAwesome.Sharp.IconChar.FileDownload;
+            this.btnGuardarDocumento.IconColor = System.Drawing.Color.White;
+            this.btnGuardarDocumento.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnGuardarDocumento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGuardarDocumento.Location = new System.Drawing.Point(322, 3);
+            this.btnGuardarDocumento.Name = "btnGuardarDocumento";
+            this.btnGuardarDocumento.Size = new System.Drawing.Size(150, 110);
+            this.btnGuardarDocumento.TabIndex = 52;
+            this.btnGuardarDocumento.Text = "Guardar \r\nDocumento";
+            this.btnGuardarDocumento.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnGuardarDocumento.UseVisualStyleBackColor = false;
+            // 
+            // btnCargarPrecio
+            // 
+            this.btnCargarPrecio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCargarPrecio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
+            this.btnCargarPrecio.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.btnCargarPrecio.FlatAppearance.BorderSize = 3;
+            this.btnCargarPrecio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCargarPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCargarPrecio.ForeColor = System.Drawing.Color.White;
+            this.btnCargarPrecio.IconChar = FontAwesome.Sharp.IconChar.Tags;
+            this.btnCargarPrecio.IconColor = System.Drawing.Color.White;
+            this.btnCargarPrecio.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCargarPrecio.IconSize = 50;
+            this.btnCargarPrecio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCargarPrecio.Location = new System.Drawing.Point(166, 127);
+            this.btnCargarPrecio.Name = "btnCargarPrecio";
+            this.btnCargarPrecio.Size = new System.Drawing.Size(150, 110);
+            this.btnCargarPrecio.TabIndex = 51;
+            this.btnCargarPrecio.Text = "Cambiar\r\nPrecio\r\n";
+            this.btnCargarPrecio.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCargarPrecio.UseVisualStyleBackColor = false;
+            // 
+            // btnDevoluciones
+            // 
+            this.btnDevoluciones.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDevoluciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
+            this.btnDevoluciones.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.btnDevoluciones.FlatAppearance.BorderSize = 3;
+            this.btnDevoluciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDevoluciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDevoluciones.ForeColor = System.Drawing.Color.White;
+            this.btnDevoluciones.IconChar = FontAwesome.Sharp.IconChar.RedoAlt;
+            this.btnDevoluciones.IconColor = System.Drawing.Color.White;
+            this.btnDevoluciones.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnDevoluciones.IconSize = 50;
+            this.btnDevoluciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDevoluciones.Location = new System.Drawing.Point(166, 3);
+            this.btnDevoluciones.Name = "btnDevoluciones";
+            this.btnDevoluciones.Size = new System.Drawing.Size(150, 110);
+            this.btnDevoluciones.TabIndex = 50;
+            this.btnDevoluciones.Text = "Devoluciones";
+            this.btnDevoluciones.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDevoluciones.UseVisualStyleBackColor = false;
+            // 
+            // btnEgresoCaja
+            // 
+            this.btnEgresoCaja.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEgresoCaja.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
+            this.btnEgresoCaja.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.btnEgresoCaja.FlatAppearance.BorderSize = 3;
+            this.btnEgresoCaja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEgresoCaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEgresoCaja.ForeColor = System.Drawing.Color.White;
+            this.btnEgresoCaja.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckAlt;
+            this.btnEgresoCaja.IconColor = System.Drawing.Color.White;
+            this.btnEgresoCaja.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnEgresoCaja.IconSize = 50;
+            this.btnEgresoCaja.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEgresoCaja.Location = new System.Drawing.Point(10, 125);
+            this.btnEgresoCaja.Name = "btnEgresoCaja";
+            this.btnEgresoCaja.Size = new System.Drawing.Size(150, 110);
+            this.btnEgresoCaja.TabIndex = 49;
+            this.btnEgresoCaja.Text = "Egreso \r\nde Caja";
+            this.btnEgresoCaja.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEgresoCaja.UseVisualStyleBackColor = false;
+            // 
+            // btnTicketsEmitidos
+            // 
+            this.btnTicketsEmitidos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnTicketsEmitidos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
+            this.btnTicketsEmitidos.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.btnTicketsEmitidos.FlatAppearance.BorderSize = 3;
+            this.btnTicketsEmitidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTicketsEmitidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTicketsEmitidos.ForeColor = System.Drawing.Color.White;
+            this.btnTicketsEmitidos.IconChar = FontAwesome.Sharp.IconChar.TicketAlt;
+            this.btnTicketsEmitidos.IconColor = System.Drawing.Color.White;
+            this.btnTicketsEmitidos.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnTicketsEmitidos.IconSize = 50;
+            this.btnTicketsEmitidos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTicketsEmitidos.Location = new System.Drawing.Point(10, 3);
+            this.btnTicketsEmitidos.Name = "btnTicketsEmitidos";
+            this.btnTicketsEmitidos.Size = new System.Drawing.Size(150, 110);
+            this.btnTicketsEmitidos.TabIndex = 48;
+            this.btnTicketsEmitidos.Text = "Tickets \r\nEmitidos\r\n";
+            this.btnTicketsEmitidos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnTicketsEmitidos.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -989,8 +896,11 @@ namespace ptoVenta
             this.BackColor = System.Drawing.Color.GhostWhite;
             this.CausesValidation = false;
             this.ClientSize = new System.Drawing.Size(1521, 839);
+            this.Controls.Add(this.panel12);
             this.Controls.Add(this.panel17);
+            this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel16);
+            this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel15);
             this.Controls.Add(this.panel14);
             this.Controls.Add(this.panel13);
@@ -1000,7 +910,10 @@ namespace ptoVenta
             this.Controls.Add(this.btnDelivery);
             this.Controls.Add(this.txtRut);
             this.Controls.Add(this.btnProductoFaltante);
+            this.Controls.Add(this.btnProductosNoVendidos);
             this.Controls.Add(this.btnAperturaCaja);
+            this.Controls.Add(this.btnSalir);
+            this.Controls.Add(this.btnVentas);
             this.Controls.Add(this.btnAbrirCajon);
             this.Controls.Add(this.btnCotizacion);
             this.Controls.Add(this.btnDescripciónFarmacologica);
@@ -1035,8 +948,8 @@ namespace ptoVenta
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1091,14 +1004,6 @@ namespace ptoVenta
         private FontAwesome.Sharp.IconButton btnProductosNoVendidos;
         private System.Windows.Forms.TextBox txtRut;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Panel panel10;
