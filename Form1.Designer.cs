@@ -85,6 +85,8 @@ namespace ptoVenta
             this.btnDescripciónFarmacologica = new FontAwesome.Sharp.IconButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panelclass.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -95,11 +97,12 @@ namespace ptoVenta
             // 
             this.btnClases.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
             this.btnClases.FlatAppearance.BorderSize = 3;
-            this.btnClases.Location = new System.Drawing.Point(461, 52);
+            this.btnClases.Location = new System.Drawing.Point(802, 87);
             // 
-            // panel155
+            // panelclass
             // 
-            this.panel155.Location = new System.Drawing.Point(461, 166);
+            this.panelclass.Controls.Add(this.panel2);
+            this.panelclass.Location = new System.Drawing.Point(802, 201);
             // 
             // txtNombre
             // 
@@ -884,6 +887,14 @@ namespace ptoVenta
             this.iconButton1.UseVisualStyleBackColor = false;
             this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(185, 13);
+            this.panel2.TabIndex = 72;
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -922,11 +933,8 @@ namespace ptoVenta
             this.Controls.Add(this.label7);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txtPrincipioActivo);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.txtBuscarProducto);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.txtAlmacen);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.updownPrecio);
             this.Controls.Add(this.dgvLista);
             this.Controls.Add(this.txtCorreo);
@@ -942,19 +950,14 @@ namespace ptoVenta
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Controls.SetChildIndex(this.pictureBox1, 0);
-            this.Controls.SetChildIndex(this.btnClases, 0);
-            this.Controls.SetChildIndex(this.panel155, 0);
             this.Controls.SetChildIndex(this.panel1, 0);
             this.Controls.SetChildIndex(this.txtDireccion, 0);
             this.Controls.SetChildIndex(this.txtTelefono, 0);
             this.Controls.SetChildIndex(this.txtCorreo, 0);
             this.Controls.SetChildIndex(this.dgvLista, 0);
             this.Controls.SetChildIndex(this.updownPrecio, 0);
-            this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.txtAlmacen, 0);
-            this.Controls.SetChildIndex(this.label2, 0);
             this.Controls.SetChildIndex(this.txtBuscarProducto, 0);
-            this.Controls.SetChildIndex(this.label3, 0);
             this.Controls.SetChildIndex(this.txtPrincipioActivo, 0);
             this.Controls.SetChildIndex(this.groupBox1, 0);
             this.Controls.SetChildIndex(this.label7, 0);
@@ -984,6 +987,9 @@ namespace ptoVenta
             this.Controls.SetChildIndex(this.panel17, 0);
             this.Controls.SetChildIndex(this.panel12, 0);
             this.Controls.SetChildIndex(this.iconButton1, 0);
+            this.Controls.SetChildIndex(this.btnClases, 0);
+            this.Controls.SetChildIndex(this.panelclass, 0);
+            this.panelclass.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -1050,6 +1056,7 @@ namespace ptoVenta
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Panel panel17;
         private FontAwesome.Sharp.IconButton iconButton1;
+        private System.Windows.Forms.Panel panel2;
     }
 }
 

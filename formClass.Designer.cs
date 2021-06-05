@@ -37,7 +37,7 @@ namespace ptoVenta
             this.btnExistenciaenLocales = new FontAwesome.Sharp.IconButton();
             this.label3 = new System.Windows.Forms.Label();
             this.btnClases = new FontAwesome.Sharp.IconButton();
-            this.panel155 = new System.Windows.Forms.Panel();
+            this.panelclass = new System.Windows.Forms.Panel();
             groupBox1 = new System.Windows.Forms.GroupBox();
             groupBox2 = new System.Windows.Forms.GroupBox();
             groupBox1.SuspendLayout();
@@ -162,20 +162,20 @@ namespace ptoVenta
             this.btnClases.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnClases.UseVisualStyleBackColor = false;
             // 
-            // panel155
+            // panelclass
             // 
-            this.panel155.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
-            this.panel155.Location = new System.Drawing.Point(12, 161);
-            this.panel155.Name = "panel155";
-            this.panel155.Size = new System.Drawing.Size(185, 13);
-            this.panel155.TabIndex = 72;
+            this.panelclass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.panelclass.Location = new System.Drawing.Point(12, 172);
+            this.panelclass.Name = "panelclass";
+            this.panelclass.Size = new System.Drawing.Size(185, 13);
+            this.panelclass.TabIndex = 72;
             // 
             // formClass
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(802, 577);
-            this.Controls.Add(this.panel155);
+            this.Controls.Add(this.panelclass);
             this.Controls.Add(this.btnClases);
             this.Controls.Add(groupBox2);
             this.Controls.Add(groupBox1);
@@ -196,6 +196,6 @@ namespace ptoVenta
         private System.Windows.Forms.Panel panel15;
         private FontAwesome.Sharp.IconButton btnExistenciaenLocales;
         public FontAwesome.Sharp.IconButton btnClases;
-        public System.Windows.Forms.Panel panel155;
+        public System.Windows.Forms.Panel panelclass;
     }
 }
