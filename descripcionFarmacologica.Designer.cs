@@ -51,6 +51,8 @@ namespace ptoVenta
             this.label6 = new System.Windows.Forms.Label();
             this.txtReg = new System.Windows.Forms.TextBox();
             this.btnSalirIngreso = new System.Windows.Forms.Button();
+            this.panel21 = new System.Windows.Forms.Panel();
+            this.panel16 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDescripcionFarmacologica)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -64,7 +66,7 @@ namespace ptoVenta
             this.dgvDescripcionFarmacologica.Name = "dgvDescripcionFarmacologica";
             this.dgvDescripcionFarmacologica.RowHeadersWidth = 51;
             this.dgvDescripcionFarmacologica.RowTemplate.Height = 24;
-            this.dgvDescripcionFarmacologica.Size = new System.Drawing.Size(1486, 652);
+            this.dgvDescripcionFarmacologica.Size = new System.Drawing.Size(1512, 652);
             this.dgvDescripcionFarmacologica.TabIndex = 21;
             // 
             // label1
@@ -173,10 +175,10 @@ namespace ptoVenta
             this.btnBuscarDescripcion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscarDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscarDescripcion.ForeColor = System.Drawing.Color.White;
-            this.btnBuscarDescripcion.Location = new System.Drawing.Point(880, 94);
+            this.btnBuscarDescripcion.Location = new System.Drawing.Point(880, 82);
             this.btnBuscarDescripcion.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscarDescripcion.Name = "btnBuscarDescripcion";
-            this.btnBuscarDescripcion.Size = new System.Drawing.Size(115, 43);
+            this.btnBuscarDescripcion.Size = new System.Drawing.Size(138, 46);
             this.btnBuscarDescripcion.TabIndex = 29;
             this.btnBuscarDescripcion.Text = "Buscar";
             this.btnBuscarDescripcion.UseVisualStyleBackColor = false;
@@ -193,7 +195,7 @@ namespace ptoVenta
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(1002, 94);
+            this.checkBox2.Location = new System.Drawing.Point(1029, 94);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(152, 21);
             this.checkBox2.TabIndex = 31;
@@ -205,7 +207,7 @@ namespace ptoVenta
             this.cmbAsignar.AllowDrop = true;
             this.cmbAsignar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbAsignar.FormattingEnabled = true;
-            this.cmbAsignar.Location = new System.Drawing.Point(1002, 145);
+            this.cmbAsignar.Location = new System.Drawing.Point(1029, 145);
             this.cmbAsignar.Name = "cmbAsignar";
             this.cmbAsignar.Size = new System.Drawing.Size(163, 28);
             this.cmbAsignar.TabIndex = 32;
@@ -213,7 +215,7 @@ namespace ptoVenta
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(1195, 145);
+            this.checkBox3.Location = new System.Drawing.Point(1222, 145);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(18, 17);
             this.checkBox3.TabIndex = 33;
@@ -222,7 +224,7 @@ namespace ptoVenta
             // checkBox4
             // 
             this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(1171, 145);
+            this.checkBox4.Location = new System.Drawing.Point(1198, 145);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(18, 17);
             this.checkBox4.TabIndex = 34;
@@ -231,7 +233,7 @@ namespace ptoVenta
             // checkBox5
             // 
             this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(1258, 143);
+            this.checkBox5.Location = new System.Drawing.Point(1285, 143);
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(96, 21);
             this.checkBox5.TabIndex = 35;
@@ -242,7 +244,7 @@ namespace ptoVenta
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(1171, 84);
+            this.label6.Location = new System.Drawing.Point(1198, 84);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(69, 26);
             this.label6.TabIndex = 31;
@@ -251,7 +253,7 @@ namespace ptoVenta
             // txtReg
             // 
             this.txtReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtReg.Location = new System.Drawing.Point(1171, 116);
+            this.txtReg.Location = new System.Drawing.Point(1198, 116);
             this.txtReg.Name = "txtReg";
             this.txtReg.Size = new System.Drawing.Size(188, 23);
             this.txtReg.TabIndex = 30;
@@ -265,20 +267,38 @@ namespace ptoVenta
             this.btnSalirIngreso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalirIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalirIngreso.ForeColor = System.Drawing.Color.White;
-            this.btnSalirIngreso.Location = new System.Drawing.Point(1391, 67);
+            this.btnSalirIngreso.Location = new System.Drawing.Point(1391, 49);
             this.btnSalirIngreso.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalirIngreso.Name = "btnSalirIngreso";
-            this.btnSalirIngreso.Size = new System.Drawing.Size(107, 44);
+            this.btnSalirIngreso.Size = new System.Drawing.Size(133, 62);
             this.btnSalirIngreso.TabIndex = 36;
             this.btnSalirIngreso.Text = "Atrás";
             this.btnSalirIngreso.UseVisualStyleBackColor = false;
             this.btnSalirIngreso.Click += new System.EventHandler(this.btnSalirIngreso_Click);
             // 
+            // panel21
+            // 
+            this.panel21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.panel21.Location = new System.Drawing.Point(880, 126);
+            this.panel21.Name = "panel21";
+            this.panel21.Size = new System.Drawing.Size(138, 13);
+            this.panel21.TabIndex = 77;
+            // 
+            // panel16
+            // 
+            this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.panel16.Location = new System.Drawing.Point(1391, 106);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(133, 13);
+            this.panel16.TabIndex = 76;
+            // 
             // descripcionFarmacologica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1510, 868);
+            this.ClientSize = new System.Drawing.Size(1599, 868);
+            this.Controls.Add(this.panel21);
+            this.Controls.Add(this.panel16);
             this.Controls.Add(this.btnSalirIngreso);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.checkBox5);
@@ -329,5 +349,7 @@ namespace ptoVenta
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtReg;
         private System.Windows.Forms.Button btnSalirIngreso;
+        private System.Windows.Forms.Panel panel21;
+        private System.Windows.Forms.Panel panel16;
     }
 }

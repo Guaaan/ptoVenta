@@ -55,6 +55,9 @@ namespace ptoVenta
             this.txtObservaciones = new System.Windows.Forms.TextBox();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.panel21 = new System.Windows.Forms.Panel();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -115,7 +118,7 @@ namespace ptoVenta
             this.btnBuscarCredito.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscarCredito.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscarCredito.ForeColor = System.Drawing.Color.White;
-            this.btnBuscarCredito.Location = new System.Drawing.Point(422, 119);
+            this.btnBuscarCredito.Location = new System.Drawing.Point(430, 109);
             this.btnBuscarCredito.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscarCredito.Name = "btnBuscarCredito";
             this.btnBuscarCredito.Size = new System.Drawing.Size(115, 44);
@@ -298,7 +301,7 @@ namespace ptoVenta
             this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAceptar.ForeColor = System.Drawing.Color.White;
-            this.btnAceptar.Location = new System.Drawing.Point(441, 663);
+            this.btnAceptar.Location = new System.Drawing.Point(441, 650);
             this.btnAceptar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(126, 44);
@@ -315,7 +318,7 @@ namespace ptoVenta
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
-            this.btnCancelar.Location = new System.Drawing.Point(575, 663);
+            this.btnCancelar.Location = new System.Drawing.Point(575, 650);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(148, 44);
@@ -323,12 +326,42 @@ namespace ptoVenta
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
             // 
+            // panel21
+            // 
+            this.panel21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.panel21.Location = new System.Drawing.Point(430, 150);
+            this.panel21.Name = "panel21";
+            this.panel21.Size = new System.Drawing.Size(115, 13);
+            this.panel21.TabIndex = 77;
+            // 
+            // panel16
+            // 
+            this.panel16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
+            this.panel16.Location = new System.Drawing.Point(441, 692);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(126, 13);
+            this.panel16.TabIndex = 76;
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.panel1.Location = new System.Drawing.Point(575, 692);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(148, 13);
+            this.panel1.TabIndex = 77;
+            // 
             // devoluciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GhostWhite;
             this.ClientSize = new System.Drawing.Size(1232, 730);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel21);
+            this.Controls.Add(this.panel16);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.groupBox2);
@@ -382,5 +415,8 @@ namespace ptoVenta
         private System.Windows.Forms.TextBox txtObservaciones;
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Panel panel21;
+        private System.Windows.Forms.Panel panel16;
+        private System.Windows.Forms.Panel panel1;
     }
 }

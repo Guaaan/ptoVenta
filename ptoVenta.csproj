@@ -55,18 +55,6 @@
     <Compile Include="abrirCajon.Designer.cs">
       <DependentUpon>abrirCajon.cs</DependentUpon>
     </Compile>
-    <Compile Include="boton.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="boton.Designer.cs">
-      <DependentUpon>boton.cs</DependentUpon>
-    </Compile>
-    <Compile Include="botonheredable.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="botonheredable.Designer.cs">
-      <DependentUpon>botonheredable.cs</DependentUpon>
-    </Compile>
     <Compile Include="Buscar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,12 +155,6 @@
     </Compile>
     <EmbeddedResource Include="abrirCajon.resx">
       <DependentUpon>abrirCajon.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="boton.resx">
-      <DependentUpon>boton.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="botonheredable.resx">
-      <DependentUpon>botonheredable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Buscar.resx">
       <DependentUpon>Buscar.cs</DependentUpon>

@@ -44,6 +44,8 @@ namespace ptoVenta
             this.txtNuevoPrecio = new System.Windows.Forms.TextBox();
             this.btnPrecioMinimo = new System.Windows.Forms.Button();
             this.btnRestablecer = new System.Windows.Forms.Button();
+            this.panel21 = new System.Windows.Forms.Panel();
+            this.panel16 = new System.Windows.Forms.Panel();
             this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -177,7 +179,7 @@ namespace ptoVenta
             this.btnPrecioMinimo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPrecioMinimo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrecioMinimo.ForeColor = System.Drawing.Color.White;
-            this.btnPrecioMinimo.Location = new System.Drawing.Point(623, 136);
+            this.btnPrecioMinimo.Location = new System.Drawing.Point(623, 122);
             this.btnPrecioMinimo.Margin = new System.Windows.Forms.Padding(4);
             this.btnPrecioMinimo.Name = "btnPrecioMinimo";
             this.btnPrecioMinimo.Size = new System.Drawing.Size(142, 57);
@@ -202,11 +204,31 @@ namespace ptoVenta
             this.btnRestablecer.Text = "F8- Restablecer";
             this.btnRestablecer.UseVisualStyleBackColor = false;
             // 
+            // panel21
+            // 
+            this.panel21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.panel21.Location = new System.Drawing.Point(623, 176);
+            this.panel21.Name = "panel21";
+            this.panel21.Size = new System.Drawing.Size(142, 13);
+            this.panel21.TabIndex = 77;
+            // 
+            // panel16
+            // 
+            this.panel16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
+            this.panel16.Location = new System.Drawing.Point(623, 258);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(142, 13);
+            this.panel16.TabIndex = 76;
+            // 
             // cambiarPrecio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 342);
+            this.Controls.Add(this.panel21);
+            this.Controls.Add(this.panel16);
             this.Controls.Add(this.btnRestablecer);
             this.Controls.Add(this.btnPrecioMinimo);
             this.Controls.Add(this.groupBox4);
@@ -245,5 +267,7 @@ namespace ptoVenta
         private System.Windows.Forms.TextBox txtNuevoPrecio;
         private System.Windows.Forms.Button btnPrecioMinimo;
         private System.Windows.Forms.Button btnRestablecer;
+        private System.Windows.Forms.Panel panel21;
+        private System.Windows.Forms.Panel panel16;
     }
 }

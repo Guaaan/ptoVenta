@@ -59,7 +59,7 @@ namespace ptoVenta
             // txtParamBusqueda
             // 
             this.txtParamBusqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtParamBusqueda.Location = new System.Drawing.Point(105, 97);
+            this.txtParamBusqueda.Location = new System.Drawing.Point(105, 102);
             this.txtParamBusqueda.Name = "txtParamBusqueda";
             this.txtParamBusqueda.Size = new System.Drawing.Size(427, 26);
             this.txtParamBusqueda.TabIndex = 38;
@@ -68,7 +68,7 @@ namespace ptoVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(633, 150);
+            this.ClientSize = new System.Drawing.Size(629, 173);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtParamBusqueda);
             this.Controls.Add(this.label3);

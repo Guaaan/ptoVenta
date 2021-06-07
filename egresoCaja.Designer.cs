@@ -84,6 +84,8 @@ namespace ptoVenta
             this.label7 = new System.Windows.Forms.Label();
             this.txtCaja = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel16 = new System.Windows.Forms.Panel();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -92,6 +94,7 @@ namespace ptoVenta
             // 
             // btnSalirIngreso
             // 
+            this.btnSalirIngreso.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnSalirIngreso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
             this.btnSalirIngreso.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnSalirIngreso.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
@@ -99,16 +102,17 @@ namespace ptoVenta
             this.btnSalirIngreso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalirIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalirIngreso.ForeColor = System.Drawing.Color.White;
-            this.btnSalirIngreso.Location = new System.Drawing.Point(1032, 792);
+            this.btnSalirIngreso.Location = new System.Drawing.Point(1032, 781);
             this.btnSalirIngreso.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalirIngreso.Name = "btnSalirIngreso";
-            this.btnSalirIngreso.Size = new System.Drawing.Size(107, 44);
+            this.btnSalirIngreso.Size = new System.Drawing.Size(107, 57);
             this.btnSalirIngreso.TabIndex = 35;
             this.btnSalirIngreso.Text = "Atrás";
             this.btnSalirIngreso.UseVisualStyleBackColor = false;
             // 
             // btnAceptarIngreso
             // 
+            this.btnAceptarIngreso.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnAceptarIngreso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(195)))), ((int)(((byte)(93)))));
             this.btnAceptarIngreso.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnAceptarIngreso.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
@@ -116,10 +120,10 @@ namespace ptoVenta
             this.btnAceptarIngreso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAceptarIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAceptarIngreso.ForeColor = System.Drawing.Color.White;
-            this.btnAceptarIngreso.Location = new System.Drawing.Point(464, 787);
+            this.btnAceptarIngreso.Location = new System.Drawing.Point(465, 781);
             this.btnAceptarIngreso.Margin = new System.Windows.Forms.Padding(4);
             this.btnAceptarIngreso.Name = "btnAceptarIngreso";
-            this.btnAceptarIngreso.Size = new System.Drawing.Size(147, 44);
+            this.btnAceptarIngreso.Size = new System.Drawing.Size(147, 57);
             this.btnAceptarIngreso.TabIndex = 34;
             this.btnAceptarIngreso.Text = "Aceptar";
             this.btnAceptarIngreso.UseVisualStyleBackColor = false;
@@ -635,14 +639,34 @@ namespace ptoVenta
             this.label1.TabIndex = 30;
             this.label1.Text = "Engreso de Caja";
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.panel1.Location = new System.Drawing.Point(1032, 835);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(107, 13);
+            this.panel1.TabIndex = 79;
+            // 
+            // panel16
+            // 
+            this.panel16.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
+            this.panel16.Location = new System.Drawing.Point(465, 835);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(147, 13);
+            this.panel16.TabIndex = 78;
+            // 
             // egresoCaja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1183, 849);
-            this.Controls.Add(this.btnSalirIngreso);
+            this.ClientSize = new System.Drawing.Size(1183, 883);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel16);
             this.Controls.Add(this.btnAceptarIngreso);
             this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.btnSalirIngreso);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
@@ -718,5 +742,7 @@ namespace ptoVenta
         private System.Windows.Forms.TextBox txtNControl;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.TextBox txtNFactura;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel16;
     }
 }

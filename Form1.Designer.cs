@@ -30,10 +30,6 @@ namespace ptoVenta
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.txtTelefono = new System.Windows.Forms.TextBox();
-            this.txtDireccion = new System.Windows.Forms.TextBox();
-            this.txtCorreo = new System.Windows.Forms.TextBox();
             this.dgvLista = new System.Windows.Forms.DataGridView();
             this.updownPrecio = new System.Windows.Forms.DomainUpDown();
             this.label1 = new System.Windows.Forms.Label();
@@ -49,14 +45,8 @@ namespace ptoVenta
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.txtSubTotal = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.drdVendedor = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtRut = new System.Windows.Forms.TextBox();
             this.btnSistema = new FontAwesome.Sharp.IconButton();
             this.btnReciboIngreso = new FontAwesome.Sharp.IconButton();
             this.btnCargarDocumento = new FontAwesome.Sharp.IconButton();
@@ -83,7 +73,6 @@ namespace ptoVenta
             this.btnCotizacion = new FontAwesome.Sharp.IconButton();
             this.btnDescripciónFarmacologica = new FontAwesome.Sharp.IconButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -93,42 +82,32 @@ namespace ptoVenta
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.panelBuscarPersona = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.btnDesplegarBuscar = new FontAwesome.Sharp.IconButton();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.panel19 = new System.Windows.Forms.Panel();
+            this.panel20 = new System.Windows.Forms.Panel();
+            this.panel21 = new System.Windows.Forms.Panel();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel18.SuspendLayout();
+            this.panelBuscarPersona.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(122, 239);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(241, 22);
-            this.txtNombre.TabIndex = 14;
-            // 
-            // txtTelefono
-            // 
-            this.txtTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefono.Location = new System.Drawing.Point(122, 295);
-            this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(241, 22);
-            this.txtTelefono.TabIndex = 16;
-            // 
-            // txtDireccion
-            // 
-            this.txtDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDireccion.Location = new System.Drawing.Point(122, 267);
-            this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(241, 22);
-            this.txtDireccion.TabIndex = 15;
-            // 
-            // txtCorreo
-            // 
-            this.txtCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCorreo.Location = new System.Drawing.Point(122, 323);
-            this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(241, 22);
-            this.txtCorreo.TabIndex = 17;
             // 
             // dgvLista
             // 
@@ -139,17 +118,17 @@ namespace ptoVenta
             this.dgvLista.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvLista.BackgroundColor = System.Drawing.Color.White;
             this.dgvLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvLista.Location = new System.Drawing.Point(19, 546);
+            this.dgvLista.Location = new System.Drawing.Point(19, 355);
             this.dgvLista.Name = "dgvLista";
             this.dgvLista.RowHeadersWidth = 51;
             this.dgvLista.RowTemplate.Height = 24;
-            this.dgvLista.Size = new System.Drawing.Size(1488, 87);
+            this.dgvLista.Size = new System.Drawing.Size(1488, 217);
             this.dgvLista.TabIndex = 18;
             // 
             // updownPrecio
             // 
             this.updownPrecio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.updownPrecio.Location = new System.Drawing.Point(1340, 406);
+            this.updownPrecio.Location = new System.Drawing.Point(614, 16);
             this.updownPrecio.Name = "updownPrecio";
             this.updownPrecio.Size = new System.Drawing.Size(90, 22);
             this.updownPrecio.TabIndex = 20;
@@ -170,7 +149,7 @@ namespace ptoVenta
             // txtAlmacen
             // 
             this.txtAlmacen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtAlmacen.Location = new System.Drawing.Point(1186, 406);
+            this.txtAlmacen.Location = new System.Drawing.Point(427, 15);
             this.txtAlmacen.Name = "txtAlmacen";
             this.txtAlmacen.Size = new System.Drawing.Size(54, 22);
             this.txtAlmacen.TabIndex = 22;
@@ -191,7 +170,7 @@ namespace ptoVenta
             // 
             this.txtBuscarProducto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.txtBuscarProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBuscarProducto.Location = new System.Drawing.Point(12, 640);
+            this.txtBuscarProducto.Location = new System.Drawing.Point(19, 579);
             this.txtBuscarProducto.Name = "txtBuscarProducto";
             this.txtBuscarProducto.Size = new System.Drawing.Size(535, 55);
             this.txtBuscarProducto.TabIndex = 24;
@@ -212,7 +191,7 @@ namespace ptoVenta
             // 
             this.txtPrincipioActivo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.txtPrincipioActivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrincipioActivo.Location = new System.Drawing.Point(286, 701);
+            this.txtPrincipioActivo.Location = new System.Drawing.Point(293, 640);
             this.txtPrincipioActivo.Name = "txtPrincipioActivo";
             this.txtPrincipioActivo.Size = new System.Drawing.Size(261, 40);
             this.txtPrincipioActivo.TabIndex = 26;
@@ -226,7 +205,7 @@ namespace ptoVenta
             this.groupBox1.Controls.Add(this.textBox11);
             this.groupBox1.Controls.Add(this.txtTotal);
             this.groupBox1.Controls.Add(this.txtSubTotal);
-            this.groupBox1.Location = new System.Drawing.Point(1046, 639);
+            this.groupBox1.Location = new System.Drawing.Point(1046, 578);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(461, 166);
             this.groupBox1.TabIndex = 32;
@@ -289,67 +268,12 @@ namespace ptoVenta
             this.txtSubTotal.Size = new System.Drawing.Size(261, 40);
             this.txtSubTotal.TabIndex = 33;
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label7.Location = new System.Drawing.Point(15, 211);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(44, 20);
-            this.label7.TabIndex = 33;
-            this.label7.Text = "Rut:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label8.Location = new System.Drawing.Point(15, 239);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(80, 20);
-            this.label8.TabIndex = 34;
-            this.label8.Text = "Nombre:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label9.Location = new System.Drawing.Point(15, 295);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(87, 20);
-            this.label9.TabIndex = 36;
-            this.label9.Text = "Teléfono:";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label10.Location = new System.Drawing.Point(15, 267);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(96, 20);
-            this.label10.TabIndex = 35;
-            this.label10.Text = "Dirección:";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label11.Location = new System.Drawing.Point(15, 323);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(72, 20);
-            this.label11.TabIndex = 37;
-            this.label11.Text = "Correo:";
-            // 
             // drdVendedor
             // 
             this.drdVendedor.AllowDrop = true;
             this.drdVendedor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.drdVendedor.FormattingEnabled = true;
-            this.drdVendedor.Location = new System.Drawing.Point(910, 405);
+            this.drdVendedor.Location = new System.Drawing.Point(112, 15);
             this.drdVendedor.Name = "drdVendedor";
             this.drdVendedor.Size = new System.Drawing.Size(163, 24);
             this.drdVendedor.TabIndex = 39;
@@ -360,19 +284,11 @@ namespace ptoVenta
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label5.Location = new System.Drawing.Point(811, 406);
+            this.label5.Location = new System.Drawing.Point(12, 15);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(94, 20);
             this.label5.TabIndex = 40;
             this.label5.Text = "Vendedor:";
-            // 
-            // txtRut
-            // 
-            this.txtRut.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRut.Location = new System.Drawing.Point(122, 211);
-            this.txtRut.Name = "txtRut";
-            this.txtRut.Size = new System.Drawing.Size(165, 22);
-            this.txtRut.TabIndex = 13;
             // 
             // btnSistema
             // 
@@ -396,6 +312,7 @@ namespace ptoVenta
             this.btnSistema.Text = "SIstema";
             this.btnSistema.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnSistema.UseVisualStyleBackColor = false;
+            this.btnSistema.Click += new System.EventHandler(this.btnSistema_Click);
             // 
             // btnReciboIngreso
             // 
@@ -419,6 +336,7 @@ namespace ptoVenta
             this.btnReciboIngreso.Text = "Recibo \r\nde Ingreso";
             this.btnReciboIngreso.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnReciboIngreso.UseVisualStyleBackColor = false;
+            this.btnReciboIngreso.Click += new System.EventHandler(this.btnReciboIngreso_Click);
             // 
             // btnCargarDocumento
             // 
@@ -487,6 +405,7 @@ namespace ptoVenta
             this.btnCargarPrecio.Text = "Cambiar\r\nPrecio\r\n";
             this.btnCargarPrecio.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnCargarPrecio.UseVisualStyleBackColor = false;
+            this.btnCargarPrecio.Click += new System.EventHandler(this.btnCargarPrecio_Click);
             // 
             // btnDevoluciones
             // 
@@ -510,6 +429,7 @@ namespace ptoVenta
             this.btnDevoluciones.Text = "Devoluciones";
             this.btnDevoluciones.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnDevoluciones.UseVisualStyleBackColor = false;
+            this.btnDevoluciones.Click += new System.EventHandler(this.btnDevoluciones_Click);
             // 
             // btnEgresoCaja
             // 
@@ -533,6 +453,7 @@ namespace ptoVenta
             this.btnEgresoCaja.Text = "Egreso \r\nde Caja";
             this.btnEgresoCaja.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnEgresoCaja.UseVisualStyleBackColor = false;
+            this.btnEgresoCaja.Click += new System.EventHandler(this.btnEgresoCaja_Click);
             // 
             // btnTicketsEmitidos
             // 
@@ -560,27 +481,27 @@ namespace ptoVenta
             // 
             // panel10
             // 
-            this.panel10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
-            this.panel10.Location = new System.Drawing.Point(992, 405);
+            this.panel10.Location = new System.Drawing.Point(1006, 810);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(153, 13);
             this.panel10.TabIndex = 68;
             // 
             // panel11
             // 
-            this.panel11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
-            this.panel11.Location = new System.Drawing.Point(1151, 405);
+            this.panel11.Location = new System.Drawing.Point(1165, 810);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(153, 13);
             this.panel11.TabIndex = 69;
             // 
             // panel12
             // 
-            this.panel12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.panel12.Location = new System.Drawing.Point(1340, 405);
+            this.panel12.Location = new System.Drawing.Point(1354, 810);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(153, 13);
             this.panel12.TabIndex = 70;
@@ -589,7 +510,7 @@ namespace ptoVenta
             // 
             this.panel13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
-            this.panel13.Location = new System.Drawing.Point(802, 813);
+            this.panel13.Location = new System.Drawing.Point(485, 753);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(237, 13);
             this.panel13.TabIndex = 68;
@@ -598,7 +519,7 @@ namespace ptoVenta
             // 
             this.panel14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
-            this.panel14.Location = new System.Drawing.Point(553, 406);
+            this.panel14.Location = new System.Drawing.Point(535, 252);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(250, 13);
             this.panel14.TabIndex = 70;
@@ -607,7 +528,7 @@ namespace ptoVenta
             // 
             this.panel16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
-            this.panel16.Location = new System.Drawing.Point(553, 682);
+            this.panel16.Location = new System.Drawing.Point(560, 621);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(162, 13);
             this.panel16.TabIndex = 72;
@@ -616,7 +537,7 @@ namespace ptoVenta
             // 
             this.panel17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.panel17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
-            this.panel17.Location = new System.Drawing.Point(553, 741);
+            this.panel17.Location = new System.Drawing.Point(560, 680);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(162, 13);
             this.panel17.TabIndex = 73;
@@ -634,7 +555,7 @@ namespace ptoVenta
             this.btnBuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnBuscar.IconSize = 50;
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.Location = new System.Drawing.Point(293, 190);
+            this.btnBuscar.Location = new System.Drawing.Point(247, 201);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.btnBuscar.Size = new System.Drawing.Size(135, 43);
@@ -642,6 +563,7 @@ namespace ptoVenta
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // btnDelivery
             // 
@@ -657,7 +579,7 @@ namespace ptoVenta
             this.btnDelivery.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnDelivery.IconSize = 50;
             this.btnDelivery.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDelivery.Location = new System.Drawing.Point(878, 697);
+            this.btnDelivery.Location = new System.Drawing.Point(878, 652);
             this.btnDelivery.Name = "btnDelivery";
             this.btnDelivery.Size = new System.Drawing.Size(162, 56);
             this.btnDelivery.TabIndex = 65;
@@ -679,7 +601,7 @@ namespace ptoVenta
             this.btnProductoFaltante.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnProductoFaltante.IconSize = 50;
             this.btnProductoFaltante.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProductoFaltante.Location = new System.Drawing.Point(878, 639);
+            this.btnProductoFaltante.Location = new System.Drawing.Point(878, 584);
             this.btnProductoFaltante.Name = "btnProductoFaltante";
             this.btnProductoFaltante.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
             this.btnProductoFaltante.Size = new System.Drawing.Size(162, 56);
@@ -687,10 +609,11 @@ namespace ptoVenta
             this.btnProductoFaltante.Text = "Producto Faltante";
             this.btnProductoFaltante.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnProductoFaltante.UseVisualStyleBackColor = false;
+            this.btnProductoFaltante.Click += new System.EventHandler(this.btnProductoFaltante_Click);
             // 
             // btnProductosNoVendidos
             // 
-            this.btnProductosNoVendidos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnProductosNoVendidos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnProductosNoVendidos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
             this.btnProductosNoVendidos.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
             this.btnProductosNoVendidos.FlatAppearance.BorderSize = 3;
@@ -702,13 +625,14 @@ namespace ptoVenta
             this.btnProductosNoVendidos.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnProductosNoVendidos.IconSize = 50;
             this.btnProductosNoVendidos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProductosNoVendidos.Location = new System.Drawing.Point(992, 345);
+            this.btnProductosNoVendidos.Location = new System.Drawing.Point(1006, 750);
             this.btnProductosNoVendidos.Name = "btnProductosNoVendidos";
             this.btnProductosNoVendidos.Size = new System.Drawing.Size(153, 64);
             this.btnProductosNoVendidos.TabIndex = 66;
             this.btnProductosNoVendidos.Text = "Productos \r\nno Vendidos";
             this.btnProductosNoVendidos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnProductosNoVendidos.UseVisualStyleBackColor = false;
+            this.btnProductosNoVendidos.Click += new System.EventHandler(this.btnProductosNoVendidos_Click);
             // 
             // btnAperturaCaja
             // 
@@ -724,7 +648,7 @@ namespace ptoVenta
             this.btnAperturaCaja.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnAperturaCaja.IconSize = 50;
             this.btnAperturaCaja.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAperturaCaja.Location = new System.Drawing.Point(802, 759);
+            this.btnAperturaCaja.Location = new System.Drawing.Point(485, 699);
             this.btnAperturaCaja.Name = "btnAperturaCaja";
             this.btnAperturaCaja.Size = new System.Drawing.Size(237, 56);
             this.btnAperturaCaja.TabIndex = 63;
@@ -734,7 +658,7 @@ namespace ptoVenta
             // 
             // btnSalir
             // 
-            this.btnSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
             this.btnSalir.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.btnSalir.FlatAppearance.BorderSize = 3;
@@ -746,7 +670,7 @@ namespace ptoVenta
             this.btnSalir.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSalir.IconSize = 50;
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSalir.Location = new System.Drawing.Point(1340, 345);
+            this.btnSalir.Location = new System.Drawing.Point(1354, 750);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(153, 64);
             this.btnSalir.TabIndex = 59;
@@ -757,7 +681,7 @@ namespace ptoVenta
             // 
             // btnVentas
             // 
-            this.btnVentas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnVentas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnVentas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(195)))), ((int)(((byte)(93)))));
             this.btnVentas.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
             this.btnVentas.FlatAppearance.BorderSize = 3;
@@ -769,13 +693,14 @@ namespace ptoVenta
             this.btnVentas.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnVentas.IconSize = 45;
             this.btnVentas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVentas.Location = new System.Drawing.Point(1151, 345);
+            this.btnVentas.Location = new System.Drawing.Point(1165, 750);
             this.btnVentas.Name = "btnVentas";
             this.btnVentas.Size = new System.Drawing.Size(153, 64);
             this.btnVentas.TabIndex = 56;
             this.btnVentas.Text = "Ventas";
             this.btnVentas.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnVentas.UseVisualStyleBackColor = false;
+            this.btnVentas.Click += new System.EventHandler(this.btnVentas_Click);
             // 
             // btnAbrirCajon
             // 
@@ -791,7 +716,7 @@ namespace ptoVenta
             this.btnAbrirCajon.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnAbrirCajon.IconSize = 50;
             this.btnAbrirCajon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAbrirCajon.Location = new System.Drawing.Point(553, 700);
+            this.btnAbrirCajon.Location = new System.Drawing.Point(560, 639);
             this.btnAbrirCajon.Name = "btnAbrirCajon";
             this.btnAbrirCajon.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
             this.btnAbrirCajon.Size = new System.Drawing.Size(162, 46);
@@ -799,6 +724,7 @@ namespace ptoVenta
             this.btnAbrirCajon.Text = "Abrir Cajón";
             this.btnAbrirCajon.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAbrirCajon.UseVisualStyleBackColor = false;
+            this.btnAbrirCajon.Click += new System.EventHandler(this.btnAbrirCajon_Click);
             // 
             // btnCotizacion
             // 
@@ -814,7 +740,7 @@ namespace ptoVenta
             this.btnCotizacion.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnCotizacion.IconSize = 50;
             this.btnCotizacion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCotizacion.Location = new System.Drawing.Point(553, 639);
+            this.btnCotizacion.Location = new System.Drawing.Point(560, 578);
             this.btnCotizacion.Name = "btnCotizacion";
             this.btnCotizacion.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
             this.btnCotizacion.Size = new System.Drawing.Size(162, 46);
@@ -827,7 +753,7 @@ namespace ptoVenta
             // 
             this.btnDescripciónFarmacologica.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDescripciónFarmacologica.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(195)))), ((int)(((byte)(93)))));
-            this.btnDescripciónFarmacologica.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
+            this.btnDescripciónFarmacologica.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(175)))), ((int)(((byte)(100)))));
             this.btnDescripciónFarmacologica.FlatAppearance.BorderSize = 3;
             this.btnDescripciónFarmacologica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDescripciónFarmacologica.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -837,41 +763,24 @@ namespace ptoVenta
             this.btnDescripciónFarmacologica.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnDescripciónFarmacologica.IconSize = 50;
             this.btnDescripciónFarmacologica.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDescripciónFarmacologica.Location = new System.Drawing.Point(553, 336);
+            this.btnDescripciónFarmacologica.Location = new System.Drawing.Point(535, 183);
             this.btnDescripciónFarmacologica.Name = "btnDescripciónFarmacologica";
             this.btnDescripciónFarmacologica.Size = new System.Drawing.Size(250, 73);
             this.btnDescripciónFarmacologica.TabIndex = 58;
             this.btnDescripciónFarmacologica.Text = "Descripción \r\nfarmacológica";
             this.btnDescripciónFarmacologica.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDescripciónFarmacologica.UseVisualStyleBackColor = false;
+            this.btnDescripciónFarmacologica.Click += new System.EventHandler(this.btnDescripciónFarmacologica_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-15, 16);
+            this.pictureBox1.Location = new System.Drawing.Point(-9, -62);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(322, 220);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
-            // 
-            // iconButton1
-            // 
-            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
-            this.iconButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.iconButton1.FlatAppearance.BorderSize = 2;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.ForeColor = System.Drawing.Color.White;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Reply;
-            this.iconButton1.IconColor = System.Drawing.Color.White;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Location = new System.Drawing.Point(607, 486);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
-            this.iconButton1.Size = new System.Drawing.Size(159, 54);
-            this.iconButton1.TabIndex = 74;
-            this.iconButton1.UseVisualStyleBackColor = false;
-            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // panel2
             // 
@@ -953,6 +862,239 @@ namespace ptoVenta
             this.panel9.Size = new System.Drawing.Size(175, 13);
             this.panel9.TabIndex = 77;
             // 
+            // panel18
+            // 
+            this.panel18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel18.BackColor = System.Drawing.Color.SlateGray;
+            this.panel18.Controls.Add(this.label8);
+            this.panel18.Controls.Add(this.label7);
+            this.panel18.Controls.Add(this.label5);
+            this.panel18.Controls.Add(this.drdVendedor);
+            this.panel18.Controls.Add(this.txtAlmacen);
+            this.panel18.Controls.Add(this.updownPrecio);
+            this.panel18.Location = new System.Drawing.Point(791, 271);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(718, 48);
+            this.panel18.TabIndex = 82;
+            // 
+            // label8
+            // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label8.Location = new System.Drawing.Point(539, 15);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(69, 20);
+            this.label8.TabIndex = 42;
+            this.label8.Text = "Precio:";
+            // 
+            // label7
+            // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label7.Location = new System.Drawing.Point(334, 15);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(87, 20);
+            this.label7.TabIndex = 41;
+            this.label7.Text = "Almacén:";
+            // 
+            // panelBuscarPersona
+            // 
+            this.panelBuscarPersona.BackColor = System.Drawing.Color.SlateGray;
+            this.panelBuscarPersona.Controls.Add(this.label13);
+            this.panelBuscarPersona.Controls.Add(this.textBox1);
+            this.panelBuscarPersona.Controls.Add(this.textBox2);
+            this.panelBuscarPersona.Controls.Add(this.label12);
+            this.panelBuscarPersona.Controls.Add(this.textBox3);
+            this.panelBuscarPersona.Controls.Add(this.textBox4);
+            this.panelBuscarPersona.Controls.Add(this.textBox5);
+            this.panelBuscarPersona.Controls.Add(this.btnBuscar);
+            this.panelBuscarPersona.Controls.Add(this.label14);
+            this.panelBuscarPersona.Controls.Add(this.label16);
+            this.panelBuscarPersona.Controls.Add(this.label15);
+            this.panelBuscarPersona.Location = new System.Drawing.Point(389, 84);
+            this.panelBuscarPersona.Name = "panelBuscarPersona";
+            this.panelBuscarPersona.Size = new System.Drawing.Size(396, 256);
+            this.panelBuscarPersona.TabIndex = 83;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(139, 57);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(243, 30);
+            this.textBox1.TabIndex = 39;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(139, 21);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(167, 30);
+            this.textBox2.TabIndex = 38;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(3, 164);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(103, 29);
+            this.label12.TabIndex = 47;
+            this.label12.Text = "Correo:";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(139, 165);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(243, 30);
+            this.textBox3.TabIndex = 42;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(139, 129);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(243, 30);
+            this.textBox4.TabIndex = 41;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.Location = new System.Drawing.Point(3, 128);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(127, 29);
+            this.label13.TabIndex = 46;
+            this.label13.Text = "Teléfono:";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.Location = new System.Drawing.Point(139, 93);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(243, 30);
+            this.textBox5.TabIndex = 40;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(3, 92);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(136, 29);
+            this.label14.TabIndex = 45;
+            this.label14.Text = "Dirección:";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.Location = new System.Drawing.Point(3, 22);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(63, 29);
+            this.label16.TabIndex = 43;
+            this.label16.Text = "Rut:";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.Location = new System.Drawing.Point(2, 56);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(117, 29);
+            this.label15.TabIndex = 44;
+            this.label15.Text = "Nombre:";
+            // 
+            // btnDesplegarBuscar
+            // 
+            this.btnDesplegarBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(195)))), ((int)(((byte)(93)))));
+            this.btnDesplegarBuscar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
+            this.btnDesplegarBuscar.FlatAppearance.BorderSize = 3;
+            this.btnDesplegarBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDesplegarBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDesplegarBuscar.ForeColor = System.Drawing.Color.White;
+            this.btnDesplegarBuscar.IconChar = FontAwesome.Sharp.IconChar.Eye;
+            this.btnDesplegarBuscar.IconColor = System.Drawing.Color.White;
+            this.btnDesplegarBuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnDesplegarBuscar.IconSize = 50;
+            this.btnDesplegarBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDesplegarBuscar.Location = new System.Drawing.Point(389, 12);
+            this.btnDesplegarBuscar.Name = "btnDesplegarBuscar";
+            this.btnDesplegarBuscar.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.btnDesplegarBuscar.Size = new System.Drawing.Size(396, 66);
+            this.btnDesplegarBuscar.TabIndex = 84;
+            this.btnDesplegarBuscar.Text = "Buscar";
+            this.btnDesplegarBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDesplegarBuscar.UseVisualStyleBackColor = false;
+            this.btnDesplegarBuscar.Click += new System.EventHandler(this.btnDesplegarBuscar_Click);
+            // 
+            // panel15
+            // 
+            this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
+            this.panel15.Location = new System.Drawing.Point(389, 75);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(396, 13);
+            this.panel15.TabIndex = 71;
+            // 
+            // panel19
+            // 
+            this.panel19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
+            this.panel19.Location = new System.Drawing.Point(878, 633);
+            this.panel19.Name = "panel19";
+            this.panel19.Size = new System.Drawing.Size(162, 13);
+            this.panel19.TabIndex = 73;
+            // 
+            // panel20
+            // 
+            this.panel20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
+            this.panel20.Location = new System.Drawing.Point(878, 705);
+            this.panel20.Name = "panel20";
+            this.panel20.Size = new System.Drawing.Size(162, 13);
+            this.panel20.TabIndex = 74;
+            // 
+            // panel21
+            // 
+            this.panel21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
+            this.panel21.Location = new System.Drawing.Point(19, 156);
+            this.panel21.Name = "panel21";
+            this.panel21.Size = new System.Drawing.Size(183, 13);
+            this.panel21.TabIndex = 75;
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(195)))), ((int)(((byte)(93)))));
+            this.iconButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
+            this.iconButton1.FlatAppearance.BorderSize = 3;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton1.ForeColor = System.Drawing.Color.White;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Bars;
+            this.iconButton1.IconColor = System.Drawing.Color.White;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.IconSize = 50;
+            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton1.Location = new System.Drawing.Point(19, 96);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.iconButton1.Size = new System.Drawing.Size(183, 62);
+            this.iconButton1.TabIndex = 74;
+            this.iconButton1.Text = "Existencia en Locales";
+            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton1.UseVisualStyleBackColor = false;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -962,6 +1104,14 @@ namespace ptoVenta
             this.BackColor = System.Drawing.Color.GhostWhite;
             this.CausesValidation = false;
             this.ClientSize = new System.Drawing.Size(1521, 839);
+            this.Controls.Add(this.panel21);
+            this.Controls.Add(this.iconButton1);
+            this.Controls.Add(this.panelBuscarPersona);
+            this.Controls.Add(this.panel20);
+            this.Controls.Add(this.panel19);
+            this.Controls.Add(this.panel15);
+            this.Controls.Add(this.btnDesplegarBuscar);
+            this.Controls.Add(this.panel18);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel7);
@@ -974,7 +1124,6 @@ namespace ptoVenta
             this.Controls.Add(this.btnReciboIngreso);
             this.Controls.Add(this.btnCargarDocumento);
             this.Controls.Add(this.btnGuardarDocumento);
-            this.Controls.Add(this.iconButton1);
             this.Controls.Add(this.btnCargarPrecio);
             this.Controls.Add(this.panel12);
             this.Controls.Add(this.btnDevoluciones);
@@ -986,10 +1135,7 @@ namespace ptoVenta
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel14);
             this.Controls.Add(this.panel13);
-            this.Controls.Add(this.btnBuscar);
-            this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.btnDelivery);
-            this.Controls.Add(this.txtRut);
             this.Controls.Add(this.btnProductoFaltante);
             this.Controls.Add(this.btnProductosNoVendidos);
             this.Controls.Add(this.btnAperturaCaja);
@@ -998,22 +1144,10 @@ namespace ptoVenta
             this.Controls.Add(this.btnAbrirCajon);
             this.Controls.Add(this.btnCotizacion);
             this.Controls.Add(this.btnDescripciónFarmacologica);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.drdVendedor);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txtPrincipioActivo);
             this.Controls.Add(this.txtBuscarProducto);
-            this.Controls.Add(this.txtAlmacen);
-            this.Controls.Add(this.updownPrecio);
             this.Controls.Add(this.dgvLista);
-            this.Controls.Add(this.txtCorreo);
-            this.Controls.Add(this.txtTelefono);
-            this.Controls.Add(this.txtDireccion);
             this.Controls.Add(this.pictureBox1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -1027,6 +1161,10 @@ namespace ptoVenta
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel18.ResumeLayout(false);
+            this.panel18.PerformLayout();
+            this.panelBuscarPersona.ResumeLayout(false);
+            this.panelBuscarPersona.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1034,10 +1172,6 @@ namespace ptoVenta
 
         #endregion
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.TextBox txtTelefono;
-        private System.Windows.Forms.TextBox txtDireccion;
-        private System.Windows.Forms.TextBox txtCorreo;
         private System.Windows.Forms.DataGridView dgvLista;
         private System.Windows.Forms.DomainUpDown updownPrecio;
         private System.Windows.Forms.Label label1;
@@ -1053,11 +1187,6 @@ namespace ptoVenta
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.TextBox txtTotal;
         private System.Windows.Forms.TextBox txtSubTotal;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ComboBox drdVendedor;
         private System.Windows.Forms.Label label5;
         private FontAwesome.Sharp.IconButton btnBuscar;
@@ -1078,7 +1207,6 @@ namespace ptoVenta
         private FontAwesome.Sharp.IconButton btnVentas;
         private FontAwesome.Sharp.IconButton btnSalir;
         private FontAwesome.Sharp.IconButton btnProductosNoVendidos;
-        private System.Windows.Forms.TextBox txtRut;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Panel panel10;
@@ -1086,7 +1214,6 @@ namespace ptoVenta
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Panel panel17;
-        private FontAwesome.Sharp.IconButton iconButton1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
@@ -1096,6 +1223,26 @@ namespace ptoVenta
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel18;
+        private System.Windows.Forms.Panel panelBuscarPersona;
+        private FontAwesome.Sharp.IconButton btnDesplegarBuscar;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Panel panel19;
+        private System.Windows.Forms.Panel panel20;
+        private System.Windows.Forms.Panel panel21;
+        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }
 
