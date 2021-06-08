@@ -1,4 +1,3 @@
-﻿
 namespace ptoVenta
 {
     partial class Form1
@@ -88,11 +87,13 @@ namespace ptoVenta
             this.panel19 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel15.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
+
             this.panel18.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -105,6 +106,7 @@ namespace ptoVenta
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
+
             // 
             // panel2
             // 
@@ -114,6 +116,7 @@ namespace ptoVenta
             this.panel2.Size = new System.Drawing.Size(185, 13);
             this.panel2.TabIndex = 72;
             // 
+
             // label3
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -125,19 +128,42 @@ namespace ptoVenta
             this.label3.Size = new System.Drawing.Size(277, 39);
             this.label3.TabIndex = 25;
             this.label3.Text = "Principio Activo:";
+
             // 
-            // label2
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.panel4.Location = new System.Drawing.Point(1072, 118);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(136, 9);
+            this.panel4.TabIndex = 94;
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(1093, 405);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 20);
-            this.label2.TabIndex = 23;
-            this.label2.Text = "Almacén:";
+            // iconButton2
             // 
+            this.iconButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconButton2.BackColor = System.Drawing.Color.Transparent;
+            this.iconButton2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.iconButton2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.File;
+            this.iconButton2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
+            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton2.IconSize = 50;
+            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton2.Location = new System.Drawing.Point(1072, 60);
+            this.iconButton2.Name = "iconButton2";
+            this.iconButton2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.iconButton2.Size = new System.Drawing.Size(136, 65);
+            this.iconButton2.TabIndex = 93;
+            this.iconButton2.TabStop = false;
+            this.iconButton2.Text = "Cotizacion";
+            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton2.UseVisualStyleBackColor = false;
+            // 
+            // panel6
+            // 
+
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -185,6 +211,7 @@ namespace ptoVenta
             // 
             // panel6
             // 
+
             this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
             this.panel6.Location = new System.Drawing.Point(1371, 118);
@@ -871,6 +898,7 @@ namespace ptoVenta
             this.label4.TabIndex = 6;
             this.label4.Text = "Caja: 02 Jean Manuel";
             this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+
             // 
             // Form1
             // 
@@ -881,7 +909,9 @@ namespace ptoVenta
             this.BackColor = System.Drawing.Color.White;
             this.CausesValidation = false;
             this.ClientSize = new System.Drawing.Size(1521, 839);
+
             this.Controls.Add(this.panel18);
+
             this.Controls.Add(this.panel16);
             this.Controls.Add(this.iconButton5);
             this.Controls.Add(this.panel10);
@@ -923,6 +953,7 @@ namespace ptoVenta
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).EndInit();
             this.panel18.ResumeLayout(false);
             this.panel18.PerformLayout();
+
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -980,11 +1011,13 @@ namespace ptoVenta
         private System.Windows.Forms.Panel panel12;
         private FontAwesome.Sharp.IconButton iconButton3;
         private System.Windows.Forms.TextBox txtBuscarProducto;
+
         private System.Windows.Forms.Panel panel18;
         private FontAwesome.Sharp.IconButton btnSalir;
         private System.Windows.Forms.Panel panel19;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label4;
+
     }
 }
 
