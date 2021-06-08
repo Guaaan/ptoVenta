@@ -55,18 +55,6 @@
     <Compile Include="abrirCajon.Designer.cs">
       <DependentUpon>abrirCajon.cs</DependentUpon>
     </Compile>
-    <Compile Include="boton.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="boton.Designer.cs">
-      <DependentUpon>boton.cs</DependentUpon>
-    </Compile>
-    <Compile Include="botonheredable.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="botonheredable.Designer.cs">
-      <DependentUpon>botonheredable.cs</DependentUpon>
-    </Compile>
     <Compile Include="Buscar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +102,12 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form1respaldovisual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form1respaldovisual.Designer.cs">
+      <DependentUpon>form1respaldovisual.cs</DependentUpon>
     </Compile>
     <Compile Include="formClass.cs">
       <SubType>Form</SubType>
@@ -168,12 +162,6 @@
     <EmbeddedResource Include="abrirCajon.resx">
       <DependentUpon>abrirCajon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="boton.resx">
-      <DependentUpon>boton.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="botonheredable.resx">
-      <DependentUpon>botonheredable.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Buscar.resx">
       <DependentUpon>Buscar.cs</DependentUpon>
     </EmbeddedResource>
@@ -197,6 +185,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form1respaldovisual.resx">
+      <DependentUpon>form1respaldovisual.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formClass.resx">
       <DependentUpon>formClass.cs</DependentUpon>

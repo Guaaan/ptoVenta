@@ -15,8 +15,35 @@ namespace ptoVenta
         public Form1()
         {
             InitializeComponent();
+            //customizeDesign();
         }
 
+        //abrir dropdown grande tipo panel
+        /*private void customizeDesign()
+        {
+            panelBuscarPersona.Visible = false;
+        }
+        private void hideBuscarPersona()
+        {
+            if (panelBuscarPersona.Visible == true)
+                panelBuscarPersona.Visible = false;
+        }
+        private void showBuscarPersona()
+        {
+            if (panelBuscarPersona.Visible == false)
+            {
+                hideBuscarPersona();
+                panelBuscarPersona.Visible = true;
+            }
+            else
+                panelBuscarPersona.Visible = false;
+        }
+        private void btnDesplegarBuscar_Click(object sender, EventArgs e)
+        {
+            showBuscarPersona();
+        }*/
+        
+        
         private void Form1_Load(object sender, EventArgs e)
         {
             alternarColorData(dgvLista);
@@ -32,21 +59,6 @@ namespace ptoVenta
             abrirExistencia.Show();
         }
 
-        private void btnSalir_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void iconButton1_Click(object sender, EventArgs e)
-        {
-            formClass abrirFormClass = new formClass();
-            abrirFormClass.Show();
-        }
-
-        private void btnTicketsEmitidos_Click(object sender, EventArgs e)
-        {
-            ticketsEmitidos abrirTicketsEmitidos = new ticketsEmitidos();
-            abrirTicketsEmitidos.Show();
-        }
+        
     }
 }

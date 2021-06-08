@@ -45,10 +45,10 @@ namespace ptoVenta
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
-            this.btnCancelar.Location = new System.Drawing.Point(503, 106);
+            this.btnCancelar.Location = new System.Drawing.Point(504, 123);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(138, 39);
+            this.btnCancelar.Size = new System.Drawing.Size(147, 49);
             this.btnCancelar.TabIndex = 41;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
@@ -63,10 +63,10 @@ namespace ptoVenta
             this.btnOk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOk.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOk.ForeColor = System.Drawing.Color.White;
-            this.btnOk.Location = new System.Drawing.Point(378, 106);
+            this.btnOk.Location = new System.Drawing.Point(370, 123);
             this.btnOk.Margin = new System.Windows.Forms.Padding(4);
             this.btnOk.Name = "btnOk";
-            this.btnOk.Size = new System.Drawing.Size(117, 36);
+            this.btnOk.Size = new System.Drawing.Size(126, 49);
             this.btnOk.TabIndex = 40;
             this.btnOk.Text = "Ok";
             this.btnOk.UseVisualStyleBackColor = false;
@@ -85,7 +85,7 @@ namespace ptoVenta
             // txtRut
             // 
             this.txtRut.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRut.Location = new System.Drawing.Point(69, 73);
+            this.txtRut.Location = new System.Drawing.Point(69, 79);
             this.txtRut.Name = "txtRut";
             this.txtRut.Size = new System.Drawing.Size(427, 26);
             this.txtRut.TabIndex = 38;
@@ -94,7 +94,7 @@ namespace ptoVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(684, 190);
+            this.ClientSize = new System.Drawing.Size(685, 222);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.label7);

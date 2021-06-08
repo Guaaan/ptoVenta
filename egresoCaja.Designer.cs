@@ -30,7 +30,6 @@ namespace ptoVenta
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(egresoCaja));
-            this.btnSalirIngreso = new System.Windows.Forms.Button();
             this.btnAceptarIngreso = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -84,31 +83,18 @@ namespace ptoVenta
             this.label7 = new System.Windows.Forms.Label();
             this.txtCaja = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.btnSalir = new FontAwesome.Sharp.IconButton();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnSalirIngreso
-            // 
-            this.btnSalirIngreso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
-            this.btnSalirIngreso.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnSalirIngreso.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.btnSalirIngreso.FlatAppearance.BorderSize = 4;
-            this.btnSalirIngreso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalirIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalirIngreso.ForeColor = System.Drawing.Color.White;
-            this.btnSalirIngreso.Location = new System.Drawing.Point(1032, 792);
-            this.btnSalirIngreso.Margin = new System.Windows.Forms.Padding(4);
-            this.btnSalirIngreso.Name = "btnSalirIngreso";
-            this.btnSalirIngreso.Size = new System.Drawing.Size(107, 44);
-            this.btnSalirIngreso.TabIndex = 35;
-            this.btnSalirIngreso.Text = "Atrás";
-            this.btnSalirIngreso.UseVisualStyleBackColor = false;
-            // 
             // btnAceptarIngreso
             // 
+            this.btnAceptarIngreso.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnAceptarIngreso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(195)))), ((int)(((byte)(93)))));
             this.btnAceptarIngreso.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnAceptarIngreso.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
@@ -116,10 +102,10 @@ namespace ptoVenta
             this.btnAceptarIngreso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAceptarIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAceptarIngreso.ForeColor = System.Drawing.Color.White;
-            this.btnAceptarIngreso.Location = new System.Drawing.Point(464, 787);
+            this.btnAceptarIngreso.Location = new System.Drawing.Point(465, 781);
             this.btnAceptarIngreso.Margin = new System.Windows.Forms.Padding(4);
             this.btnAceptarIngreso.Name = "btnAceptarIngreso";
-            this.btnAceptarIngreso.Size = new System.Drawing.Size(147, 44);
+            this.btnAceptarIngreso.Size = new System.Drawing.Size(147, 57);
             this.btnAceptarIngreso.TabIndex = 34;
             this.btnAceptarIngreso.Text = "Aceptar";
             this.btnAceptarIngreso.UseVisualStyleBackColor = false;
@@ -635,12 +621,54 @@ namespace ptoVenta
             this.label1.TabIndex = 30;
             this.label1.Text = "Engreso de Caja";
             // 
+            // panel16
+            // 
+            this.panel16.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
+            this.panel16.Location = new System.Drawing.Point(465, 835);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(147, 13);
+            this.panel16.TabIndex = 78;
+            // 
+            // panel12
+            // 
+            this.panel12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.panel12.Location = new System.Drawing.Point(999, 838);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(156, 10);
+            this.panel12.TabIndex = 73;
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
+            this.btnSalir.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.btnSalir.FlatAppearance.BorderSize = 3;
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.ForeColor = System.Drawing.Color.White;
+            this.btnSalir.IconChar = FontAwesome.Sharp.IconChar.Share;
+            this.btnSalir.IconColor = System.Drawing.Color.White;
+            this.btnSalir.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnSalir.IconSize = 50;
+            this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSalir.Location = new System.Drawing.Point(999, 781);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(156, 57);
+            this.btnSalir.TabIndex = 72;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSalir.UseVisualStyleBackColor = false;
+            // 
             // egresoCaja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1183, 849);
-            this.Controls.Add(this.btnSalirIngreso);
+            this.ClientSize = new System.Drawing.Size(1183, 883);
+            this.Controls.Add(this.panel12);
+            this.Controls.Add(this.btnSalir);
+            this.Controls.Add(this.panel16);
             this.Controls.Add(this.btnAceptarIngreso);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -663,8 +691,6 @@ namespace ptoVenta
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnSalirIngreso;
         private System.Windows.Forms.Button btnAceptarIngreso;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label19;
@@ -718,5 +744,8 @@ namespace ptoVenta
         private System.Windows.Forms.TextBox txtNControl;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.TextBox txtNFactura;
+        private System.Windows.Forms.Panel panel16;
+        private System.Windows.Forms.Panel panel12;
+        private FontAwesome.Sharp.IconButton btnSalir;
     }
 }
