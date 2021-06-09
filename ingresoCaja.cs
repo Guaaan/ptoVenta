@@ -21,5 +21,10 @@ namespace ptoVenta
         {
             this.Close();
         }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

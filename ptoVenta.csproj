@@ -61,6 +61,12 @@
     <Compile Include="Buscar.Designer.cs">
       <DependentUpon>Buscar.cs</DependentUpon>
     </Compile>
+    <Compile Include="calendarioTicketsE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="calendarioTicketsE.Designer.cs">
+      <DependentUpon>calendarioTicketsE.cs</DependentUpon>
+    </Compile>
     <Compile Include="cambiarPrecio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -164,6 +170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Buscar.resx">
       <DependentUpon>Buscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="calendarioTicketsE.resx">
+      <DependentUpon>calendarioTicketsE.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="cambiarPrecio.resx">
       <DependentUpon>cambiarPrecio.cs</DependentUpon>

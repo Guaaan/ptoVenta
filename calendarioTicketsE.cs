@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace ptoVenta
 {
-    public partial class devoluciones : Form
+    public partial class calendarioTicketsE : Form
     {
-        public devoluciones()
+        public calendarioTicketsE()
         {
             InitializeComponent();
-        }
-
-        private void iconButton4_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

@@ -16,7 +16,7 @@ namespace ptoVenta
         public Form1()
         {
             InitializeComponent();
-            //cargardatagridview();
+            cargardatagridview();
             //customizeDesign();
         }
 
@@ -49,7 +49,7 @@ namespace ptoVenta
         {
             alternarColorData(dgvLista);
         }
-        /*public void cargardatagridview()
+        public void cargardatagridview()
         {
             //declaramos la cadena  de conexion
             string cadenaconexion = @"Data Source = 10.147.18.245\GEMINIS; initial Catalog = SAES_ADMINISTRATIVOFD; user id = sa; password = 12345";
@@ -85,7 +85,7 @@ namespace ptoVenta
             }
             //cierra la conexión
             con.Close();
-        }*/
+        }
         public void alternarColorData(DataGridView dgv)
         {
             dgv.RowsDefaultCellStyle.BackColor = Color.LightBlue;
@@ -97,6 +97,30 @@ namespace ptoVenta
             ticketsEmitidos abrirTicketsEmitidos = new ticketsEmitidos();
             abrirTicketsEmitidos.Show();
 
+        }
+
+        private void btnDevoluciones_Click(object sender, EventArgs e)
+        {
+            devoluciones abrirDevoluciones = new devoluciones();
+            abrirDevoluciones.Show();
+        }
+
+        private void btnSistema_Click(object sender, EventArgs e)
+        {
+            sistema abrirSistema = new sistema();
+            abrirSistema.Show();
+        }
+
+        private void btnEgresoCaja_Click(object sender, EventArgs e)
+        {
+            ingresoCaja abrirIngresoCaja = new ingresoCaja();
+            abrirIngresoCaja.Show();
+        }
+
+        private void iconButton5_Click(object sender, EventArgs e)
+        {
+            abrirCajon abrirGaveta = new abrirCajon();
+            abrirGaveta.Show();
         }
     }
 
