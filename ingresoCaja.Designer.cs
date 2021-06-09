@@ -30,7 +30,6 @@ namespace ptoVenta
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ingresoCaja));
-            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
@@ -75,23 +74,18 @@ namespace ptoVenta
             this.label4 = new System.Windows.Forms.Label();
             this.txtConcepto1 = new System.Windows.Forms.TextBox();
             this.txtConcepto2 = new System.Windows.Forms.TextBox();
-            this.btnSalirIngreso = new System.Windows.Forms.Button();
-            this.btnAceptarIngreso = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnRegresar = new FontAwesome.Sharp.IconButton();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.panel15.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(328, 48);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Ingreso de Caja";
             // 
             // groupBox1
             // 
@@ -147,14 +141,14 @@ namespace ptoVenta
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Location = new System.Drawing.Point(489, 71);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(413, 99);
+            this.groupBox2.Size = new System.Drawing.Size(495, 99);
             this.groupBox2.TabIndex = 25;
             this.groupBox2.TabStop = false;
             // 
             // txtNumero
             // 
             this.txtNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumero.Location = new System.Drawing.Point(199, 34);
+            this.txtNumero.Location = new System.Drawing.Point(249, 34);
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.Size = new System.Drawing.Size(200, 45);
             this.txtNumero.TabIndex = 25;
@@ -214,31 +208,34 @@ namespace ptoVenta
             // 
             // label19
             // 
+            this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.Location = new System.Drawing.Point(713, 353);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(91, 29);
+            this.label19.Size = new System.Drawing.Size(75, 25);
             this.label19.TabIndex = 57;
             this.label19.Text = "Clave:";
             // 
             // label18
             // 
+            this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.Location = new System.Drawing.Point(544, 353);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(117, 29);
+            this.label18.Size = new System.Drawing.Size(94, 25);
             this.label18.TabIndex = 56;
             this.label18.Text = "Número:";
             // 
             // label17
             // 
+            this.label17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.Location = new System.Drawing.Point(375, 353);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(98, 29);
+            this.label17.Size = new System.Drawing.Size(80, 25);
             this.label17.TabIndex = 55;
             this.label17.Text = "Banco:";
             // 
@@ -252,11 +249,12 @@ namespace ptoVenta
             // 
             // label16
             // 
+            this.label16.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(6, 524);
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(6, 528);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(188, 29);
+            this.label16.Size = new System.Drawing.Size(152, 25);
             this.label16.TabIndex = 51;
             this.label16.Text = "Transferencia:";
             // 
@@ -318,11 +316,12 @@ namespace ptoVenta
             // 
             // label15
             // 
+            this.label15.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(6, 483);
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(6, 487);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(109, 29);
+            this.label15.Size = new System.Drawing.Size(89, 25);
             this.label15.TabIndex = 43;
             this.label15.Text = "Crédito:";
             // 
@@ -336,11 +335,12 @@ namespace ptoVenta
             // 
             // label13
             // 
+            this.label13.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(6, 416);
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(6, 420);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(121, 58);
+            this.label13.Size = new System.Drawing.Size(97, 50);
             this.label13.TabIndex = 41;
             this.label13.Text = "Depósito\r\nDébito:\r\n";
             // 
@@ -354,11 +354,12 @@ namespace ptoVenta
             // 
             // label14
             // 
+            this.label14.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(6, 380);
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(6, 384);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(115, 29);
+            this.label14.Size = new System.Drawing.Size(95, 25);
             this.label14.TabIndex = 39;
             this.label14.Text = "Cheque:";
             // 
@@ -372,11 +373,12 @@ namespace ptoVenta
             // 
             // label11
             // 
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(6, 338);
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(6, 342);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(120, 29);
+            this.label11.Size = new System.Drawing.Size(96, 25);
             this.label11.TabIndex = 37;
             this.label11.Text = "Efectivo:";
             // 
@@ -390,11 +392,12 @@ namespace ptoVenta
             // 
             // label12
             // 
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(6, 296);
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(6, 300);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(82, 29);
+            this.label12.Size = new System.Drawing.Size(68, 25);
             this.label12.TabIndex = 35;
             this.label12.Text = "Total:";
             // 
@@ -417,11 +420,12 @@ namespace ptoVenta
             // 
             // label10
             // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(6, 240);
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(6, 244);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(137, 29);
+            this.label10.Size = new System.Drawing.Size(112, 25);
             this.label10.TabIndex = 32;
             this.label10.Text = "Concepto:";
             // 
@@ -436,21 +440,23 @@ namespace ptoVenta
             // 
             // label9
             // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(6, 181);
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(6, 185);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(136, 29);
+            this.label9.Size = new System.Drawing.Size(109, 25);
             this.label9.TabIndex = 30;
             this.label9.Text = "Dirección:";
             // 
             // label8
             // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(6, 140);
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(6, 144);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(141, 29);
+            this.label8.Size = new System.Drawing.Size(115, 25);
             this.label8.TabIndex = 29;
             this.label8.Text = "Teléfonos:";
             // 
@@ -464,11 +470,12 @@ namespace ptoVenta
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(6, 97);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(6, 101);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(63, 29);
+            this.label5.Size = new System.Drawing.Size(51, 25);
             this.label5.TabIndex = 27;
             this.label5.Text = "Rut:";
             // 
@@ -491,21 +498,23 @@ namespace ptoVenta
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 58);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(6, 62);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(114, 29);
+            this.label3.Size = new System.Drawing.Size(93, 25);
             this.label3.TabIndex = 23;
             this.label3.Text = "Asignar:";
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(6, 16);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(6, 20);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(137, 29);
+            this.label4.Size = new System.Drawing.Size(112, 25);
             this.label4.TabIndex = 24;
             this.label4.Text = "Concepto:";
             // 
@@ -525,53 +534,109 @@ namespace ptoVenta
             this.txtConcepto2.Size = new System.Drawing.Size(163, 26);
             this.txtConcepto2.TabIndex = 23;
             // 
-            // btnSalirIngreso
+            // panel15
             // 
-            this.btnSalirIngreso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
-            this.btnSalirIngreso.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnSalirIngreso.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.btnSalirIngreso.FlatAppearance.BorderSize = 3;
-            this.btnSalirIngreso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalirIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalirIngreso.ForeColor = System.Drawing.Color.White;
-            this.btnSalirIngreso.Location = new System.Drawing.Point(948, 781);
-            this.btnSalirIngreso.Margin = new System.Windows.Forms.Padding(4);
-            this.btnSalirIngreso.Name = "btnSalirIngreso";
-            this.btnSalirIngreso.Size = new System.Drawing.Size(107, 44);
-            this.btnSalirIngreso.TabIndex = 29;
-            this.btnSalirIngreso.Text = "Atrás";
-            this.btnSalirIngreso.UseVisualStyleBackColor = false;
-            this.btnSalirIngreso.Click += new System.EventHandler(this.btnSalirIngreso_Click);
+            this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(195)))), ((int)(((byte)(217)))));
+            this.panel15.Controls.Add(this.label1);
+            this.panel15.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel15.Location = new System.Drawing.Point(0, 0);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(1086, 57);
+            this.panel15.TabIndex = 109;
             // 
-            // btnAceptarIngreso
+            // label1
             // 
-            this.btnAceptarIngreso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(195)))), ((int)(((byte)(93)))));
-            this.btnAceptarIngreso.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnAceptarIngreso.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
-            this.btnAceptarIngreso.FlatAppearance.BorderSize = 3;
-            this.btnAceptarIngreso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAceptarIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAceptarIngreso.ForeColor = System.Drawing.Color.White;
-            this.btnAceptarIngreso.Location = new System.Drawing.Point(459, 781);
-            this.btnAceptarIngreso.Margin = new System.Windows.Forms.Padding(4);
-            this.btnAceptarIngreso.Name = "btnAceptarIngreso";
-            this.btnAceptarIngreso.Size = new System.Drawing.Size(147, 44);
-            this.btnAceptarIngreso.TabIndex = 28;
-            this.btnAceptarIngreso.Text = "Aceptar";
-            this.btnAceptarIngreso.UseVisualStyleBackColor = false;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(3, 2);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(329, 55);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Ingreso de Caja";
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.panel1.Location = new System.Drawing.Point(850, 839);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(205, 9);
+            this.panel1.TabIndex = 113;
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
+            this.panel2.Location = new System.Drawing.Point(441, 839);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(205, 9);
+            this.panel2.TabIndex = 111;
+            // 
+            // btnRegresar
+            // 
+            this.btnRegresar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnRegresar.BackColor = System.Drawing.Color.Transparent;
+            this.btnRegresar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnRegresar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.btnRegresar.IconChar = FontAwesome.Sharp.IconChar.Share;
+            this.btnRegresar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.btnRegresar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnRegresar.IconSize = 50;
+            this.btnRegresar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRegresar.Location = new System.Drawing.Point(850, 783);
+            this.btnRegresar.Name = "btnRegresar";
+            this.btnRegresar.Size = new System.Drawing.Size(205, 65);
+            this.btnRegresar.TabIndex = 112;
+            this.btnRegresar.TabStop = false;
+            this.btnRegresar.Text = "Regresar";
+            this.btnRegresar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnRegresar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
+            // 
+            // iconButton2
+            // 
+            this.iconButton2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.iconButton2.BackColor = System.Drawing.Color.Transparent;
+            this.iconButton2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.iconButton2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.Check;
+            this.iconButton2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
+            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton2.IconSize = 50;
+            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton2.Location = new System.Drawing.Point(441, 783);
+            this.iconButton2.Name = "iconButton2";
+            this.iconButton2.Size = new System.Drawing.Size(205, 65);
+            this.iconButton2.TabIndex = 110;
+            this.iconButton2.TabStop = false;
+            this.iconButton2.Text = "Grabar \r\nArchivo";
+            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton2.UseVisualStyleBackColor = false;
             // 
             // ingresoCaja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.GhostWhite;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1086, 869);
-            this.Controls.Add(this.btnSalirIngreso);
-            this.Controls.Add(this.btnAceptarIngreso);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.btnRegresar);
+            this.Controls.Add(this.iconButton2);
+            this.Controls.Add(this.panel15);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ingresoCaja";
             this.Text = "Ingreso de Caja";
@@ -581,14 +646,13 @@ namespace ptoVenta
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.panel15.ResumeLayout(false);
+            this.panel15.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
@@ -633,8 +697,12 @@ namespace ptoVenta
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox txtChequeClave;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Button btnSalirIngreso;
-        private System.Windows.Forms.Button btnAceptarIngreso;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private FontAwesome.Sharp.IconButton btnRegresar;
+        private FontAwesome.Sharp.IconButton iconButton2;
     }
 }

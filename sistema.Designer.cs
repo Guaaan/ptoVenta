@@ -37,7 +37,6 @@ namespace ptoVenta
             this.tpReimprimirFactura = new System.Windows.Forms.TabPage();
             this.cmbAsignar = new System.Windows.Forms.ComboBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.button4 = new System.Windows.Forms.Button();
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tpReporteConsumo = new System.Windows.Forms.TabPage();
@@ -59,14 +58,25 @@ namespace ptoVenta
             this.rbReporteConsumo = new System.Windows.Forms.RadioButton();
             this.rbImprimirFactura = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.btnAceptarIngreso = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.tbConfiguracion = new System.Windows.Forms.TabPage();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dgvConfiguración = new System.Windows.Forms.DataGridView();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.iconButton3 = new FontAwesome.Sharp.IconButton();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnTicketsEmitidos = new FontAwesome.Sharp.IconButton();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.btnSalir = new FontAwesome.Sharp.IconButton();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.btnBuscar = new FontAwesome.Sharp.IconButton();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
             this.tabControl1.SuspendLayout();
             this.tpReportes.SuspendLayout();
             this.tabControlChico.SuspendLayout();
@@ -86,12 +96,13 @@ namespace ptoVenta
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1209, 815);
+            this.tabControl1.Size = new System.Drawing.Size(1337, 849);
             this.tabControl1.TabIndex = 0;
             // 
             // tpReportes
             // 
             this.tpReportes.AccessibleName = "Reportes";
+            this.tpReportes.AutoScroll = true;
             this.tpReportes.Controls.Add(this.panel1);
             this.tpReportes.Controls.Add(this.tabControlChico);
             this.tpReportes.Controls.Add(this.groupBox2);
@@ -99,7 +110,7 @@ namespace ptoVenta
             this.tpReportes.Location = new System.Drawing.Point(4, 25);
             this.tpReportes.Name = "tpReportes";
             this.tpReportes.Padding = new System.Windows.Forms.Padding(3);
-            this.tpReportes.Size = new System.Drawing.Size(1201, 786);
+            this.tpReportes.Size = new System.Drawing.Size(1329, 820);
             this.tpReportes.TabIndex = 0;
             this.tpReportes.Text = " Reportes";
             this.tpReportes.UseVisualStyleBackColor = true;
@@ -108,9 +119,9 @@ namespace ptoVenta
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel1.Location = new System.Drawing.Point(32, 322);
+            this.panel1.Location = new System.Drawing.Point(36, 382);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(898, 39);
+            this.panel1.Size = new System.Drawing.Size(921, 39);
             this.panel1.TabIndex = 49;
             // 
             // tabControlChico
@@ -121,23 +132,24 @@ namespace ptoVenta
             this.tabControlChico.Controls.Add(this.tpCierreCaja);
             this.tabControlChico.Controls.Add(this.tpConsolaFiscal);
             this.tabControlChico.Controls.Add(this.ReporteVentas);
-            this.tabControlChico.Location = new System.Drawing.Point(32, 334);
+            this.tabControlChico.Location = new System.Drawing.Point(36, 394);
             this.tabControlChico.Name = "tabControlChico";
             this.tabControlChico.SelectedIndex = 0;
-            this.tabControlChico.Size = new System.Drawing.Size(898, 420);
+            this.tabControlChico.Size = new System.Drawing.Size(921, 420);
             this.tabControlChico.TabIndex = 48;
             // 
             // tpReimprimirFactura
             // 
+            this.tpReimprimirFactura.Controls.Add(this.panel5);
+            this.tpReimprimirFactura.Controls.Add(this.btnBuscar);
             this.tpReimprimirFactura.Controls.Add(this.cmbAsignar);
             this.tpReimprimirFactura.Controls.Add(this.checkBox1);
-            this.tpReimprimirFactura.Controls.Add(this.button4);
             this.tpReimprimirFactura.Controls.Add(this.txtPrecio);
             this.tpReimprimirFactura.Controls.Add(this.label2);
             this.tpReimprimirFactura.Location = new System.Drawing.Point(4, 25);
             this.tpReimprimirFactura.Name = "tpReimprimirFactura";
             this.tpReimprimirFactura.Padding = new System.Windows.Forms.Padding(3);
-            this.tpReimprimirFactura.Size = new System.Drawing.Size(890, 391);
+            this.tpReimprimirFactura.Size = new System.Drawing.Size(913, 391);
             this.tpReimprimirFactura.TabIndex = 0;
             this.tpReimprimirFactura.Text = "Reimprimir";
             this.tpReimprimirFactura.UseVisualStyleBackColor = true;
@@ -162,38 +174,23 @@ namespace ptoVenta
             this.checkBox1.Text = "Copia Fiscal";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.Gray;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button4.FlatAppearance.BorderSize = 3;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(587, 129);
-            this.button4.Margin = new System.Windows.Forms.Padding(4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(120, 36);
-            this.button4.TabIndex = 47;
-            this.button4.Text = "Buscar";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
             // txtPrecio
             // 
+            this.txtPrecio.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrecio.Location = new System.Drawing.Point(380, 129);
+            this.txtPrecio.Location = new System.Drawing.Point(396, 129);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(200, 36);
             this.txtPrecio.TabIndex = 33;
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(88, 122);
+            this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 20F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(38, 122);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(275, 39);
+            this.label2.Size = new System.Drawing.Size(268, 44);
             this.label2.TabIndex = 34;
             this.label2.Text = "Transacción N°:";
             // 
@@ -375,14 +372,19 @@ namespace ptoVenta
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.panel9);
+            this.groupBox2.Controls.Add(this.panel8);
+            this.groupBox2.Controls.Add(this.panel7);
+            this.groupBox2.Controls.Add(this.panel6);
+            this.groupBox2.Controls.Add(this.panel4);
             this.groupBox2.Controls.Add(this.rbConsolaFiscal);
             this.groupBox2.Controls.Add(this.rbReporteVentas);
             this.groupBox2.Controls.Add(this.rbCierreCaja);
             this.groupBox2.Controls.Add(this.rbReporteConsumo);
             this.groupBox2.Controls.Add(this.rbImprimirFactura);
-            this.groupBox2.Location = new System.Drawing.Point(32, 19);
+            this.groupBox2.Location = new System.Drawing.Point(36, 6);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(426, 309);
+            this.groupBox2.Size = new System.Drawing.Size(471, 370);
             this.groupBox2.TabIndex = 47;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Dispositivo";
@@ -390,15 +392,14 @@ namespace ptoVenta
             // rbConsolaFiscal
             // 
             this.rbConsolaFiscal.Appearance = System.Windows.Forms.Appearance.Button;
-            this.rbConsolaFiscal.BackColor = System.Drawing.Color.Gray;
-            this.rbConsolaFiscal.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.rbConsolaFiscal.FlatAppearance.BorderSize = 3;
+            this.rbConsolaFiscal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.rbConsolaFiscal.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.rbConsolaFiscal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rbConsolaFiscal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbConsolaFiscal.ForeColor = System.Drawing.Color.White;
-            this.rbConsolaFiscal.Location = new System.Drawing.Point(30, 191);
+            this.rbConsolaFiscal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbConsolaFiscal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
+            this.rbConsolaFiscal.Location = new System.Drawing.Point(34, 195);
             this.rbConsolaFiscal.Name = "rbConsolaFiscal";
-            this.rbConsolaFiscal.Size = new System.Drawing.Size(365, 43);
+            this.rbConsolaFiscal.Size = new System.Drawing.Size(398, 43);
             this.rbConsolaFiscal.TabIndex = 4;
             this.rbConsolaFiscal.Text = "Consola Fiscal";
             this.rbConsolaFiscal.UseVisualStyleBackColor = false;
@@ -407,15 +408,14 @@ namespace ptoVenta
             // rbReporteVentas
             // 
             this.rbReporteVentas.Appearance = System.Windows.Forms.Appearance.Button;
-            this.rbReporteVentas.BackColor = System.Drawing.Color.Gray;
-            this.rbReporteVentas.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.rbReporteVentas.FlatAppearance.BorderSize = 3;
+            this.rbReporteVentas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.rbReporteVentas.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.rbReporteVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rbReporteVentas.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbReporteVentas.ForeColor = System.Drawing.Color.White;
-            this.rbReporteVentas.Location = new System.Drawing.Point(30, 242);
+            this.rbReporteVentas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbReporteVentas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
+            this.rbReporteVentas.Location = new System.Drawing.Point(34, 253);
             this.rbReporteVentas.Name = "rbReporteVentas";
-            this.rbReporteVentas.Size = new System.Drawing.Size(365, 43);
+            this.rbReporteVentas.Size = new System.Drawing.Size(398, 43);
             this.rbReporteVentas.TabIndex = 5;
             this.rbReporteVentas.Text = "Reporte de Ventas";
             this.rbReporteVentas.UseVisualStyleBackColor = false;
@@ -424,15 +424,14 @@ namespace ptoVenta
             // rbCierreCaja
             // 
             this.rbCierreCaja.Appearance = System.Windows.Forms.Appearance.Button;
-            this.rbCierreCaja.BackColor = System.Drawing.Color.Gray;
-            this.rbCierreCaja.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.rbCierreCaja.FlatAppearance.BorderSize = 3;
+            this.rbCierreCaja.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.rbCierreCaja.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.rbCierreCaja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rbCierreCaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbCierreCaja.ForeColor = System.Drawing.Color.White;
-            this.rbCierreCaja.Location = new System.Drawing.Point(30, 140);
+            this.rbCierreCaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbCierreCaja.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
+            this.rbCierreCaja.Location = new System.Drawing.Point(34, 137);
             this.rbCierreCaja.Name = "rbCierreCaja";
-            this.rbCierreCaja.Size = new System.Drawing.Size(365, 43);
+            this.rbCierreCaja.Size = new System.Drawing.Size(398, 43);
             this.rbCierreCaja.TabIndex = 3;
             this.rbCierreCaja.Text = "Cierre Caja";
             this.rbCierreCaja.UseVisualStyleBackColor = false;
@@ -441,15 +440,14 @@ namespace ptoVenta
             // rbReporteConsumo
             // 
             this.rbReporteConsumo.Appearance = System.Windows.Forms.Appearance.Button;
-            this.rbReporteConsumo.BackColor = System.Drawing.Color.Gray;
-            this.rbReporteConsumo.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.rbReporteConsumo.FlatAppearance.BorderSize = 3;
+            this.rbReporteConsumo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.rbReporteConsumo.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.rbReporteConsumo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rbReporteConsumo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbReporteConsumo.ForeColor = System.Drawing.Color.White;
-            this.rbReporteConsumo.Location = new System.Drawing.Point(30, 89);
+            this.rbReporteConsumo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbReporteConsumo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
+            this.rbReporteConsumo.Location = new System.Drawing.Point(34, 79);
             this.rbReporteConsumo.Name = "rbReporteConsumo";
-            this.rbReporteConsumo.Size = new System.Drawing.Size(365, 43);
+            this.rbReporteConsumo.Size = new System.Drawing.Size(398, 43);
             this.rbReporteConsumo.TabIndex = 2;
             this.rbReporteConsumo.Text = "Reporte de Consumo";
             this.rbReporteConsumo.UseVisualStyleBackColor = false;
@@ -458,15 +456,14 @@ namespace ptoVenta
             // rbImprimirFactura
             // 
             this.rbImprimirFactura.Appearance = System.Windows.Forms.Appearance.Button;
-            this.rbImprimirFactura.BackColor = System.Drawing.Color.Gray;
-            this.rbImprimirFactura.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.rbImprimirFactura.FlatAppearance.BorderSize = 3;
+            this.rbImprimirFactura.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.rbImprimirFactura.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.rbImprimirFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rbImprimirFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbImprimirFactura.ForeColor = System.Drawing.Color.White;
-            this.rbImprimirFactura.Location = new System.Drawing.Point(30, 37);
+            this.rbImprimirFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbImprimirFactura.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
+            this.rbImprimirFactura.Location = new System.Drawing.Point(34, 21);
             this.rbImprimirFactura.Name = "rbImprimirFactura";
-            this.rbImprimirFactura.Size = new System.Drawing.Size(365, 43);
+            this.rbImprimirFactura.Size = new System.Drawing.Size(398, 43);
             this.rbImprimirFactura.TabIndex = 1;
             this.rbImprimirFactura.Text = "Reimprimir Factura";
             this.rbImprimirFactura.UseVisualStyleBackColor = false;
@@ -474,85 +471,20 @@ namespace ptoVenta
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.btnAceptarIngreso);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Location = new System.Drawing.Point(979, 19);
+            this.groupBox1.Controls.Add(this.panel2);
+            this.groupBox1.Controls.Add(this.panel3);
+            this.groupBox1.Controls.Add(this.panel10);
+            this.groupBox1.Controls.Add(this.btnTicketsEmitidos);
+            this.groupBox1.Controls.Add(this.panel12);
+            this.groupBox1.Controls.Add(this.iconButton1);
+            this.groupBox1.Controls.Add(this.btnSalir);
+            this.groupBox1.Controls.Add(this.iconButton3);
+            this.groupBox1.Location = new System.Drawing.Point(1064, 6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(193, 443);
+            this.groupBox1.Size = new System.Drawing.Size(259, 353);
             this.groupBox1.TabIndex = 45;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dispositivo";
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(195)))), ((int)(((byte)(93)))));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
-            this.button2.FlatAppearance.BorderSize = 3;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(28, 167);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(142, 57);
-            this.button2.TabIndex = 45;
-            this.button2.Text = "Grabar Archivo";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.button3.FlatAppearance.BorderSize = 3;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(28, 370);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(142, 57);
-            this.button3.TabIndex = 46;
-            this.button3.Text = "Salir";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // btnAceptarIngreso
-            // 
-            this.btnAceptarIngreso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
-            this.btnAceptarIngreso.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnAceptarIngreso.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
-            this.btnAceptarIngreso.FlatAppearance.BorderSize = 3;
-            this.btnAceptarIngreso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAceptarIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAceptarIngreso.ForeColor = System.Drawing.Color.White;
-            this.btnAceptarIngreso.Location = new System.Drawing.Point(28, 37);
-            this.btnAceptarIngreso.Margin = new System.Windows.Forms.Padding(4);
-            this.btnAceptarIngreso.Name = "btnAceptarIngreso";
-            this.btnAceptarIngreso.Size = new System.Drawing.Size(142, 57);
-            this.btnAceptarIngreso.TabIndex = 43;
-            this.btnAceptarIngreso.Text = "Generar en Pantalla";
-            this.btnAceptarIngreso.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
-            this.button1.FlatAppearance.BorderSize = 3;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(28, 102);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(142, 57);
-            this.button1.TabIndex = 44;
-            this.button1.Text = "Imprimir Reporte";
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // tbConfiguracion
             // 
@@ -598,15 +530,226 @@ namespace ptoVenta
             this.dgvConfiguración.Size = new System.Drawing.Size(1189, 674);
             this.dgvConfiguración.TabIndex = 19;
             // 
+            // panel12
+            // 
+            this.panel12.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
+            this.panel12.Location = new System.Drawing.Point(27, 240);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(205, 9);
+            this.panel12.TabIndex = 101;
+            // 
+            // iconButton3
+            // 
+            this.iconButton3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.iconButton3.BackColor = System.Drawing.Color.Transparent;
+            this.iconButton3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.iconButton3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
+            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Save;
+            this.iconButton3.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
+            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton3.IconSize = 50;
+            this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton3.Location = new System.Drawing.Point(27, 179);
+            this.iconButton3.Name = "iconButton3";
+            this.iconButton3.Size = new System.Drawing.Size(205, 65);
+            this.iconButton3.TabIndex = 100;
+            this.iconButton3.TabStop = false;
+            this.iconButton3.Text = "Grabar \r\nArchivo";
+            this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton3.UseVisualStyleBackColor = false;
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.panel2.Location = new System.Drawing.Point(27, 164);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(205, 9);
+            this.panel2.TabIndex = 103;
+            // 
+            // btnTicketsEmitidos
+            // 
+            this.btnTicketsEmitidos.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnTicketsEmitidos.BackColor = System.Drawing.Color.Transparent;
+            this.btnTicketsEmitidos.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnTicketsEmitidos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnTicketsEmitidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTicketsEmitidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTicketsEmitidos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
+            this.btnTicketsEmitidos.IconChar = FontAwesome.Sharp.IconChar.Print;
+            this.btnTicketsEmitidos.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
+            this.btnTicketsEmitidos.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnTicketsEmitidos.IconSize = 50;
+            this.btnTicketsEmitidos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTicketsEmitidos.Location = new System.Drawing.Point(27, 106);
+            this.btnTicketsEmitidos.Name = "btnTicketsEmitidos";
+            this.btnTicketsEmitidos.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnTicketsEmitidos.Size = new System.Drawing.Size(205, 65);
+            this.btnTicketsEmitidos.TabIndex = 102;
+            this.btnTicketsEmitidos.TabStop = false;
+            this.btnTicketsEmitidos.Text = "Imprimir Reportes";
+            this.btnTicketsEmitidos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnTicketsEmitidos.UseVisualStyleBackColor = false;
+            // 
+            // panel10
+            // 
+            this.panel10.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.panel10.Location = new System.Drawing.Point(27, 327);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(205, 9);
+            this.panel10.TabIndex = 107;
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnSalir.BackColor = System.Drawing.Color.Transparent;
+            this.btnSalir.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.btnSalir.IconChar = FontAwesome.Sharp.IconChar.Ban;
+            this.btnSalir.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.btnSalir.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnSalir.IconSize = 50;
+            this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSalir.Location = new System.Drawing.Point(27, 271);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(205, 65);
+            this.btnSalir.TabIndex = 106;
+            this.btnSalir.TabStop = false;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSalir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.panel3.Location = new System.Drawing.Point(27, 91);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(205, 9);
+            this.panel3.TabIndex = 105;
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.iconButton1.BackColor = System.Drawing.Color.Transparent;
+            this.iconButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.iconButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Desktop;
+            this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.IconSize = 50;
+            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton1.Location = new System.Drawing.Point(27, 33);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.iconButton1.Size = new System.Drawing.Size(205, 65);
+            this.iconButton1.TabIndex = 104;
+            this.iconButton1.TabStop = false;
+            this.iconButton1.Text = "Generar en Pantalla";
+            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton1.UseVisualStyleBackColor = false;
+            // 
+            // panel5
+            // 
+            this.panel5.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
+            this.panel5.Location = new System.Drawing.Point(602, 157);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(151, 9);
+            this.panel5.TabIndex = 82;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnBuscar.BackColor = System.Drawing.Color.Transparent;
+            this.btnBuscar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
+            this.btnBuscar.IconChar = FontAwesome.Sharp.IconChar.Search;
+            this.btnBuscar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
+            this.btnBuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnBuscar.IconSize = 35;
+            this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscar.Location = new System.Drawing.Point(602, 118);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.btnBuscar.Size = new System.Drawing.Size(151, 39);
+            this.btnBuscar.TabIndex = 81;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            // 
+            // panel4
+            // 
+            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.panel4.Location = new System.Drawing.Point(34, 64);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(398, 9);
+            this.panel4.TabIndex = 106;
+            // 
+            // panel6
+            // 
+            this.panel6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.panel6.Location = new System.Drawing.Point(34, 122);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(398, 9);
+            this.panel6.TabIndex = 107;
+            // 
+            // panel7
+            // 
+            this.panel7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.panel7.Location = new System.Drawing.Point(34, 180);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(398, 9);
+            this.panel7.TabIndex = 108;
+            // 
+            // panel8
+            // 
+            this.panel8.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.panel8.Location = new System.Drawing.Point(34, 238);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(398, 9);
+            this.panel8.TabIndex = 109;
+            // 
+            // panel9
+            // 
+            this.panel9.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.panel9.Location = new System.Drawing.Point(34, 296);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(398, 9);
+            this.panel9.TabIndex = 109;
+            // 
             // sistema
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1233, 847);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1361, 873);
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "sistema";
-            this.Text = "sistema";
+            this.Text = "Sistema";
             this.tabControl1.ResumeLayout(false);
             this.tpReportes.ResumeLayout(false);
             this.tabControlChico.ResumeLayout(false);
@@ -628,11 +771,7 @@ namespace ptoVenta
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tbConfiguracion;
         private System.Windows.Forms.TabPage tpReportes;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnAceptarIngreso;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TabControl tabControlChico;
@@ -654,7 +793,6 @@ namespace ptoVenta
         private System.Windows.Forms.RadioButton rbReporteConsumo;
         private System.Windows.Forms.RadioButton rbImprimirFactura;
         private System.Windows.Forms.TabPage ReporteVentas;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.CheckBox checkBox1;
@@ -662,5 +800,20 @@ namespace ptoVenta
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.DataGridView dgvConfiguración;
+        private System.Windows.Forms.Panel panel12;
+        private FontAwesome.Sharp.IconButton iconButton3;
+        private System.Windows.Forms.Panel panel2;
+        private FontAwesome.Sharp.IconButton btnTicketsEmitidos;
+        private System.Windows.Forms.Panel panel10;
+        private FontAwesome.Sharp.IconButton btnSalir;
+        private System.Windows.Forms.Panel panel3;
+        private FontAwesome.Sharp.IconButton iconButton1;
+        private System.Windows.Forms.Panel panel5;
+        private FontAwesome.Sharp.IconButton btnBuscar;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel4;
     }
 }

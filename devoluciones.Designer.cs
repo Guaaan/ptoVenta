@@ -30,12 +30,10 @@ namespace ptoVenta
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(devoluciones));
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtNotaCredito = new System.Windows.Forms.TextBox();
             this.txtBoletaFactura = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnBuscarCredito = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.txtClienteCredito = new System.Windows.Forms.TextBox();
             this.dgvLista1 = new System.Windows.Forms.DataGridView();
@@ -53,25 +51,19 @@ namespace ptoVenta
             this.txtFechaPago = new System.Windows.Forms.TextBox();
             this.txtConcepto = new System.Windows.Forms.TextBox();
             this.txtObservaciones = new System.Windows.Forms.TextBox();
-            this.btnAceptar = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.panel21 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.panel16 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.iconButton5 = new FontAwesome.Sharp.IconButton();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.iconButton4 = new FontAwesome.Sharp.IconButton();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.panel15.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(326, 48);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Nota de Crédito";
             // 
             // label2
             // 
@@ -86,17 +78,17 @@ namespace ptoVenta
             // txtNotaCredito
             // 
             this.txtNotaCredito.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNotaCredito.Location = new System.Drawing.Point(302, 81);
+            this.txtNotaCredito.Location = new System.Drawing.Point(362, 81);
             this.txtNotaCredito.Name = "txtNotaCredito";
-            this.txtNotaCredito.Size = new System.Drawing.Size(100, 26);
+            this.txtNotaCredito.Size = new System.Drawing.Size(141, 26);
             this.txtNotaCredito.TabIndex = 3;
             // 
             // txtBoletaFactura
             // 
             this.txtBoletaFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoletaFactura.Location = new System.Drawing.Point(251, 137);
+            this.txtBoletaFactura.Location = new System.Drawing.Point(307, 137);
             this.txtBoletaFactura.Name = "txtBoletaFactura";
-            this.txtBoletaFactura.Size = new System.Drawing.Size(151, 26);
+            this.txtBoletaFactura.Size = new System.Drawing.Size(196, 26);
             this.txtBoletaFactura.TabIndex = 4;
             // 
             // label3
@@ -109,28 +101,11 @@ namespace ptoVenta
             this.label3.TabIndex = 5;
             this.label3.Text = "Boleta/Factura:";
             // 
-            // btnBuscarCredito
-            // 
-            this.btnBuscarCredito.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
-            this.btnBuscarCredito.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnBuscarCredito.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
-            this.btnBuscarCredito.FlatAppearance.BorderSize = 3;
-            this.btnBuscarCredito.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarCredito.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarCredito.ForeColor = System.Drawing.Color.White;
-            this.btnBuscarCredito.Location = new System.Drawing.Point(430, 109);
-            this.btnBuscarCredito.Margin = new System.Windows.Forms.Padding(4);
-            this.btnBuscarCredito.Name = "btnBuscarCredito";
-            this.btnBuscarCredito.Size = new System.Drawing.Size(115, 44);
-            this.btnBuscarCredito.TabIndex = 6;
-            this.btnBuscarCredito.Text = "Buscar";
-            this.btnBuscarCredito.UseVisualStyleBackColor = false;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(768, 132);
+            this.label4.Location = new System.Drawing.Point(742, 132);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(107, 29);
             this.label4.TabIndex = 8;
@@ -152,7 +127,7 @@ namespace ptoVenta
             this.dgvLista1.Name = "dgvLista1";
             this.dgvLista1.RowHeadersWidth = 51;
             this.dgvLista1.RowTemplate.Height = 24;
-            this.dgvLista1.Size = new System.Drawing.Size(1184, 252);
+            this.dgvLista1.Size = new System.Drawing.Size(1184, 262);
             this.dgvLista1.TabIndex = 20;
             // 
             // groupBox1
@@ -165,37 +140,37 @@ namespace ptoVenta
             this.groupBox1.Controls.Add(this.txtTotalCredito);
             this.groupBox1.Location = new System.Drawing.Point(35, 462);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(444, 177);
+            this.groupBox1.Size = new System.Drawing.Size(468, 177);
             this.groupBox1.TabIndex = 21;
             this.groupBox1.TabStop = false;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(6, 135);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(98, 29);
+            this.label5.Size = new System.Drawing.Size(84, 25);
             this.label5.TabIndex = 22;
             this.label5.Text = "TOTAL";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(6, 53);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(133, 29);
+            this.label6.Size = new System.Drawing.Size(107, 25);
             this.label6.TabIndex = 23;
             this.label6.Text = "Impuesto:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(6, 16);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(199, 29);
+            this.label7.Size = new System.Drawing.Size(160, 25);
             this.label7.TabIndex = 24;
             this.label7.Text = "Monto de Nota:";
             // 
@@ -204,7 +179,7 @@ namespace ptoVenta
             this.txtMontoNota.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMontoNota.Location = new System.Drawing.Point(231, 21);
             this.txtMontoNota.Name = "txtMontoNota";
-            this.txtMontoNota.Size = new System.Drawing.Size(200, 26);
+            this.txtMontoNota.Size = new System.Drawing.Size(224, 26);
             this.txtMontoNota.TabIndex = 22;
             // 
             // txtImpuesto
@@ -212,7 +187,7 @@ namespace ptoVenta
             this.txtImpuesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtImpuesto.Location = new System.Drawing.Point(231, 58);
             this.txtImpuesto.Name = "txtImpuesto";
-            this.txtImpuesto.Size = new System.Drawing.Size(200, 26);
+            this.txtImpuesto.Size = new System.Drawing.Size(224, 26);
             this.txtImpuesto.TabIndex = 23;
             // 
             // txtTotalCredito
@@ -220,182 +195,243 @@ namespace ptoVenta
             this.txtTotalCredito.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTotalCredito.Location = new System.Drawing.Point(231, 135);
             this.txtTotalCredito.Name = "txtTotalCredito";
-            this.txtTotalCredito.Size = new System.Drawing.Size(200, 26);
+            this.txtTotalCredito.Size = new System.Drawing.Size(224, 26);
             this.txtTotalCredito.TabIndex = 24;
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.White;
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.txtFechaPago);
             this.groupBox2.Controls.Add(this.txtConcepto);
             this.groupBox2.Controls.Add(this.txtObservaciones);
-            this.groupBox2.Location = new System.Drawing.Point(511, 462);
+            this.groupBox2.Location = new System.Drawing.Point(520, 462);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(693, 177);
+            this.groupBox2.Size = new System.Drawing.Size(684, 177);
             this.groupBox2.TabIndex = 25;
             this.groupBox2.TabStop = false;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(15, 90);
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(17, 90);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(203, 29);
+            this.label8.Size = new System.Drawing.Size(164, 25);
             this.label8.TabIndex = 22;
             this.label8.Text = "Observaciones:";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(15, 53);
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(17, 53);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(137, 29);
+            this.label9.Size = new System.Drawing.Size(112, 25);
             this.label9.TabIndex = 23;
             this.label9.Text = "Concepto:";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(10, 16);
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(17, 16);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(202, 29);
+            this.label10.Size = new System.Drawing.Size(163, 25);
             this.label10.TabIndex = 24;
             this.label10.Text = "Fecha de pago:";
             // 
             // txtFechaPago
             // 
             this.txtFechaPago.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFechaPago.Location = new System.Drawing.Point(236, 21);
+            this.txtFechaPago.Location = new System.Drawing.Point(245, 21);
             this.txtFechaPago.Name = "txtFechaPago";
-            this.txtFechaPago.Size = new System.Drawing.Size(442, 26);
+            this.txtFechaPago.Size = new System.Drawing.Size(426, 26);
             this.txtFechaPago.TabIndex = 22;
             // 
             // txtConcepto
             // 
             this.txtConcepto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConcepto.Location = new System.Drawing.Point(236, 58);
+            this.txtConcepto.Location = new System.Drawing.Point(245, 58);
             this.txtConcepto.Name = "txtConcepto";
-            this.txtConcepto.Size = new System.Drawing.Size(442, 26);
+            this.txtConcepto.Size = new System.Drawing.Size(426, 26);
             this.txtConcepto.TabIndex = 23;
             // 
             // txtObservaciones
             // 
             this.txtObservaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtObservaciones.Location = new System.Drawing.Point(236, 90);
+            this.txtObservaciones.Location = new System.Drawing.Point(245, 90);
             this.txtObservaciones.Multiline = true;
             this.txtObservaciones.Name = "txtObservaciones";
-            this.txtObservaciones.Size = new System.Drawing.Size(442, 67);
+            this.txtObservaciones.Size = new System.Drawing.Size(426, 67);
             this.txtObservaciones.TabIndex = 24;
             // 
-            // btnAceptar
+            // panel4
             // 
-            this.btnAceptar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(195)))), ((int)(((byte)(93)))));
-            this.btnAceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnAceptar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
-            this.btnAceptar.FlatAppearance.BorderSize = 3;
-            this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAceptar.ForeColor = System.Drawing.Color.White;
-            this.btnAceptar.Location = new System.Drawing.Point(441, 650);
-            this.btnAceptar.Margin = new System.Windows.Forms.Padding(4);
-            this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(126, 44);
-            this.btnAceptar.TabIndex = 26;
-            this.btnAceptar.Text = "Aceptar";
-            this.btnAceptar.UseVisualStyleBackColor = false;
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.panel4.Location = new System.Drawing.Point(520, 156);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(136, 9);
+            this.panel4.TabIndex = 96;
             // 
-            // btnCancelar
+            // iconButton2
             // 
-            this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
-            this.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.btnCancelar.FlatAppearance.BorderSize = 3;
-            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.ForeColor = System.Drawing.Color.White;
-            this.btnCancelar.Location = new System.Drawing.Point(575, 650);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(148, 44);
-            this.btnCancelar.TabIndex = 27;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = false;
-            // 
-            // panel21
-            // 
-            this.panel21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
-            this.panel21.Location = new System.Drawing.Point(430, 150);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(115, 13);
-            this.panel21.TabIndex = 77;
+            this.iconButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconButton2.BackColor = System.Drawing.Color.Transparent;
+            this.iconButton2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.iconButton2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.Search;
+            this.iconButton2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
+            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton2.IconSize = 40;
+            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton2.Location = new System.Drawing.Point(520, 113);
+            this.iconButton2.Name = "iconButton2";
+            this.iconButton2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.iconButton2.Size = new System.Drawing.Size(136, 50);
+            this.iconButton2.TabIndex = 95;
+            this.iconButton2.TabStop = false;
+            this.iconButton2.Text = "Buscar";
+            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton2.UseVisualStyleBackColor = false;
             // 
             // panel16
             // 
             this.panel16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
-            this.panel16.Location = new System.Drawing.Point(441, 692);
+            this.panel16.Location = new System.Drawing.Point(393, 701);
             this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(126, 13);
-            this.panel16.TabIndex = 76;
+            this.panel16.Size = new System.Drawing.Size(179, 9);
+            this.panel16.TabIndex = 107;
             // 
-            // panel1
+            // iconButton5
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.panel1.Location = new System.Drawing.Point(575, 692);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(148, 13);
-            this.panel1.TabIndex = 77;
+            this.iconButton5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconButton5.BackColor = System.Drawing.Color.Transparent;
+            this.iconButton5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.iconButton5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
+            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.Check;
+            this.iconButton5.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
+            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton5.IconSize = 50;
+            this.iconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton5.Location = new System.Drawing.Point(393, 645);
+            this.iconButton5.Name = "iconButton5";
+            this.iconButton5.Size = new System.Drawing.Size(179, 65);
+            this.iconButton5.TabIndex = 106;
+            this.iconButton5.TabStop = false;
+            this.iconButton5.Text = "Aceptar";
+            this.iconButton5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton5.UseVisualStyleBackColor = false;
+            // 
+            // panel10
+            // 
+            this.panel10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.panel10.Location = new System.Drawing.Point(596, 701);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(195, 9);
+            this.panel10.TabIndex = 105;
+            // 
+            // iconButton4
+            // 
+            this.iconButton4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconButton4.BackColor = System.Drawing.Color.Transparent;
+            this.iconButton4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.iconButton4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Ban;
+            this.iconButton4.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton4.IconSize = 50;
+            this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton4.Location = new System.Drawing.Point(596, 645);
+            this.iconButton4.Name = "iconButton4";
+            this.iconButton4.Size = new System.Drawing.Size(195, 65);
+            this.iconButton4.TabIndex = 104;
+            this.iconButton4.TabStop = false;
+            this.iconButton4.Text = "Cancelar";
+            this.iconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton4.UseVisualStyleBackColor = false;
+            this.iconButton4.Click += new System.EventHandler(this.iconButton4_Click);
+            // 
+            // panel15
+            // 
+            this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(195)))), ((int)(((byte)(217)))));
+            this.panel15.Controls.Add(this.label11);
+            this.panel15.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel15.Location = new System.Drawing.Point(0, 0);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(1232, 57);
+            this.panel15.TabIndex = 108;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label11.Font = new System.Drawing.Font("Microsoft Tai Le", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(3, 2);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(288, 55);
+            this.label11.TabIndex = 2;
+            this.label11.Text = "Devoluciones";
             // 
             // devoluciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.GhostWhite;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1232, 730);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel21);
             this.Controls.Add(this.panel16);
-            this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.btnAceptar);
+            this.Controls.Add(this.iconButton5);
+            this.Controls.Add(this.panel10);
+            this.Controls.Add(this.iconButton4);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.iconButton2);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvLista1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtClienteCredito);
-            this.Controls.Add(this.btnBuscarCredito);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtBoletaFactura);
             this.Controls.Add(this.txtNotaCredito);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.panel15);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "devoluciones";
-            this.Text = "devoluciones";
+            this.Text = "Devolucion";
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.panel15.ResumeLayout(false);
+            this.panel15.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtNotaCredito;
         private System.Windows.Forms.TextBox txtBoletaFactura;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnBuscarCredito;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtClienteCredito;
         private System.Windows.Forms.DataGridView dgvLista1;
@@ -413,10 +449,13 @@ namespace ptoVenta
         private System.Windows.Forms.TextBox txtFechaPago;
         private System.Windows.Forms.TextBox txtConcepto;
         private System.Windows.Forms.TextBox txtObservaciones;
-        private System.Windows.Forms.Button btnAceptar;
-        private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.Panel panel21;
+        private System.Windows.Forms.Panel panel4;
+        private FontAwesome.Sharp.IconButton iconButton2;
         private System.Windows.Forms.Panel panel16;
-        private System.Windows.Forms.Panel panel1;
+        private FontAwesome.Sharp.IconButton iconButton5;
+        private System.Windows.Forms.Panel panel10;
+        private FontAwesome.Sharp.IconButton iconButton4;
+        private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.Label label11;
     }
 }

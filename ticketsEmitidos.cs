@@ -17,6 +17,10 @@ namespace ptoVenta
             InitializeComponent();
         }
 
-       
+        private void iconButton3_Click(object sender, EventArgs e)
+        {
+            calendarioTicketsE abrirCalendarioTickets = new calendarioTicketsE();
+            abrirCalendarioTickets.Show();
+        }
     }
 }
