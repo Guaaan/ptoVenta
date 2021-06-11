@@ -161,7 +161,7 @@ namespace ptoVenta
             this.dgvLista.RowTemplate.Height = 25;
             this.dgvLista.RowTemplate.ReadOnly = true;
             this.dgvLista.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvLista.Size = new System.Drawing.Size(1328, 351);
+            this.dgvLista.Size = new System.Drawing.Size(1329, 351);
             this.dgvLista.TabIndex = 18;
             this.dgvLista.TabStop = false;
             this.dgvLista.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLista_CellContentClick);
@@ -320,7 +320,7 @@ namespace ptoVenta
             this.btnSistema.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSistema.IconSize = 50;
             this.btnSistema.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSistema.Location = new System.Drawing.Point(1199, 53);
+            this.btnSistema.Location = new System.Drawing.Point(1204, 55);
             this.btnSistema.Name = "btnSistema";
             this.btnSistema.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnSistema.Size = new System.Drawing.Size(136, 65);
@@ -344,7 +344,7 @@ namespace ptoVenta
             this.btnDevoluciones.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnDevoluciones.IconSize = 50;
             this.btnDevoluciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDevoluciones.Location = new System.Drawing.Point(779, 53);
+            this.btnDevoluciones.Location = new System.Drawing.Point(784, 55);
             this.btnDevoluciones.Name = "btnDevoluciones";
             this.btnDevoluciones.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnDevoluciones.Size = new System.Drawing.Size(136, 65);
@@ -368,7 +368,7 @@ namespace ptoVenta
             this.btnEgresoCaja.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnEgresoCaja.IconSize = 50;
             this.btnEgresoCaja.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEgresoCaja.Location = new System.Drawing.Point(1059, 53);
+            this.btnEgresoCaja.Location = new System.Drawing.Point(1064, 55);
             this.btnEgresoCaja.Name = "btnEgresoCaja";
             this.btnEgresoCaja.Size = new System.Drawing.Size(136, 65);
             this.btnEgresoCaja.TabIndex = 49;
@@ -391,7 +391,7 @@ namespace ptoVenta
             this.btnTicketsEmitidos.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnTicketsEmitidos.IconSize = 50;
             this.btnTicketsEmitidos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTicketsEmitidos.Location = new System.Drawing.Point(639, 53);
+            this.btnTicketsEmitidos.Location = new System.Drawing.Point(644, 55);
             this.btnTicketsEmitidos.Name = "btnTicketsEmitidos";
             this.btnTicketsEmitidos.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnTicketsEmitidos.Size = new System.Drawing.Size(136, 65);
@@ -456,7 +456,7 @@ namespace ptoVenta
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.panel1.ForeColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(639, 111);
+            this.panel1.Location = new System.Drawing.Point(644, 113);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(136, 9);
             this.panel1.TabIndex = 73;
@@ -465,7 +465,7 @@ namespace ptoVenta
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.Red;
-            this.panel3.Location = new System.Drawing.Point(779, 111);
+            this.panel3.Location = new System.Drawing.Point(784, 113);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(136, 9);
             this.panel3.TabIndex = 74;
@@ -474,7 +474,7 @@ namespace ptoVenta
             // 
             this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel6.BackColor = System.Drawing.Color.DarkBlue;
-            this.panel6.Location = new System.Drawing.Point(1199, 111);
+            this.panel6.Location = new System.Drawing.Point(1204, 113);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(136, 9);
             this.panel6.TabIndex = 80;
@@ -483,7 +483,7 @@ namespace ptoVenta
             // 
             this.panel9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel9.BackColor = System.Drawing.Color.DarkOrange;
-            this.panel9.Location = new System.Drawing.Point(1059, 111);
+            this.panel9.Location = new System.Drawing.Point(1064, 113);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(136, 9);
             this.panel9.TabIndex = 77;
@@ -611,7 +611,7 @@ namespace ptoVenta
             // 
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackColor = System.Drawing.Color.LimeGreen;
-            this.panel4.Location = new System.Drawing.Point(919, 111);
+            this.panel4.Location = new System.Drawing.Point(924, 113);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(136, 9);
             this.panel4.TabIndex = 84;
@@ -630,7 +630,7 @@ namespace ptoVenta
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton2.IconSize = 50;
             this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.Location = new System.Drawing.Point(919, 53);
+            this.iconButton2.Location = new System.Drawing.Point(924, 55);
             this.iconButton2.Name = "iconButton2";
             this.iconButton2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.iconButton2.Size = new System.Drawing.Size(136, 65);
@@ -645,13 +645,14 @@ namespace ptoVenta
             this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.panel5.Controls.Add(this.label6);
+            this.panel5.Controls.Add(this.panel8);
             this.panel5.Controls.Add(this.txtIva);
             this.panel5.Controls.Add(this.label4);
             this.panel5.Controls.Add(this.textIva);
             this.panel5.Controls.Add(this.txtTotal);
             this.panel5.Controls.Add(this.txtSubTotal);
             this.panel5.ForeColor = System.Drawing.Color.White;
-            this.panel5.Location = new System.Drawing.Point(968, 126);
+            this.panel5.Location = new System.Drawing.Point(970, 126);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(370, 129);
             this.panel5.TabIndex = 85;
@@ -897,7 +898,7 @@ namespace ptoVenta
             // 
             this.panel12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.panel12.BackColor = System.Drawing.Color.DarkOrange;
-            this.panel12.Location = new System.Drawing.Point(888, 691);
+            this.panel12.Location = new System.Drawing.Point(890, 691);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(151, 9);
             this.panel12.TabIndex = 88;
@@ -916,7 +917,7 @@ namespace ptoVenta
             this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton3.IconSize = 50;
             this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.Location = new System.Drawing.Point(888, 630);
+            this.iconButton3.Location = new System.Drawing.Point(890, 630);
             this.iconButton3.Name = "iconButton3";
             this.iconButton3.Size = new System.Drawing.Size(151, 65);
             this.iconButton3.TabIndex = 87;
@@ -930,7 +931,7 @@ namespace ptoVenta
             // 
             this.panel14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
-            this.panel14.Location = new System.Drawing.Point(1187, 691);
+            this.panel14.Location = new System.Drawing.Point(1189, 691);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(151, 9);
             this.panel14.TabIndex = 90;
@@ -949,7 +950,7 @@ namespace ptoVenta
             this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton4.IconSize = 50;
             this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton4.Location = new System.Drawing.Point(1187, 630);
+            this.iconButton4.Location = new System.Drawing.Point(1189, 630);
             this.iconButton4.Name = "iconButton4";
             this.iconButton4.Size = new System.Drawing.Size(151, 65);
             this.iconButton4.TabIndex = 89;
@@ -963,7 +964,7 @@ namespace ptoVenta
             // 
             this.panel16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.panel16.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.panel16.Location = new System.Drawing.Point(1045, 691);
+            this.panel16.Location = new System.Drawing.Point(1047, 691);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(136, 9);
             this.panel16.TabIndex = 92;
@@ -982,7 +983,7 @@ namespace ptoVenta
             this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton5.IconSize = 50;
             this.iconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton5.Location = new System.Drawing.Point(1045, 630);
+            this.iconButton5.Location = new System.Drawing.Point(1047, 630);
             this.iconButton5.Name = "iconButton5";
             this.iconButton5.Size = new System.Drawing.Size(136, 65);
             this.iconButton5.TabIndex = 91;
@@ -996,7 +997,7 @@ namespace ptoVenta
             // 
             this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel8.BackColor = System.Drawing.Color.MediumOrchid;
-            this.panel8.Location = new System.Drawing.Point(968, 254);
+            this.panel8.Location = new System.Drawing.Point(0, 128);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(370, 9);
             this.panel8.TabIndex = 75;
@@ -1019,7 +1020,6 @@ namespace ptoVenta
             this.CausesValidation = false;
             this.ClientSize = new System.Drawing.Size(1352, 749);
             this.Controls.Add(this.panel10);
-            this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel16);
             this.Controls.Add(this.iconButton5);
             this.Controls.Add(this.panel14);
