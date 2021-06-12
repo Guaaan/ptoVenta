@@ -77,6 +77,7 @@ namespace ptoVenta
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
             this.txtIva = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.textIva = new System.Windows.Forms.TextBox();
@@ -100,7 +101,6 @@ namespace ptoVenta
             this.iconButton4 = new FontAwesome.Sharp.IconButton();
             this.panel16 = new System.Windows.Forms.Panel();
             this.iconButton5 = new FontAwesome.Sharp.IconButton();
-            this.panel8 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -436,7 +436,7 @@ namespace ptoVenta
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-18, -22);
+            this.pictureBox1.Location = new System.Drawing.Point(164, -22);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(322, 209);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -668,6 +668,15 @@ namespace ptoVenta
             this.label6.Size = new System.Drawing.Size(95, 45);
             this.label6.TabIndex = 43;
             this.label6.Text = "Total";
+            // 
+            // panel8
+            // 
+            this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel8.BackColor = System.Drawing.Color.MediumOrchid;
+            this.panel8.Location = new System.Drawing.Point(0, 128);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(370, 9);
+            this.panel8.TabIndex = 75;
             // 
             // txtIva
             // 
@@ -992,15 +1001,6 @@ namespace ptoVenta
             this.iconButton5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.iconButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton5.UseVisualStyleBackColor = false;
-            // 
-            // panel8
-            // 
-            this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel8.BackColor = System.Drawing.Color.MediumOrchid;
-            this.panel8.Location = new System.Drawing.Point(0, 128);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(370, 9);
-            this.panel8.TabIndex = 75;
             // 
             // panel10
             // 

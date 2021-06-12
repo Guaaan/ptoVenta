@@ -139,22 +139,8 @@ namespace ptoVenta
         {
             this.Close();
         }
+           
 
-        private void btnAbrirCajon_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dgvLista_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void btnBuscar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        
+             
     }
 }
