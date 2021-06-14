@@ -164,7 +164,6 @@ namespace ptoVenta
             this.dgvLista.Size = new System.Drawing.Size(1329, 351);
             this.dgvLista.TabIndex = 18;
             this.dgvLista.TabStop = false;
-            this.dgvLista.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLista_CellContentClick);
             // 
             // REGISTRO
             // 
@@ -797,7 +796,6 @@ namespace ptoVenta
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscar.UseVisualStyleBackColor = false;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // txtNombre
             // 
