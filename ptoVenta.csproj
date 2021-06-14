@@ -133,6 +133,12 @@
     <Compile Include="ingresoCaja.Designer.cs">
       <DependentUpon>ingresoCaja.cs</DependentUpon>
     </Compile>
+    <Compile Include="iniciarSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iniciarSesion.Designer.cs">
+      <DependentUpon>iniciarSesion.cs</DependentUpon>
+    </Compile>
     <Compile Include="productoFaltante.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -212,6 +218,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ingresoCaja.resx">
       <DependentUpon>ingresoCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iniciarSesion.resx">
+      <DependentUpon>iniciarSesion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="productoFaltante.resx">
       <DependentUpon>productoFaltante.cs</DependentUpon>
