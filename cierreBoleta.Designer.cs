@@ -244,9 +244,9 @@ namespace ptoVenta
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(3, 2);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(204, 33);
+            this.label3.Size = new System.Drawing.Size(197, 33);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Cierre de Boleta";
+            this.label3.Text = "Forma de Pago:";
             // 
             // label19
             // 
