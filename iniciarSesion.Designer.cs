@@ -33,8 +33,8 @@ namespace ptoVenta
             this.panel15 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtRut1 = new System.Windows.Forms.TextBox();
-            this.cmbAsignar = new System.Windows.Forms.ComboBox();
+            this.txtContraseña = new System.Windows.Forms.TextBox();
+            this.cmbUsuario = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -77,25 +77,25 @@ namespace ptoVenta
             this.label5.TabIndex = 31;
             this.label5.Text = "Contraseña:";
             // 
-            // txtRut1
+            // txtContraseña
             // 
-            this.txtRut1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtRut1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRut1.Location = new System.Drawing.Point(228, 167);
-            this.txtRut1.Name = "txtRut1";
-            this.txtRut1.Size = new System.Drawing.Size(198, 26);
-            this.txtRut1.TabIndex = 30;
+            this.txtContraseña.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContraseña.Location = new System.Drawing.Point(228, 167);
+            this.txtContraseña.Name = "txtContraseña";
+            this.txtContraseña.Size = new System.Drawing.Size(198, 26);
+            this.txtContraseña.TabIndex = 30;
             // 
-            // cmbAsignar
+            // cmbUsuario
             // 
-            this.cmbAsignar.AllowDrop = true;
-            this.cmbAsignar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.cmbAsignar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbAsignar.FormattingEnabled = true;
-            this.cmbAsignar.Location = new System.Drawing.Point(228, 121);
-            this.cmbAsignar.Name = "cmbAsignar";
-            this.cmbAsignar.Size = new System.Drawing.Size(198, 28);
-            this.cmbAsignar.TabIndex = 29;
+            this.cmbUsuario.AllowDrop = true;
+            this.cmbUsuario.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cmbUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbUsuario.FormattingEnabled = true;
+            this.cmbUsuario.Location = new System.Drawing.Point(228, 121);
+            this.cmbUsuario.Name = "cmbUsuario";
+            this.cmbUsuario.Size = new System.Drawing.Size(198, 28);
+            this.cmbUsuario.TabIndex = 29;
             // 
             // label3
             // 
@@ -199,9 +199,9 @@ namespace ptoVenta
             this.Controls.Add(this.iconButton2);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtRut1);
+            this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.panel15);
-            this.Controls.Add(this.cmbAsignar);
+            this.Controls.Add(this.cmbUsuario);
             this.Controls.Add(this.label3);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "iniciarSesion";
@@ -218,8 +218,8 @@ namespace ptoVenta
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtRut1;
-        private System.Windows.Forms.ComboBox cmbAsignar;
+        private System.Windows.Forms.TextBox txtContraseña;
+        private System.Windows.Forms.ComboBox cmbUsuario;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Panel panel6;

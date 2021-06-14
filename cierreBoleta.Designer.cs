@@ -65,11 +65,11 @@ namespace ptoVenta
             this.txtEfectivo = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtTeléfono = new System.Windows.Forms.TextBox();
+            this.txtPrefijo = new System.Windows.Forms.TextBox();
+            this.txtMonto = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtFono = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
@@ -424,12 +424,12 @@ namespace ptoVenta
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.txtFono);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.txtMonto);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.txtTeléfono);
+            this.groupBox1.Controls.Add(this.txtPrefijo);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Location = new System.Drawing.Point(415, 505);
             this.groupBox1.Name = "groupBox1";
@@ -448,29 +448,29 @@ namespace ptoVenta
             this.label4.TabIndex = 140;
             this.label4.Text = "Delivery:";
             // 
-            // textBox1
+            // txtTeléfono
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(204, 17);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(163, 26);
-            this.textBox1.TabIndex = 141;
+            this.txtTeléfono.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTeléfono.Location = new System.Drawing.Point(204, 17);
+            this.txtTeléfono.Name = "txtTeléfono";
+            this.txtTeléfono.Size = new System.Drawing.Size(163, 26);
+            this.txtTeléfono.TabIndex = 141;
             // 
-            // textBox2
+            // txtPrefijo
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(109, 17);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(89, 26);
-            this.textBox2.TabIndex = 140;
+            this.txtPrefijo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrefijo.Location = new System.Drawing.Point(109, 17);
+            this.txtPrefijo.Name = "txtPrefijo";
+            this.txtPrefijo.Size = new System.Drawing.Size(89, 26);
+            this.txtPrefijo.TabIndex = 140;
             // 
-            // textBox3
+            // txtMonto
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(507, 19);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(89, 26);
-            this.textBox3.TabIndex = 142;
+            this.txtMonto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMonto.Location = new System.Drawing.Point(507, 19);
+            this.txtMonto.Name = "txtMonto";
+            this.txtMonto.Size = new System.Drawing.Size(89, 26);
+            this.txtMonto.TabIndex = 142;
             // 
             // label5
             // 
@@ -483,13 +483,13 @@ namespace ptoVenta
             this.label5.TabIndex = 143;
             this.label5.Text = "Monto: ";
             // 
-            // textBox4
+            // txtFono
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(177, 60);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(419, 26);
-            this.textBox4.TabIndex = 144;
+            this.txtFono.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFono.Location = new System.Drawing.Point(177, 60);
+            this.txtFono.Name = "txtFono";
+            this.txtFono.Size = new System.Drawing.Size(419, 26);
+            this.txtFono.TabIndex = 144;
             // 
             // label7
             // 
@@ -669,12 +669,12 @@ namespace ptoVenta
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtEfectivo;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtFono;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtMonto;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtTeléfono;
+        private System.Windows.Forms.TextBox txtPrefijo;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel4;
         private FontAwesome.Sharp.IconButton iconButton2;
