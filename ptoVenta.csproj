@@ -85,6 +85,7 @@
     <Compile Include="clases.Designer.cs">
       <DependentUpon>clases.cs</DependentUpon>
     </Compile>
+    <Compile Include="C_Procedimientos.cs" />
     <Compile Include="descripcionFarmacologica.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +122,7 @@
     <Compile Include="form1respaldovisual.Designer.cs">
       <DependentUpon>form1respaldovisual.cs</DependentUpon>
     </Compile>
+    <Compile Include="formatoNumerico.cs" />
     <Compile Include="formClass.cs">
       <SubType>Form</SubType>
     </Compile>
