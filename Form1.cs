@@ -144,7 +144,7 @@ namespace ptoVenta
 
         private void txtSubTotal_Leave(object sender, EventArgs e)
         {
-            this.Close();
+            
         }
 
         private void textIva_Leave(object sender, EventArgs e)
@@ -155,6 +155,12 @@ namespace ptoVenta
         private void txtTotal_Leave(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnCambiarFotodgv_Click(object sender, EventArgs e)
+        {
+            AgregarFoto abrirAgregarFoto = new AgregarFoto();
+            abrirAgregarFoto.Show();
         }
     }
 }

@@ -9,18 +9,6 @@ namespace ptoVenta
 {
     public class formatoNumerico
     {
-        public void FormatoMoneda(TextBox xTBox)
-        {
-            if (xTBox.Text == string.Empty)
-            {
-                return;
-            }
-            else
-            {
-                decimal Monto;
-                Monto = Convert.ToDecimal(xTBox.Text);
-                xTBox.Text = Monto.ToString("N2");
-            }
-        }
+        
     }
 }
