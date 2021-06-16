@@ -144,7 +144,7 @@ namespace ptoVenta
 
         private void txtSubTotal_Leave(object sender, EventArgs e)
         {
-            
+            this.Close();
         }
 
         private void textIva_Leave(object sender, EventArgs e)
