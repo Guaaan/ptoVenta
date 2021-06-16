@@ -20,6 +20,8 @@ namespace ptoVenta
         SqlCommand com;
         SqlDataReader dr;
 
+        public object Procedimientos { get; private set; }
+
         public Form1()
         {
             InitializeComponent();
@@ -139,8 +141,20 @@ namespace ptoVenta
         {
             this.Close();
         }
-           
 
-             
+        private void txtSubTotal_Leave(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void textIva_Leave(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTotal_Leave(object sender, EventArgs e)
+        {
+
+        }
     }
 }
