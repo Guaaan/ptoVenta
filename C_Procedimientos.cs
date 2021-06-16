@@ -11,9 +11,6 @@ namespace ptoVenta
     {
         C_Procedimientos Procedimientos = new C_Procedimientos();
 
-        public void FormatoMoneda(TextBox xTBox)
-        {
-            Procedimientos.FormatoMoneda(xTBox);
-        }
+        
     }
 }
