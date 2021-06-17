@@ -46,7 +46,10 @@ namespace ptoVenta
                 //no supe cómo manejar bien este error pero mientras investigo esto es lo que se me ocurre
                 throw;
             }
-            finally{ cn.Close(); }
+            finally
+            { 
+                cn.Close(); 
+            }
 
             return dt;
         }
