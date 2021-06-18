@@ -144,17 +144,69 @@ namespace ptoVenta
 
         private void txtSubTotal_Leave(object sender, EventArgs e)
         {
-            
+            // El control TextBox ha perdido el foco.
+            //
+            // Referenciamos el control TextBox que ha
+            // desencadenado el evento.
+            //
+            TextBox tb = (TextBox)sender;
+
+            // Primero verificamos si el valor se puede convertir a Decimal.
+            //
+            decimal numero = default(decimal);
+            bool bln = decimal.TryParse(tb.Text, out numero);
+
+            if ((!(bln)))
+            {
+                // No es un valor decimal válido; limpiamos el control.
+                tb.Clear();
+                return;
+            }
+
+            // En la propiedad Tag guardamos el valor con todos los decimales.
+            //
+            tb.Tag = numero;
+
+            // Y acto seguido formateamos el valor
+            // a monetario con dos decimales.
+            //
+            tb.Text = string.Format("{0:C2}", numero);
+
         }
 
         private void textIva_Leave(object sender, EventArgs e)
         {
+            TextBox tb = (TextBox)sender;
 
+            decimal numero = default(decimal);
+            bool bln = decimal.TryParse(tb.Text, out numero);
+
+            if ((!(bln)))
+            {                
+                tb.Clear();
+                return;
+            }
+
+            tb.Tag = numero;
+            tb.Text = string.Format("{0:C2}", numero);
         }
 
         private void txtTotal_Leave(object sender, EventArgs e)
         {
+            //Codigo necesario para el formato moneda
+            TextBox tb = (TextBox)sender;
 
+            decimal numero = default(decimal);
+            bool bln = decimal.TryParse(tb.Text, out numero);
+
+            if ((!(bln)))
+            {
+                tb.Clear();
+                return;
+            }
+
+            tb.Tag = numero;
+            tb.Text = string.Format("{0:C2}", numero);
         }
 
         private void btnCambiarFotodgv_Click(object sender, EventArgs e)
@@ -162,5 +214,7 @@ namespace ptoVenta
             AgregarFoto abrirAgregarFoto = new AgregarFoto();
             abrirAgregarFoto.Show();
         }
+
+        
     }
 }
