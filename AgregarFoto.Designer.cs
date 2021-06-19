@@ -29,30 +29,14 @@ namespace ptoVenta
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel14 = new System.Windows.Forms.Panel();
             this.btnExaminar = new FontAwesome.Sharp.IconButton();
             this.panel16 = new System.Windows.Forms.Panel();
             this.btnGuardar = new FontAwesome.Sharp.IconButton();
-            this.dgvFoto = new System.Windows.Forms.DataGridView();
-            this.REGISTRO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CODIGO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PRODUCTO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.STOCK = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CANTIDAD = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PRECIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.OFERTA = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TOTAL = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ptbImagen = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvFoto)).BeginInit();
+            this.dgvFoto = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.ptbImagen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFoto)).BeginInit();
             this.SuspendLayout();
             // 
             // panel14
@@ -123,142 +107,6 @@ namespace ptoVenta
             this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // dgvFoto
-            // 
-            this.dgvFoto.AllowUserToDeleteRows = false;
-            this.dgvFoto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvFoto.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dgvFoto.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dgvFoto.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvFoto.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvFoto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvFoto.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.REGISTRO,
-            this.CODIGO,
-            this.PRODUCTO,
-            this.STOCK,
-            this.CANTIDAD,
-            this.PRECIO,
-            this.OFERTA,
-            this.TOTAL});
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvFoto.DefaultCellStyle = dataGridViewCellStyle7;
-            this.dgvFoto.Location = new System.Drawing.Point(365, 16);
-            this.dgvFoto.Name = "dgvFoto";
-            this.dgvFoto.ReadOnly = true;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvFoto.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
-            this.dgvFoto.RowHeadersWidth = 20;
-            this.dgvFoto.RowTemplate.Height = 25;
-            this.dgvFoto.RowTemplate.ReadOnly = true;
-            this.dgvFoto.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvFoto.Size = new System.Drawing.Size(494, 421);
-            this.dgvFoto.TabIndex = 95;
-            this.dgvFoto.TabStop = false;
-            // 
-            // REGISTRO
-            // 
-            this.REGISTRO.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.REGISTRO.HeaderText = "Linea";
-            this.REGISTRO.MinimumWidth = 6;
-            this.REGISTRO.Name = "REGISTRO";
-            this.REGISTRO.ReadOnly = true;
-            this.REGISTRO.Width = 50;
-            // 
-            // CODIGO
-            // 
-            this.CODIGO.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.CODIGO.HeaderText = "CODIGO";
-            this.CODIGO.MinimumWidth = 6;
-            this.CODIGO.Name = "CODIGO";
-            this.CODIGO.ReadOnly = true;
-            this.CODIGO.Width = 150;
-            // 
-            // PRODUCTO
-            // 
-            this.PRODUCTO.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.PRODUCTO.HeaderText = "PRODUCTO";
-            this.PRODUCTO.MinimumWidth = 6;
-            this.PRODUCTO.Name = "PRODUCTO";
-            this.PRODUCTO.ReadOnly = true;
-            this.PRODUCTO.Width = 510;
-            // 
-            // STOCK
-            // 
-            this.STOCK.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.STOCK.DefaultCellStyle = dataGridViewCellStyle2;
-            this.STOCK.HeaderText = "STOCK";
-            this.STOCK.MinimumWidth = 6;
-            this.STOCK.Name = "STOCK";
-            this.STOCK.ReadOnly = true;
-            this.STOCK.Width = 125;
-            // 
-            // CANTIDAD
-            // 
-            this.CANTIDAD.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CANTIDAD.DefaultCellStyle = dataGridViewCellStyle3;
-            this.CANTIDAD.HeaderText = "CANTIDAD";
-            this.CANTIDAD.MinimumWidth = 6;
-            this.CANTIDAD.Name = "CANTIDAD";
-            this.CANTIDAD.ReadOnly = true;
-            this.CANTIDAD.Width = 125;
-            // 
-            // PRECIO
-            // 
-            this.PRECIO.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.PRECIO.DefaultCellStyle = dataGridViewCellStyle4;
-            this.PRECIO.HeaderText = "PRECIO";
-            this.PRECIO.MinimumWidth = 6;
-            this.PRECIO.Name = "PRECIO";
-            this.PRECIO.ReadOnly = true;
-            this.PRECIO.Width = 120;
-            // 
-            // OFERTA
-            // 
-            this.OFERTA.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.OFERTA.DefaultCellStyle = dataGridViewCellStyle5;
-            this.OFERTA.HeaderText = "OFERTA";
-            this.OFERTA.MinimumWidth = 6;
-            this.OFERTA.Name = "OFERTA";
-            this.OFERTA.ReadOnly = true;
-            this.OFERTA.Width = 120;
-            // 
-            // TOTAL
-            // 
-            this.TOTAL.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.TOTAL.DefaultCellStyle = dataGridViewCellStyle6;
-            this.TOTAL.HeaderText = "TOTAL";
-            this.TOTAL.MinimumWidth = 6;
-            this.TOTAL.Name = "TOTAL";
-            this.TOTAL.ReadOnly = true;
-            this.TOTAL.Width = 150;
-            // 
             // ptbImagen
             // 
             this.ptbImagen.Location = new System.Drawing.Point(12, 16);
@@ -267,22 +115,33 @@ namespace ptoVenta
             this.ptbImagen.TabIndex = 96;
             this.ptbImagen.TabStop = false;
             // 
+            // dgvFoto
+            // 
+            this.dgvFoto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvFoto.Location = new System.Drawing.Point(381, 16);
+            this.dgvFoto.Name = "dgvFoto";
+            this.dgvFoto.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.dgvFoto.RowHeadersWidth = 51;
+            this.dgvFoto.RowTemplate.Height = 24;
+            this.dgvFoto.Size = new System.Drawing.Size(478, 283);
+            this.dgvFoto.TabIndex = 97;
+            // 
             // AgregarFoto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(871, 553);
-            this.Controls.Add(this.ptbImagen);
             this.Controls.Add(this.dgvFoto);
+            this.Controls.Add(this.ptbImagen);
             this.Controls.Add(this.panel16);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.panel14);
             this.Controls.Add(this.btnExaminar);
             this.Name = "AgregarFoto";
             this.Text = "AgregarFoto";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvFoto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbImagen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFoto)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -293,15 +152,7 @@ namespace ptoVenta
         private FontAwesome.Sharp.IconButton btnExaminar;
         private System.Windows.Forms.Panel panel16;
         private FontAwesome.Sharp.IconButton btnGuardar;
-        private System.Windows.Forms.DataGridView dgvFoto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn REGISTRO;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PRODUCTO;
-        private System.Windows.Forms.DataGridViewTextBoxColumn STOCK;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CANTIDAD;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PRECIO;
-        private System.Windows.Forms.DataGridViewTextBoxColumn OFERTA;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TOTAL;
         private System.Windows.Forms.PictureBox ptbImagen;
+        private System.Windows.Forms.DataGridView dgvFoto;
     }
 }
