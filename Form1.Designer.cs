@@ -391,7 +391,7 @@ namespace ptoVenta
             this.btnTicketsEmitidos.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnTicketsEmitidos.IconSize = 50;
             this.btnTicketsEmitidos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTicketsEmitidos.Location = new System.Drawing.Point(644, 55);
+            this.btnTicketsEmitidos.Location = new System.Drawing.Point(630, 57);
             this.btnTicketsEmitidos.Name = "btnTicketsEmitidos";
             this.btnTicketsEmitidos.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnTicketsEmitidos.Size = new System.Drawing.Size(136, 65);
@@ -456,7 +456,7 @@ namespace ptoVenta
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.panel1.ForeColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(644, 113);
+            this.panel1.Location = new System.Drawing.Point(630, 115);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(136, 9);
             this.panel1.TabIndex = 73;
