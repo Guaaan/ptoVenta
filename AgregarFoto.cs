@@ -19,12 +19,8 @@ namespace ptoVenta
         }
         private void AgregarFoto_Load(object sender, EventArgs e)
         {
-            dgvFoto.DataSource = ClsConexiones.EjecutarQuery("select * from usuario", ptbImagen.Image);
-            int cont = dgvFoto.RowCount;
-            for (int i = 0; i < cont; i++)
-            {
-                dgvFoto.Rows[i].Height = 120;
-            }
+            object imagen = @"C:\Users\Usuario\Desktop\farmacia_geminis\Imagenes\logos\recortado.png";
+            dgvFoto.Rows.Add(imagen);
         }
         public void btnGuardar_Click(object sender, EventArgs e)
         {
@@ -52,10 +48,33 @@ namespace ptoVenta
             {
                 return;
             }
-            
+
             ptbImagen.Image = Image.FromFile(examinar.FileName);
         }
 
-        
+
+        private void dgvFoto_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            switch (this.dgvFoto.Columns[e.ColumnIndex].Name)
+            {
+                case "CImagen":
+                    if (e.Value != null)
+                    {
+                        try
+                        {
+                            e.Value = Image.FromFile(e.Value.ToString());
+                        }
+                        catch (System.IO.FileNotFoundException exc)
+                        {
+
+                            e.Value = null;
+                        }
+                    }
+                    break;
+            }
+            }
+
+
+        }
     }
-}
+
