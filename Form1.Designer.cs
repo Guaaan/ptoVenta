@@ -745,7 +745,7 @@ namespace ptoVenta
             this.txtSubTotal.TabStop = false;
             this.txtSubTotal.Text = "0";
             this.txtSubTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtSubTotal.Leave += new System.EventHandler(this.txtSubTotal_Leave);
+            this.txtSubTotal.Validated += new System.EventHandler(this.txtSubTotal_Validated);
             // 
             // panel7
             // 
