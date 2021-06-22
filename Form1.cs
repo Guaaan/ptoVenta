@@ -185,6 +185,8 @@ namespace ptoVenta
 
         private void txtSubTotal_Validated(object sender, EventArgs e)
         {
+            TextBox tb = (TextBox)sender;
+
             decimal numero = default(decimal);
             bool bln = decimal.TryParse(tb.Text, out numero);
 
