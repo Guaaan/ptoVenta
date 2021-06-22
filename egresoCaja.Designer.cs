@@ -39,18 +39,8 @@ namespace ptoVenta
             this.label20 = new System.Windows.Forms.Label();
             this.txtNFactura = new System.Windows.Forms.TextBox();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.txtChequeClave = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.txtTransferencia = new System.Windows.Forms.TextBox();
-            this.txtDepositoBanco = new System.Windows.Forms.TextBox();
-            this.txtDepositoNumero = new System.Windows.Forms.TextBox();
-            this.txtCreditoBanco = new System.Windows.Forms.TextBox();
-            this.txtCreditoNumero = new System.Windows.Forms.TextBox();
-            this.txtChequeBanco = new System.Windows.Forms.TextBox();
-            this.txtChequeNumero = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.txtCredito = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
@@ -102,7 +92,7 @@ namespace ptoVenta
             this.btnAceptarIngreso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAceptarIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAceptarIngreso.ForeColor = System.Drawing.Color.White;
-            this.btnAceptarIngreso.Location = new System.Drawing.Point(465, 781);
+            this.btnAceptarIngreso.Location = new System.Drawing.Point(465, 693);
             this.btnAceptarIngreso.Margin = new System.Windows.Forms.Padding(4);
             this.btnAceptarIngreso.Name = "btnAceptarIngreso";
             this.btnAceptarIngreso.Size = new System.Drawing.Size(147, 57);
@@ -113,18 +103,8 @@ namespace ptoVenta
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.groupBox4);
-            this.groupBox3.Controls.Add(this.label19);
-            this.groupBox3.Controls.Add(this.label18);
-            this.groupBox3.Controls.Add(this.label17);
-            this.groupBox3.Controls.Add(this.txtChequeClave);
             this.groupBox3.Controls.Add(this.label16);
             this.groupBox3.Controls.Add(this.txtTransferencia);
-            this.groupBox3.Controls.Add(this.txtDepositoBanco);
-            this.groupBox3.Controls.Add(this.txtDepositoNumero);
-            this.groupBox3.Controls.Add(this.txtCreditoBanco);
-            this.groupBox3.Controls.Add(this.txtCreditoNumero);
-            this.groupBox3.Controls.Add(this.txtChequeBanco);
-            this.groupBox3.Controls.Add(this.txtChequeNumero);
             this.groupBox3.Controls.Add(this.label15);
             this.groupBox3.Controls.Add(this.txtCredito);
             this.groupBox3.Controls.Add(this.label13);
@@ -150,7 +130,7 @@ namespace ptoVenta
             this.groupBox3.Controls.Add(this.txtConcepto2);
             this.groupBox3.Location = new System.Drawing.Point(25, 199);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1130, 575);
+            this.groupBox3.Size = new System.Drawing.Size(1130, 488);
             this.groupBox3.TabIndex = 32;
             this.groupBox3.TabStop = false;
             // 
@@ -222,49 +202,11 @@ namespace ptoVenta
             this.dateTimePicker2.Size = new System.Drawing.Size(328, 26);
             this.dateTimePicker2.TabIndex = 59;
             // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(713, 353);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(91, 29);
-            this.label19.TabIndex = 57;
-            this.label19.Text = "Clave:";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(544, 353);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(117, 29);
-            this.label18.TabIndex = 56;
-            this.label18.Text = "Número:";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(375, 353);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(98, 29);
-            this.label17.TabIndex = 55;
-            this.label17.Text = "Banco:";
-            // 
-            // txtChequeClave
-            // 
-            this.txtChequeClave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtChequeClave.Location = new System.Drawing.Point(718, 385);
-            this.txtChequeClave.Name = "txtChequeClave";
-            this.txtChequeClave.Size = new System.Drawing.Size(163, 26);
-            this.txtChequeClave.TabIndex = 54;
-            // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(6, 524);
+            this.label16.Location = new System.Drawing.Point(663, 438);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(188, 29);
             this.label16.TabIndex = 51;
@@ -273,64 +215,16 @@ namespace ptoVenta
             // txtTransferencia
             // 
             this.txtTransferencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTransferencia.Location = new System.Drawing.Point(211, 529);
+            this.txtTransferencia.Location = new System.Drawing.Point(868, 443);
             this.txtTransferencia.Name = "txtTransferencia";
             this.txtTransferencia.Size = new System.Drawing.Size(163, 26);
             this.txtTransferencia.TabIndex = 50;
-            // 
-            // txtDepositoBanco
-            // 
-            this.txtDepositoBanco.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDepositoBanco.Location = new System.Drawing.Point(380, 448);
-            this.txtDepositoBanco.Name = "txtDepositoBanco";
-            this.txtDepositoBanco.Size = new System.Drawing.Size(163, 26);
-            this.txtDepositoBanco.TabIndex = 49;
-            // 
-            // txtDepositoNumero
-            // 
-            this.txtDepositoNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDepositoNumero.Location = new System.Drawing.Point(549, 448);
-            this.txtDepositoNumero.Name = "txtDepositoNumero";
-            this.txtDepositoNumero.Size = new System.Drawing.Size(163, 26);
-            this.txtDepositoNumero.TabIndex = 48;
-            // 
-            // txtCreditoBanco
-            // 
-            this.txtCreditoBanco.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCreditoBanco.Location = new System.Drawing.Point(380, 488);
-            this.txtCreditoBanco.Name = "txtCreditoBanco";
-            this.txtCreditoBanco.Size = new System.Drawing.Size(163, 26);
-            this.txtCreditoBanco.TabIndex = 47;
-            // 
-            // txtCreditoNumero
-            // 
-            this.txtCreditoNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCreditoNumero.Location = new System.Drawing.Point(549, 488);
-            this.txtCreditoNumero.Name = "txtCreditoNumero";
-            this.txtCreditoNumero.Size = new System.Drawing.Size(163, 26);
-            this.txtCreditoNumero.TabIndex = 46;
-            // 
-            // txtChequeBanco
-            // 
-            this.txtChequeBanco.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtChequeBanco.Location = new System.Drawing.Point(380, 385);
-            this.txtChequeBanco.Name = "txtChequeBanco";
-            this.txtChequeBanco.Size = new System.Drawing.Size(163, 26);
-            this.txtChequeBanco.TabIndex = 45;
-            // 
-            // txtChequeNumero
-            // 
-            this.txtChequeNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtChequeNumero.Location = new System.Drawing.Point(549, 385);
-            this.txtChequeNumero.Name = "txtChequeNumero";
-            this.txtChequeNumero.Size = new System.Drawing.Size(163, 26);
-            this.txtChequeNumero.TabIndex = 44;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(6, 483);
+            this.label15.Location = new System.Drawing.Point(663, 397);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(109, 29);
             this.label15.TabIndex = 43;
@@ -339,7 +233,7 @@ namespace ptoVenta
             // txtCredito
             // 
             this.txtCredito.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCredito.Location = new System.Drawing.Point(211, 488);
+            this.txtCredito.Location = new System.Drawing.Point(868, 402);
             this.txtCredito.Name = "txtCredito";
             this.txtCredito.Size = new System.Drawing.Size(163, 26);
             this.txtCredito.TabIndex = 42;
@@ -348,7 +242,7 @@ namespace ptoVenta
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(6, 416);
+            this.label13.Location = new System.Drawing.Point(663, 330);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(121, 58);
             this.label13.TabIndex = 41;
@@ -357,7 +251,7 @@ namespace ptoVenta
             // txtDeposito
             // 
             this.txtDeposito.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDeposito.Location = new System.Drawing.Point(211, 448);
+            this.txtDeposito.Location = new System.Drawing.Point(868, 362);
             this.txtDeposito.Name = "txtDeposito";
             this.txtDeposito.Size = new System.Drawing.Size(163, 26);
             this.txtDeposito.TabIndex = 40;
@@ -366,7 +260,7 @@ namespace ptoVenta
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(6, 380);
+            this.label14.Location = new System.Drawing.Point(663, 294);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(115, 29);
             this.label14.TabIndex = 39;
@@ -375,7 +269,7 @@ namespace ptoVenta
             // txtCheque
             // 
             this.txtCheque.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCheque.Location = new System.Drawing.Point(211, 385);
+            this.txtCheque.Location = new System.Drawing.Point(868, 299);
             this.txtCheque.Name = "txtCheque";
             this.txtCheque.Size = new System.Drawing.Size(163, 26);
             this.txtCheque.TabIndex = 38;
@@ -384,7 +278,7 @@ namespace ptoVenta
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(6, 338);
+            this.label11.Location = new System.Drawing.Point(663, 252);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(120, 29);
             this.label11.TabIndex = 37;
@@ -393,7 +287,7 @@ namespace ptoVenta
             // txtEfectivo
             // 
             this.txtEfectivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEfectivo.Location = new System.Drawing.Point(211, 343);
+            this.txtEfectivo.Location = new System.Drawing.Point(868, 257);
             this.txtEfectivo.Name = "txtEfectivo";
             this.txtEfectivo.Size = new System.Drawing.Size(163, 26);
             this.txtEfectivo.TabIndex = 36;
@@ -402,7 +296,7 @@ namespace ptoVenta
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(6, 296);
+            this.label12.Location = new System.Drawing.Point(663, 210);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(82, 29);
             this.label12.TabIndex = 35;
@@ -411,7 +305,7 @@ namespace ptoVenta
             // txtTotal1
             // 
             this.txtTotal1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotal1.Location = new System.Drawing.Point(211, 301);
+            this.txtTotal1.Location = new System.Drawing.Point(868, 215);
             this.txtTotal1.Name = "txtTotal1";
             this.txtTotal1.Size = new System.Drawing.Size(163, 26);
             this.txtTotal1.TabIndex = 34;
@@ -625,7 +519,7 @@ namespace ptoVenta
             // 
             this.panel16.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
-            this.panel16.Location = new System.Drawing.Point(465, 835);
+            this.panel16.Location = new System.Drawing.Point(465, 747);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(147, 13);
             this.panel16.TabIndex = 78;
@@ -634,7 +528,7 @@ namespace ptoVenta
             // 
             this.panel12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.panel12.Location = new System.Drawing.Point(999, 838);
+            this.panel12.Location = new System.Drawing.Point(999, 750);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(156, 10);
             this.panel12.TabIndex = 73;
@@ -653,7 +547,7 @@ namespace ptoVenta
             this.btnSalir.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSalir.IconSize = 50;
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSalir.Location = new System.Drawing.Point(999, 781);
+            this.btnSalir.Location = new System.Drawing.Point(999, 693);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(156, 57);
             this.btnSalir.TabIndex = 72;
@@ -665,6 +559,7 @@ namespace ptoVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1183, 883);
             this.Controls.Add(this.panel12);
             this.Controls.Add(this.btnSalir);
@@ -693,18 +588,8 @@ namespace ptoVenta
         #endregion
         private System.Windows.Forms.Button btnAceptarIngreso;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox txtChequeClave;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox txtTransferencia;
-        private System.Windows.Forms.TextBox txtDepositoBanco;
-        private System.Windows.Forms.TextBox txtDepositoNumero;
-        private System.Windows.Forms.TextBox txtCreditoBanco;
-        private System.Windows.Forms.TextBox txtCreditoNumero;
-        private System.Windows.Forms.TextBox txtChequeBanco;
-        private System.Windows.Forms.TextBox txtChequeNumero;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox txtCredito;
         private System.Windows.Forms.Label label13;
