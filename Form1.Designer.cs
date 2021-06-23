@@ -30,14 +30,14 @@ namespace ptoVenta
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.dgvLista = new System.Windows.Forms.DataGridView();
             this.REGISTRO = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -76,7 +76,10 @@ namespace ptoVenta
             this.panel4 = new System.Windows.Forms.Panel();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.mtxTotal = new System.Windows.Forms.MaskedTextBox();
+            this.mtxIva = new System.Windows.Forms.MaskedTextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.mtxSubTotal = new System.Windows.Forms.MaskedTextBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.txtIva = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -120,14 +123,14 @@ namespace ptoVenta
             this.dgvLista.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvLista.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvLista.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvLista.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle41.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle41.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle41.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle41.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle41.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvLista.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle41;
             this.dgvLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLista.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.REGISTRO,
@@ -138,26 +141,26 @@ namespace ptoVenta
             this.PRECIO,
             this.OFERTA,
             this.TOTAL});
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvLista.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle47.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle47.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle47.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle47.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle47.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle47.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvLista.DefaultCellStyle = dataGridViewCellStyle47;
             this.dgvLista.Location = new System.Drawing.Point(11, 269);
             this.dgvLista.Name = "dgvLista";
             this.dgvLista.ReadOnly = true;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvLista.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle48.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle48.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle48.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle48.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle48.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            dataGridViewCellStyle48.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle48.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle48.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvLista.RowHeadersDefaultCellStyle = dataGridViewCellStyle48;
             this.dgvLista.RowHeadersWidth = 20;
             this.dgvLista.RowTemplate.Height = 25;
             this.dgvLista.RowTemplate.ReadOnly = true;
@@ -196,8 +199,8 @@ namespace ptoVenta
             // STOCK
             // 
             this.STOCK.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.STOCK.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.STOCK.DefaultCellStyle = dataGridViewCellStyle42;
             this.STOCK.HeaderText = "STOCK";
             this.STOCK.MinimumWidth = 6;
             this.STOCK.Name = "STOCK";
@@ -207,8 +210,8 @@ namespace ptoVenta
             // CANTIDAD
             // 
             this.CANTIDAD.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CANTIDAD.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle43.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CANTIDAD.DefaultCellStyle = dataGridViewCellStyle43;
             this.CANTIDAD.HeaderText = "CANTIDAD";
             this.CANTIDAD.MinimumWidth = 6;
             this.CANTIDAD.Name = "CANTIDAD";
@@ -218,8 +221,8 @@ namespace ptoVenta
             // PRECIO
             // 
             this.PRECIO.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.PRECIO.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.PRECIO.DefaultCellStyle = dataGridViewCellStyle44;
             this.PRECIO.HeaderText = "PRECIO";
             this.PRECIO.MinimumWidth = 6;
             this.PRECIO.Name = "PRECIO";
@@ -229,8 +232,8 @@ namespace ptoVenta
             // OFERTA
             // 
             this.OFERTA.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.OFERTA.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.OFERTA.DefaultCellStyle = dataGridViewCellStyle45;
             this.OFERTA.HeaderText = "OFERTA";
             this.OFERTA.MinimumWidth = 6;
             this.OFERTA.Name = "OFERTA";
@@ -240,8 +243,8 @@ namespace ptoVenta
             // TOTAL
             // 
             this.TOTAL.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.TOTAL.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle46.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.TOTAL.DefaultCellStyle = dataGridViewCellStyle46;
             this.TOTAL.HeaderText = "TOTAL";
             this.TOTAL.MinimumWidth = 6;
             this.TOTAL.Name = "TOTAL";
@@ -391,7 +394,7 @@ namespace ptoVenta
             this.btnTicketsEmitidos.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnTicketsEmitidos.IconSize = 50;
             this.btnTicketsEmitidos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTicketsEmitidos.Location = new System.Drawing.Point(630, 57);
+            this.btnTicketsEmitidos.Location = new System.Drawing.Point(630, 53);
             this.btnTicketsEmitidos.Name = "btnTicketsEmitidos";
             this.btnTicketsEmitidos.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnTicketsEmitidos.Size = new System.Drawing.Size(136, 65);
@@ -644,18 +647,44 @@ namespace ptoVenta
             // 
             this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.panel5.Controls.Add(this.mtxTotal);
+            this.panel5.Controls.Add(this.mtxIva);
             this.panel5.Controls.Add(this.label6);
+            this.panel5.Controls.Add(this.mtxSubTotal);
             this.panel5.Controls.Add(this.panel8);
             this.panel5.Controls.Add(this.txtIva);
             this.panel5.Controls.Add(this.label4);
-            this.panel5.Controls.Add(this.textIva);
-            this.panel5.Controls.Add(this.txtTotal);
-            this.panel5.Controls.Add(this.txtSubTotal);
             this.panel5.ForeColor = System.Drawing.Color.White;
             this.panel5.Location = new System.Drawing.Point(970, 126);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(370, 129);
             this.panel5.TabIndex = 85;
+            // 
+            // mtxTotal
+            // 
+            this.mtxTotal.BackColor = System.Drawing.Color.White;
+            this.mtxTotal.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.mtxTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mtxTotal.ForeColor = System.Drawing.Color.MediumOrchid;
+            this.mtxTotal.Location = new System.Drawing.Point(214, 80);
+            this.mtxTotal.Name = "mtxTotal";
+            this.mtxTotal.Size = new System.Drawing.Size(151, 39);
+            this.mtxTotal.TabIndex = 95;
+            this.mtxTotal.Text = "0";
+            this.mtxTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // mtxIva
+            // 
+            this.mtxIva.BackColor = System.Drawing.Color.White;
+            this.mtxIva.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.mtxIva.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mtxIva.ForeColor = System.Drawing.Color.MediumOrchid;
+            this.mtxIva.Location = new System.Drawing.Point(214, 41);
+            this.mtxIva.Name = "mtxIva";
+            this.mtxIva.Size = new System.Drawing.Size(151, 39);
+            this.mtxIva.TabIndex = 94;
+            this.mtxIva.Text = "0";
+            this.mtxIva.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label6
             // 
@@ -668,6 +697,18 @@ namespace ptoVenta
             this.label6.Size = new System.Drawing.Size(95, 45);
             this.label6.TabIndex = 43;
             this.label6.Text = "Total";
+            // 
+            // mtxSubTotal
+            // 
+            this.mtxSubTotal.BackColor = System.Drawing.Color.White;
+            this.mtxSubTotal.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.mtxSubTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mtxSubTotal.ForeColor = System.Drawing.Color.MediumOrchid;
+            this.mtxSubTotal.Location = new System.Drawing.Point(214, 3);
+            this.mtxSubTotal.Name = "mtxSubTotal";
+            this.mtxSubTotal.Size = new System.Drawing.Size(151, 39);
+            this.mtxSubTotal.TabIndex = 93;
+            this.mtxSubTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // panel8
             // 
@@ -708,14 +749,13 @@ namespace ptoVenta
             this.textIva.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textIva.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textIva.ForeColor = System.Drawing.Color.MediumOrchid;
-            this.textIva.Location = new System.Drawing.Point(185, 49);
+            this.textIva.Location = new System.Drawing.Point(463, 97);
             this.textIva.Name = "textIva";
             this.textIva.Size = new System.Drawing.Size(151, 39);
             this.textIva.TabIndex = 41;
             this.textIva.TabStop = false;
             this.textIva.Text = "0";
             this.textIva.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textIva.Leave += new System.EventHandler(this.textIva_Leave);
             // 
             // txtTotal
             // 
@@ -723,14 +763,13 @@ namespace ptoVenta
             this.txtTotal.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTotal.ForeColor = System.Drawing.Color.MediumOrchid;
-            this.txtTotal.Location = new System.Drawing.Point(185, 88);
+            this.txtTotal.Location = new System.Drawing.Point(463, 136);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.Size = new System.Drawing.Size(151, 39);
             this.txtTotal.TabIndex = 40;
             this.txtTotal.TabStop = false;
             this.txtTotal.Text = "0";
             this.txtTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtTotal.Leave += new System.EventHandler(this.txtTotal_Leave);
             // 
             // txtSubTotal
             // 
@@ -738,14 +777,13 @@ namespace ptoVenta
             this.txtSubTotal.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSubTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSubTotal.ForeColor = System.Drawing.Color.MediumOrchid;
-            this.txtSubTotal.Location = new System.Drawing.Point(185, 11);
+            this.txtSubTotal.Location = new System.Drawing.Point(463, 59);
             this.txtSubTotal.Name = "txtSubTotal";
             this.txtSubTotal.Size = new System.Drawing.Size(151, 39);
             this.txtSubTotal.TabIndex = 39;
             this.txtSubTotal.TabStop = false;
             this.txtSubTotal.Text = "0";
             this.txtSubTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtSubTotal.Validated += new System.EventHandler(this.txtSubTotal_Validated);
             // 
             // panel7
             // 
@@ -1046,7 +1084,10 @@ namespace ptoVenta
             this.CausesValidation = false;
             this.ClientSize = new System.Drawing.Size(1352, 749);
             this.Controls.Add(this.btnCambiarFotodgv);
+            this.Controls.Add(this.textIva);
             this.Controls.Add(this.panel10);
+            this.Controls.Add(this.txtTotal);
+            this.Controls.Add(this.txtSubTotal);
             this.Controls.Add(this.panel16);
             this.Controls.Add(this.iconButton5);
             this.Controls.Add(this.panel14);
@@ -1161,6 +1202,9 @@ namespace ptoVenta
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel10;
         private FontAwesome.Sharp.IconButton btnCambiarFotodgv;
+        private System.Windows.Forms.MaskedTextBox mtxTotal;
+        private System.Windows.Forms.MaskedTextBox mtxIva;
+        private System.Windows.Forms.MaskedTextBox mtxSubTotal;
     }
 }
 
