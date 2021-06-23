@@ -32,8 +32,16 @@ namespace ptoVenta
             alternarColorData(dgvLista);
             //cargardatagridview();
             cargarconexion();
+            //mtxSubTotal.Show(String.Format("{}"))
         }
 
+       
+
+                  
+        public void formatoMoneda()
+        {
+            
+        }
         public void cargarconexion()
         {
             cn = new SqlConnection("Data Source = SERVER-GEMINIS1\\GEMINIS; initial Catalog = SAES_ADMINISTRATIVOFD; user id = sa; password = FG12345");
@@ -142,40 +150,7 @@ namespace ptoVenta
             this.Close();
         }
                 
-        private void textIva_Leave(object sender, EventArgs e)
-        {
-            TextBox tb = (TextBox)sender;
-
-            decimal numero = default(decimal);
-            bool bln = decimal.TryParse(tb.Text, out numero);
-
-            if ((!(bln)))
-            {                
-                tb.Clear();
-                return;
-            }
-
-            tb.Tag = numero;
-            tb.Text = string.Format("{0:C2}", numero);
-        }
-
-        private void txtTotal_Leave(object sender, EventArgs e)
-        {
-            //Codigo necesario para el formato moneda
-            TextBox tb = (TextBox)sender;
-
-            decimal numero = default(decimal);
-            bool bln = decimal.TryParse(tb.Text, out numero);
-
-            if ((!(bln)))
-            {
-                tb.Clear();
-                return;
-            }
-
-            tb.Tag = numero;
-            tb.Text = string.Format("{0:C2}", numero);
-        }
+        
 
         private void btnCambiarFotodgv_Click(object sender, EventArgs e)
         {
@@ -185,19 +160,9 @@ namespace ptoVenta
 
         private void txtSubTotal_Validated(object sender, EventArgs e)
         {
-            TextBox tb = (TextBox)sender;
 
-            decimal numero = default(decimal);
-            bool bln = decimal.TryParse(tb.Text, out numero);
-
-            if ((!(bln)))
-            {
-                tb.Clear();
-                return;
-            }
-
-            tb.Tag = numero;
-            tb.Text = string.Format("{0:C2}", numero);
         }
+
+        
     }
 }
