@@ -270,15 +270,25 @@ namespace ptoVenta
             // 
             // label1
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(1265, 406);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 20);
-            this.label1.TabIndex = 21;
-            this.label1.Text = "Precio:";
+            this.btnAperturaCaja.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAperturaCaja.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
+            this.btnAperturaCaja.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(145)))), ((int)(((byte)(189)))));
+            this.btnAperturaCaja.FlatAppearance.BorderSize = 3;
+            this.btnAperturaCaja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAperturaCaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAperturaCaja.ForeColor = System.Drawing.Color.White;
+            this.btnAperturaCaja.IconChar = FontAwesome.Sharp.IconChar.CashRegister;
+            this.btnAperturaCaja.IconColor = System.Drawing.Color.White;
+            this.btnAperturaCaja.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnAperturaCaja.IconSize = 50;
+            this.btnAperturaCaja.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAperturaCaja.Location = new System.Drawing.Point(784, 759);
+            this.btnAperturaCaja.Name = "btnAperturaCaja";
+            this.btnAperturaCaja.Size = new System.Drawing.Size(237, 56);
+            this.btnAperturaCaja.TabIndex = 63;
+            this.btnAperturaCaja.Text = "Apertura de Caja";
+            this.btnAperturaCaja.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAperturaCaja.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
@@ -737,6 +747,29 @@ namespace ptoVenta
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.btnBuscar.Size = new System.Drawing.Size(114, 46);
+            this.btnBuscar.TabIndex = 79;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnBuscar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.ForeColor = System.Drawing.Color.Purple;
+            this.btnBuscar.IconChar = FontAwesome.Sharp.IconChar.Search;
+            this.btnBuscar.IconColor = System.Drawing.Color.Purple;
+            this.btnBuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnBuscar.IconSize = 40;
+            this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscar.Location = new System.Drawing.Point(9, 7);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.btnBuscar.Size = new System.Drawing.Size(114, 39);
             this.btnBuscar.TabIndex = 79;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;

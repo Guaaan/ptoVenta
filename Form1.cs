@@ -187,6 +187,22 @@ namespace ptoVenta
             }
 
         }
+        private void btnExistenciaenLocales_Click_1(object sender, EventArgs e)
+        {
+            existenciaLocales abrirExistencia = new existenciaLocales();
+            abrirExistencia.Show();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            formClass abrirFormClass = new formClass();
+            abrirFormClass.Show();
+        }
 
         public void Cargarproducto()
         {
