@@ -49,7 +49,9 @@ namespace ptoVenta
             dgvGrid1.Visible = false;
             int anc = dgvGrid1.Width;
             int ancp = 0;
-            for( int a = 0; a < 9; a++)
+
+            for (int a = 0; a < 9; a++)
+
             {
                 ancp = ancp + dgvGrid1.Columns[a].Width;
             }
@@ -73,6 +75,7 @@ namespace ptoVenta
 
         public void Cargarconexion()
         {
+
 
             string[] lines = System.IO.File.ReadAllLines(@"configsql.ini");
             foreach (string line in lines)
@@ -110,53 +113,202 @@ namespace ptoVenta
             Dr = com.ExecuteReader();
             while (Dr.Read())
             {
-                label13.Text= Convert.ToString(Dr["NOMBRE"]).Trim();
+                label13.Text = Convert.ToString(Dr["NOMBRE"]).Trim();
                 label13.Text = Convert.ToString(Dr["NOMBRE"]).Trim();
             }
             Dr.Close();
         }
 
         private void txtProducto_TextChanged(object sender, EventArgs e)
+
         {
-            //declaramos la cadena  de conexion
-            string cadenaconexion = @"Data Source = 10.147.18.245\GEMINIS; initial Catalog = SAES_ADMINISTRATIVOFD; user id = sa; password = 12345";
-            //variable de tipo Sqlconnection
-            SqlConnection con = new SqlConnection();
-            //variable de tipo Sqlcommand
-            SqlCommand comando = new SqlCommand();
-            //variable SqlDataReader para leer los datos
-            SqlDataReader dr;
-            con.ConnectionString = cadenaconexion;
-            comando.Connection = con;
-            //declaramos el comando para realizar la busqueda
-            comando.CommandText = "SELECT top 50 * FROM inventario";
-            //especificamos que es de tipo Text
-            comando.CommandType = CommandType.Text;
-            //se abre la conexion
-            con.Open();
-            //limpiamos los renglones de la datagridview
-            dgvLista.Rows.Clear();
-            //a la variable DataReader asignamos  el la variable de tipo SqlCommand
-            dr = comando.ExecuteReader();
-            //el ciclo while se ejecutará mientras lea registros en la tabla
-            while (dr.Read())
+            string mante;
+            mante = "";
+            empresalic = "FARMACIAS GEMINIS SPA";
+            textBox1.Text = empresalic;
+            com = new SqlCommand("SELECT * FROM EMPRESA", cn);
+            com.ExecuteNonQuery();
+            Dr = com.ExecuteReader();
+            while (Dr.Read())
             {
-                //variable de tipo entero para ir enumerando los la filas del datagridview
-                int renglon = dgvLista.Rows.Add();
-                // especificamos en que fila se mostrará cada registro
-                // nombredeldatagrid.filas[numerodefila].celdas[nombredelacelda].valor=
-                // dr.tipodedatosalmacenado(dr.getordinal(nombredelcampo_en_la_base_de_datos)conviertelo_a_string_sino_es_del_tipo_string);
-                dgvLista.Rows[renglon].Cells["CODIGO"].Value = dr.GetString(dr.GetOrdinal("CODIGO"));
-                dgvLista.Rows[renglon].Cells["NOMBRE"].Value = dr.GetString(dr.GetOrdinal("NOMBRE"));
-                dgvLista.Rows[renglon].Cells["GRUPO"].Value = dr.GetString(dr.GetOrdinal("GRUPO"));
+
+                panel1.Visible = true;
+                dgvLista.Visible = true;
+
+                dgvLista.Rows.Clear();
+                string vari = txtProducto.Text.Trim();
+                com = new SqlCommand("SELECT I.CODIGO,I.NOMBRE,E.CANTIDAD STOCK,I.PRECIO1,I.PRECIO2,I.PRINCIPIO,I.FOTO FROM INVENTARIO I LEFT JOIN EXISTENCIA E ON E.CODIGO=I.CODIGO WHERE I.NOMBRE LIKE '" + vari + "%' ORDER BY I.NOMBRE", cn);
+                com.ExecuteNonQuery();
+                Dr = com.ExecuteReader();
+                while (Dr.Read())
+                {
+                    int renglon = dgvLista.Rows.Add();
+                    dgvLista.Rows[renglon].Cells["Linea"].Value = Convert.ToString(renglon + 1);
+                    string vfoto = (string)Convert.ToString(Dr["FOTO"]);
+                    if (vfoto.Trim() != "")
+                    {
+                        if (File.Exists(vfoto))
+                        {
+                            dgvLista.Rows[renglon].Cells["FOTO"].Value = Image.FromFile(vfoto);
+                        }
+                    }
+                    dgvLista.Rows[renglon].Cells["CODIGO"].Value = Dr["CODIGO"] == DBNull.Value ? " " : Convert.ToString(Dr["CODIGO"]);
+                    dgvLista.Rows[renglon].Cells["PRODUCTO"].Value = Dr["NOMBRE"] == DBNull.Value ? " " : Convert.ToString(Dr["NOMBRE"]);
+                    dgvLista.Rows[renglon].Cells["PRINCIPIO"].Value = Dr["PRINCIPIO"] == DBNull.Value ? " " : Convert.ToString(Dr["PRINCIPIO"]);
+                    dgvLista.Rows[renglon].Cells["STOCK"].Value = Dr["STOCK"] == DBNull.Value ? 0 : Convert.ToDouble(Dr["STOCK"]);
+                    dgvLista.Rows[renglon].Cells["PRECIO"].Value = Dr["PRECIO1"] == DBNull.Value ? 0 : Convert.ToDouble(Dr["PRECIO1"]);
+                    dgvLista.Rows[renglon].Cells["OFERTA"].Value = Dr["PRECIO2"] == DBNull.Value ? 0 : Convert.ToDouble(Dr["PRECIO2"]);
+                }
+                Dr.Close();
+
             }
-            //cierra la conexión
-            con.Close();
+            Dr.Close();
+
+            com = new SqlCommand("SELECT * FROM LOCALES WHERE SIGLAS= '" + mante + "' ", cn);
+            com.ExecuteNonQuery();
+            Dr = com.ExecuteReader();
+            while (Dr.Read())
+            {
+
+                panel1.Visible = false;
+                dgvLista.Visible = false;
+                txtProducto.Focus();
+
+            }
+            Dr.Close();
         }
+
+        private void txtProducto_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13 | e.KeyChar == 38)
+
+            {
+                if (txtProducto.Text.Trim() != string.Empty && txtProducto.Text.All(Char.IsLetter))
+                {
+                    //myGrid.CurrentCell = myGrid.Rows(1).Cells(1)
+                    dgvLista.Focus();
+                }
+                else
+                {
+                    vari = txtProducto.Text.Trim();
+                    Cargarproducto();
+                }
+            }
+        }
+
+        private void dgvLista_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                vari = Convert.ToString(dgvLista.Rows[dgvLista.CurrentRow.Index - 1].Cells[2].Value);
+                Cargarproducto();
+            }
+            if (e.KeyChar == 27)
+            {
+                Cargarproducto();
+            }
+
+        }
+
+        public void Cargarproducto()
+        {
+            //BUSCAR REGISTRO
+            int fila = 0;
+            int cant = 0;
+            int prec = 0;
+            int tot = 0;
+            int enc = 0;
+
+            foreach (DataGridViewRow row in dgvGrid1.Rows)
+            {
+                if (row.Cells["CODIGO1"].Value != null)
+                {
+                    row.Selected = false;
+                    fila += 1;
+                    string ss = row.Cells["CODIGO1"].Value.ToString();
+                    ss = ss.Trim();
+                    if (vari == ss)
+                    {
+                        enc = 1;
+                        row.Selected = true;
+                        totf -= Convert.ToInt32(row.Cells["TOTAL1"].Value.ToString());
+                        cant = row.Cells["CANTIDAD1"].Value.GetHashCode() + 1;
+                        prec = Convert.ToInt32(row.Cells["OFERTA1"].Value.ToString());
+                        if (prec == 0)
+                        {
+                            prec = Convert.ToInt32(row.Cells["PRECIO1"].Value.ToString());
+                        }
+                        tot = prec * cant;
+                        totf += tot;
+                        break;
+                    }
+                }
+            }
+            //
+            if (enc != 0)
+            {
+                dgvGrid1.Rows[fila - 1].Cells["CANTIDAD1"].Value = cant;
+                dgvGrid1.Rows[fila - 1].Cells["TOTAL1"].Value = tot;
+            }
+            else
+            {
+                com = new SqlCommand("SELECT I.CODIGO,I.NOMBRE,E.CANTIDAD STOCK,CONVERT(numeric(10,0),ROUND(I.PRECIO1*1.19,-1)) PRECIO1,CONVERT(numeric(10,0),ROUND(I.PRECIO2*1.19,-1)) PRECIO2,I.PRINCIPIO,I.FOTO FROM INVENTARIO I LEFT JOIN EXISTENCIA E ON E.CODIGO=I.CODIGO WHERE I.CODIGO = '" + vari + "' ", cn);
+                com.ExecuteNonQuery();
+                Dr = com.ExecuteReader();
+                int regs = 0;
+                while (Dr.Read())
+                {
+                    regs += 1;
+                    int renglon = dgvGrid1.Rows.Add();
+                    dgvGrid1.Rows[renglon].Cells["Linea1"].Value = Convert.ToString(renglon + 1);
+                    string vfoto = (string)Convert.ToString(Dr["FOTO"]);
+                    if (vfoto.Trim() != "")
+                    {
+                        if (File.Exists(vfoto))
+                        {
+                            dgvGrid1.Rows[renglon].Cells["FOTO1"].Value = Image.FromFile(vfoto);
+                        }
+                    }
+                    dgvGrid1.Rows[renglon].Cells["CODIGO1"].Value = Dr["CODIGO"] == DBNull.Value ? " " : Convert.ToString(Dr["CODIGO"]);
+                    dgvGrid1.Rows[renglon].Cells["PRODUCTO1"].Value = Dr["NOMBRE"] == DBNull.Value ? " " : Convert.ToString(Dr["NOMBRE"]);
+                    dgvGrid1.Rows[renglon].Cells["STOCK1"].Value = Dr["STOCK"] == DBNull.Value ? 0 : Convert.ToDouble(Dr["STOCK"]);
+                    dgvGrid1.Rows[renglon].Cells["CANTIDAD1"].Value = 1;
+                    dgvGrid1.Rows[renglon].Cells["PRECIO1"].Value = Dr["PRECIO1"] == DBNull.Value ? 0 : Convert.ToDouble(Dr["PRECIO1"]);
+                    dgvGrid1.Rows[renglon].Cells["OFERTA1"].Value = Dr["PRECIO2"] == DBNull.Value ? 0 : Convert.ToDouble(Dr["PRECIO2"]);
+                    dgvGrid1.Rows[renglon].Cells["TOTAL1"].Value = Dr["PRECIO1"] == DBNull.Value ? 0 : Convert.ToDouble(Dr["PRECIO1"]);
+                    prec = (int)Convert.ToDouble(Dr["PRECIO1"]);
+                    //MessageBox.Show(prec.ToString());
+                    totf = totf + (int)Convert.ToDouble(Dr["PRECIO1"]);
+                }
+                if (regs == 0)
+                {
+                    //System.Threading.Thread.Sleep(5000);
+                }
+                Dr.Close();
+            }
+            txtTotal.Text = Convert.ToString(totf);
+            txtSubTotal.Text = Convert.ToString(Math.Round(totf / 1.19));
+            txtIva.Text = Convert.ToString(totf - Math.Round(totf / 1.19));
+            txtProducto.Text = " ";
+        }
+
         public void alternarColorData(DataGridView dgv)
         {
-            dgv.RowsDefaultCellStyle.BackColor = Color.LightBlue;
-            dgv.AlternatingRowsDefaultCellStyle.BackColor = Color.White;
+
+
+            dgvLista.RowsDefaultCellStyle.BackColor = Color.MistyRose;
+            dgvLista.AlternatingRowsDefaultCellStyle.BackColor = Color.White;
+            dgvLista.EnableHeadersVisualStyles = false;
+            dgvLista.ColumnHeadersDefaultCellStyle.BackColor = Color.Firebrick;
+            dgvLista.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dgvGrid1.RowsDefaultCellStyle.BackColor = Color.Azure;
+            dgvGrid1.AlternatingRowsDefaultCellStyle.BackColor = Color.White;
+            dgvGrid1.EnableHeadersVisualStyles = false;
+            dgvGrid1.ColumnHeadersDefaultCellStyle.BackColor = Color.Teal;
+            dgvGrid1.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+
+
+
         }
 
         public void Cargarproducto()
@@ -220,7 +372,9 @@ namespace ptoVenta
             abririniciarSecion.ShowDialog();
             label14.Text = "Caja: " + iniciarSesion.ucaja.Trim() + " " + iniciarSesion.unombre.Trim();
             int position = eservidor.IndexOf(";");
-            label16.Text = eservidor.Substring(14, position-14);
+
+            label16.Text = eservidor.Substring(14, position - 14);
+
             txtProducto.ReadOnly = false;
         }
 
