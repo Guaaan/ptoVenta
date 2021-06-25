@@ -49,7 +49,9 @@ namespace ptoVenta
             dgvGrid1.Visible = false;
             int anc = dgvGrid1.Width;
             int ancp = 0;
+
             for (int a = 0; a < 9; a++)
+
             {
                 ancp = ancp + dgvGrid1.Columns[a].Width;
             }
@@ -73,6 +75,7 @@ namespace ptoVenta
 
         public void Cargarconexion()
         {
+
 
             string[] lines = System.IO.File.ReadAllLines(@"configsql.ini");
             foreach (string line in lines)
@@ -117,9 +120,18 @@ namespace ptoVenta
         }
 
         private void txtProducto_TextChanged(object sender, EventArgs e)
+
         {
-            if (txtProducto.Text.Trim() != string.Empty && txtProducto.Text.All(Char.IsLetter))
+            string mante;
+            mante = "";
+            empresalic = "FARMACIAS GEMINIS SPA";
+            textBox1.Text = empresalic;
+            com = new SqlCommand("SELECT * FROM EMPRESA", cn);
+            com.ExecuteNonQuery();
+            Dr = com.ExecuteReader();
+            while (Dr.Read())
             {
+
                 panel1.Visible = true;
                 dgvLista.Visible = true;
 
@@ -148,18 +160,28 @@ namespace ptoVenta
                     dgvLista.Rows[renglon].Cells["OFERTA"].Value = Dr["PRECIO2"] == DBNull.Value ? 0 : Convert.ToDouble(Dr["PRECIO2"]);
                 }
                 Dr.Close();
+
             }
-            else
+            Dr.Close();
+
+            com = new SqlCommand("SELECT * FROM LOCALES WHERE SIGLAS= '" + mante + "' ", cn);
+            com.ExecuteNonQuery();
+            Dr = com.ExecuteReader();
+            while (Dr.Read())
             {
+
                 panel1.Visible = false;
                 dgvLista.Visible = false;
                 txtProducto.Focus();
+
             }
+            Dr.Close();
         }
 
         private void txtProducto_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == 13 | e.KeyChar == 38)
+
             {
                 if (txtProducto.Text.Trim() != string.Empty && txtProducto.Text.All(Char.IsLetter))
                 {
@@ -273,6 +295,36 @@ namespace ptoVenta
         public void alternarColorData(DataGridView dgv)
         {
 
+
+            dgvLista.RowsDefaultCellStyle.BackColor = Color.MistyRose;
+            dgvLista.AlternatingRowsDefaultCellStyle.BackColor = Color.White;
+            dgvLista.EnableHeadersVisualStyles = false;
+            dgvLista.ColumnHeadersDefaultCellStyle.BackColor = Color.Firebrick;
+            dgvLista.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dgvGrid1.RowsDefaultCellStyle.BackColor = Color.Azure;
+            dgvGrid1.AlternatingRowsDefaultCellStyle.BackColor = Color.White;
+            dgvGrid1.EnableHeadersVisualStyles = false;
+            dgvGrid1.ColumnHeadersDefaultCellStyle.BackColor = Color.Teal;
+            dgvGrid1.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+
+
+
+        }
+
+        public void Cargarproducto()
+        {
+            //BUSCAR REGISTRO
+            int fila = 0;
+            int cant = 0;
+            int prec = 0;
+            int tot = 0;
+            int enc = 0;
+
+        }
+
+        public void alternarColorData(DataGridView dgv)
+        {
+
             dgvLista.RowsDefaultCellStyle.BackColor = Color.MistyRose;
             dgvLista.AlternatingRowsDefaultCellStyle.BackColor = Color.White;
             dgvLista.EnableHeadersVisualStyles = false;
@@ -320,7 +372,9 @@ namespace ptoVenta
             abririniciarSecion.ShowDialog();
             label14.Text = "Caja: " + iniciarSesion.ucaja.Trim() + " " + iniciarSesion.unombre.Trim();
             int position = eservidor.IndexOf(";");
+
             label16.Text = eservidor.Substring(14, position - 14);
+
             txtProducto.ReadOnly = false;
         }
 

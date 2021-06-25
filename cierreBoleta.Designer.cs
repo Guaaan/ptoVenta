@@ -33,6 +33,7 @@ namespace ptoVenta
             this.panel15 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.txtIva = new System.Windows.Forms.Label();
@@ -40,7 +41,7 @@ namespace ptoVenta
             this.textIva = new System.Windows.Forms.TextBox();
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.txtSubTotal = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
@@ -64,18 +65,15 @@ namespace ptoVenta
             this.label11 = new System.Windows.Forms.Label();
             this.txtEfectivo = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtTeléfono = new System.Windows.Forms.TextBox();
-            this.txtPrefijo = new System.Windows.Forms.TextBox();
-            this.txtMonto = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtFono = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel15.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -89,8 +87,9 @@ namespace ptoVenta
             this.panel15.Controls.Add(this.label1);
             this.panel15.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel15.Location = new System.Drawing.Point(0, 0);
+            this.panel15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(1381, 57);
+            this.panel15.Size = new System.Drawing.Size(1028, 46);
             this.panel15.TabIndex = 110;
             // 
             // label1
@@ -99,9 +98,10 @@ namespace ptoVenta
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(3, 2);
+            this.label1.Location = new System.Drawing.Point(2, 2);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(342, 55);
+            this.label1.Size = new System.Drawing.Size(274, 44);
             this.label1.TabIndex = 2;
             this.label1.Text = "Cierre de Boleta";
             // 
@@ -109,6 +109,7 @@ namespace ptoVenta
             // 
             this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.panel1);
             this.panel5.Controls.Add(this.label6);
             this.panel5.Controls.Add(this.txtIva);
@@ -117,10 +118,20 @@ namespace ptoVenta
             this.panel5.Controls.Add(this.txtTotal);
             this.panel5.Controls.Add(this.txtSubTotal);
             this.panel5.ForeColor = System.Drawing.Color.White;
-            this.panel5.Location = new System.Drawing.Point(95, 60);
+            this.panel5.Location = new System.Drawing.Point(749, 73);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(358, 155);
+            this.panel5.Size = new System.Drawing.Size(268, 126);
             this.panel5.TabIndex = 117;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
+            this.panel1.Location = new System.Drawing.Point(8, 76);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(248, 2);
+            this.panel1.TabIndex = 119;
             // 
             // label6
             // 
@@ -128,13 +139,12 @@ namespace ptoVenta
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label6.Font = new System.Drawing.Font("Calibri", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.MediumOrchid;
-            this.label6.Location = new System.Drawing.Point(3, 103);
+            this.label6.Location = new System.Drawing.Point(2, 84);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(215, 45);
+            this.label6.Size = new System.Drawing.Size(158, 36);
             this.label6.TabIndex = 43;
-            this.label6.Text = "Total Factura";
-            // 
-            // panel8
+            this.label6.Text = "Total Boleta";
             // 
             this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel8.BackColor = System.Drawing.Color.MediumOrchid;
@@ -149,9 +159,10 @@ namespace ptoVenta
             this.txtIva.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.txtIva.Font = new System.Drawing.Font("Calibri", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIva.ForeColor = System.Drawing.Color.MediumOrchid;
-            this.txtIva.Location = new System.Drawing.Point(3, 43);
+            this.txtIva.Location = new System.Drawing.Point(2, 35);
+            this.txtIva.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.txtIva.Name = "txtIva";
-            this.txtIva.Size = new System.Drawing.Size(145, 45);
+            this.txtIva.Size = new System.Drawing.Size(114, 36);
             this.txtIva.TabIndex = 42;
             this.txtIva.Text = "IVA 19%";
             // 
@@ -161,9 +172,10 @@ namespace ptoVenta
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label2.Font = new System.Drawing.Font("Calibri", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.MediumOrchid;
-            this.label2.Location = new System.Drawing.Point(3, 7);
+            this.label2.Location = new System.Drawing.Point(2, 6);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(163, 45);
+            this.label2.Size = new System.Drawing.Size(128, 36);
             this.label2.TabIndex = 38;
             this.label2.Text = "Sub-Total";
             // 
@@ -173,9 +185,10 @@ namespace ptoVenta
             this.textIva.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textIva.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textIva.ForeColor = System.Drawing.Color.MediumOrchid;
-            this.textIva.Location = new System.Drawing.Point(185, 49);
+            this.textIva.Location = new System.Drawing.Point(139, 40);
+            this.textIva.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textIva.Name = "textIva";
-            this.textIva.Size = new System.Drawing.Size(151, 39);
+            this.textIva.Size = new System.Drawing.Size(113, 31);
             this.textIva.TabIndex = 41;
             this.textIva.TabStop = false;
             this.textIva.Text = "0";
@@ -187,9 +200,10 @@ namespace ptoVenta
             this.txtTotal.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTotal.ForeColor = System.Drawing.Color.MediumOrchid;
-            this.txtTotal.Location = new System.Drawing.Point(185, 111);
+            this.txtTotal.Location = new System.Drawing.Point(139, 90);
+            this.txtTotal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTotal.Name = "txtTotal";
-            this.txtTotal.Size = new System.Drawing.Size(151, 39);
+            this.txtTotal.Size = new System.Drawing.Size(113, 31);
             this.txtTotal.TabIndex = 40;
             this.txtTotal.TabStop = false;
             this.txtTotal.Text = "0";
@@ -201,29 +215,33 @@ namespace ptoVenta
             this.txtSubTotal.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSubTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSubTotal.ForeColor = System.Drawing.Color.MediumOrchid;
-            this.txtSubTotal.Location = new System.Drawing.Point(185, 11);
+            this.txtSubTotal.Location = new System.Drawing.Point(139, 9);
+            this.txtSubTotal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSubTotal.Name = "txtSubTotal";
-            this.txtSubTotal.Size = new System.Drawing.Size(151, 39);
+            this.txtSubTotal.Size = new System.Drawing.Size(113, 31);
             this.txtSubTotal.TabIndex = 39;
             this.txtSubTotal.TabStop = false;
             this.txtSubTotal.Text = "0";
             this.txtSubTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // panel1
+            // panel8
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
-            this.panel1.Location = new System.Drawing.Point(11, 93);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(331, 2);
-            this.panel1.TabIndex = 119;
+            this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel8.BackColor = System.Drawing.Color.MediumOrchid;
+            this.panel8.Location = new System.Drawing.Point(749, 197);
+            this.panel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(268, 7);
+            this.panel8.TabIndex = 75;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(195)))), ((int)(((byte)(217)))));
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(86, 231);
+            this.panel2.Location = new System.Drawing.Point(709, 227);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1209, 39);
+            this.panel2.Size = new System.Drawing.Size(308, 32);
             this.panel2.TabIndex = 111;
             // 
             // label3
@@ -232,9 +250,10 @@ namespace ptoVenta
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(3, 2);
+            this.label3.Location = new System.Drawing.Point(2, 2);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(197, 33);
+            this.label3.Size = new System.Drawing.Size(158, 26);
             this.label3.TabIndex = 2;
             this.label3.Text = "Forma de Pago:";
             // 
@@ -284,43 +303,22 @@ namespace ptoVenta
             this.label16.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(81, 472);
+            this.label16.Location = new System.Drawing.Point(720, 356);
+            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(152, 25);
+            this.label16.Size = new System.Drawing.Size(124, 20);
             this.label16.TabIndex = 134;
             this.label16.Text = "Transferencia:";
             // 
             // txtTransferencia
             // 
             this.txtTransferencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTransferencia.Location = new System.Drawing.Point(286, 473);
+            this.txtTransferencia.Location = new System.Drawing.Point(889, 353);
+            this.txtTransferencia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTransferencia.Name = "txtTransferencia";
-            this.txtTransferencia.Size = new System.Drawing.Size(163, 26);
+            this.txtTransferencia.Size = new System.Drawing.Size(123, 23);
             this.txtTransferencia.TabIndex = 133;
-            // 
-            // txtDepositoBanco
-            // 
-            this.txtDepositoBanco.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDepositoBanco.Location = new System.Drawing.Point(455, 392);
-            this.txtDepositoBanco.Name = "txtDepositoBanco";
-            this.txtDepositoBanco.Size = new System.Drawing.Size(163, 26);
-            this.txtDepositoBanco.TabIndex = 132;
-            // 
-            // txtDepositoNumero
-            // 
-            this.txtDepositoNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDepositoNumero.Location = new System.Drawing.Point(624, 392);
-            this.txtDepositoNumero.Name = "txtDepositoNumero";
-            this.txtDepositoNumero.Size = new System.Drawing.Size(163, 26);
-            this.txtDepositoNumero.TabIndex = 131;
-            // 
-            // txtCreditoBanco
-            // 
-            this.txtCreditoBanco.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCreditoBanco.Location = new System.Drawing.Point(455, 432);
-            this.txtCreditoBanco.Name = "txtCreditoBanco";
-            this.txtCreditoBanco.Size = new System.Drawing.Size(163, 26);
-            this.txtCreditoBanco.TabIndex = 130;
+            this.txtTransferencia.TextChanged += new System.EventHandler(this.txtTransferencia_TextChanged);
             // 
             // txtCreditoNumero
             // 
@@ -351,18 +349,20 @@ namespace ptoVenta
             this.label15.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(81, 431);
+            this.label15.Location = new System.Drawing.Point(686, 332);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(89, 25);
+            this.label15.Size = new System.Drawing.Size(158, 20);
             this.label15.TabIndex = 126;
-            this.label15.Text = "Crédito:";
+            this.label15.Text = "Tarjeta de Crédito:";
             // 
             // txtCredito
             // 
             this.txtCredito.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCredito.Location = new System.Drawing.Point(286, 432);
+            this.txtCredito.Location = new System.Drawing.Point(889, 326);
+            this.txtCredito.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCredito.Name = "txtCredito";
-            this.txtCredito.Size = new System.Drawing.Size(163, 26);
+            this.txtCredito.Size = new System.Drawing.Size(123, 23);
             this.txtCredito.TabIndex = 125;
             // 
             // label13
@@ -379,9 +379,10 @@ namespace ptoVenta
             // txtDeposito
             // 
             this.txtDeposito.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDeposito.Location = new System.Drawing.Point(286, 392);
+            this.txtDeposito.Location = new System.Drawing.Point(889, 299);
+            this.txtDeposito.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtDeposito.Name = "txtDeposito";
-            this.txtDeposito.Size = new System.Drawing.Size(163, 26);
+            this.txtDeposito.Size = new System.Drawing.Size(123, 23);
             this.txtDeposito.TabIndex = 123;
             // 
             // label14
@@ -408,61 +409,69 @@ namespace ptoVenta
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(81, 286);
+            this.label11.Location = new System.Drawing.Point(686, 275);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(96, 25);
+            this.label11.Size = new System.Drawing.Size(159, 20);
             this.label11.TabIndex = 120;
-            this.label11.Text = "Efectivo:";
+            this.label11.Text = "Monto en Efectivo:";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // txtEfectivo
             // 
             this.txtEfectivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEfectivo.Location = new System.Drawing.Point(286, 287);
+            this.txtEfectivo.Location = new System.Drawing.Point(889, 272);
+            this.txtEfectivo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtEfectivo.Name = "txtEfectivo";
-            this.txtEfectivo.Size = new System.Drawing.Size(163, 26);
+            this.txtEfectivo.Size = new System.Drawing.Size(123, 23);
             this.txtEfectivo.TabIndex = 119;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txtFono);
+            this.groupBox1.Controls.Add(this.textBox4);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.txtMonto);
+            this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.txtTeléfono);
-            this.groupBox1.Controls.Add(this.txtPrefijo);
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Location = new System.Drawing.Point(415, 505);
+            this.groupBox1.Location = new System.Drawing.Point(557, 412);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(614, 106);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(460, 86);
             this.groupBox1.TabIndex = 139;
             this.groupBox1.TabStop = false;
             // 
-            // label4
+            // textBox4
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(6, 18);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(97, 25);
-            this.label4.TabIndex = 140;
-            this.label4.Text = "Delivery:";
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(133, 49);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(315, 23);
+            this.textBox4.TabIndex = 144;
             // 
-            // txtTeléfono
+            // label7
             // 
-            this.txtTeléfono.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTeléfono.Location = new System.Drawing.Point(204, 17);
-            this.txtTeléfono.Name = "txtTeléfono";
-            this.txtTeléfono.Size = new System.Drawing.Size(163, 26);
-            this.txtTeléfono.TabIndex = 141;
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(4, 48);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(135, 20);
+            this.label7.TabIndex = 145;
+            this.label7.Text = "Dirección/Fono:";
             // 
-            // txtPrefijo
+            // textBox3
             // 
-            this.txtPrefijo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrefijo.Location = new System.Drawing.Point(109, 17);
-            this.txtPrefijo.Name = "txtPrefijo";
-            this.txtPrefijo.Size = new System.Drawing.Size(89, 26);
-            this.txtPrefijo.TabIndex = 140;
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(380, 15);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(68, 23);
+            this.textBox3.TabIndex = 142;
             // 
             // txtMonto
             // 
@@ -477,118 +486,73 @@ namespace ptoVenta
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(416, 18);
+            this.label5.Location = new System.Drawing.Point(312, 15);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(85, 25);
+            this.label5.Size = new System.Drawing.Size(69, 20);
             this.label5.TabIndex = 143;
             this.label5.Text = "Monto: ";
             // 
-            // txtFono
+            // textBox1
             // 
-            this.txtFono.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFono.Location = new System.Drawing.Point(177, 60);
-            this.txtFono.Name = "txtFono";
-            this.txtFono.Size = new System.Drawing.Size(419, 26);
-            this.txtFono.TabIndex = 144;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(153, 14);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(123, 23);
+            this.textBox1.TabIndex = 141;
             // 
-            // label7
+            // textBox2
             // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(6, 59);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(165, 25);
-            this.label7.TabIndex = 145;
-            this.label7.Text = "Dirección/Fono:";
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(82, 14);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(68, 23);
+            this.textBox2.TabIndex = 140;
             // 
-            // panel4
+            // label4
             // 
-            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
-            this.panel4.Location = new System.Drawing.Point(477, 673);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(205, 9);
-            this.panel4.TabIndex = 141;
-            // 
-            // iconButton2
-            // 
-            this.iconButton2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.iconButton2.BackColor = System.Drawing.Color.Transparent;
-            this.iconButton2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.iconButton2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.Check;
-            this.iconButton2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(135)))), ((int)(((byte)(65)))));
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.IconSize = 50;
-            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.Location = new System.Drawing.Point(477, 617);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(205, 65);
-            this.iconButton2.TabIndex = 140;
-            this.iconButton2.TabStop = false;
-            this.iconButton2.Text = "Grabar \r\nArchivo";
-            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton2.UseVisualStyleBackColor = false;
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(4, 15);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(77, 20);
+            this.label4.TabIndex = 140;
+            this.label4.Text = "Delivery:";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1022, 60);
+            this.pictureBox1.Location = new System.Drawing.Point(11, 50);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(260, 162);
+            this.pictureBox1.Size = new System.Drawing.Size(450, 225);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 118;
             this.pictureBox1.TabStop = false;
             // 
-            // panel6
+            // label8
             // 
-            this.panel6.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.panel6.Location = new System.Drawing.Point(688, 673);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(205, 9);
-            this.panel6.TabIndex = 145;
-            // 
-            // iconButton1
-            // 
-            this.iconButton1.AllowDrop = true;
-            this.iconButton1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.iconButton1.BackColor = System.Drawing.Color.Transparent;
-            this.iconButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.iconButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Ban;
-            this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 50;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(688, 617);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(205, 65);
-            this.iconButton1.TabIndex = 144;
-            this.iconButton1.TabStop = false;
-            this.iconButton1.Text = "Cancelar";
-            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton1.UseVisualStyleBackColor = false;
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(692, 302);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(153, 20);
+            this.label8.TabIndex = 140;
+            this.label8.Text = "Tarjeta de Dédito:";
             // 
             // cierreBoleta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1381, 722);
-            this.Controls.Add(this.panel6);
-            this.Controls.Add(this.iconButton1);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.iconButton2);
+            this.ClientSize = new System.Drawing.Size(1028, 587);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label18);
@@ -616,6 +580,7 @@ namespace ptoVenta
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel15);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "cierreBoleta";
             this.Text = "Cierre de Boleta";
             this.panel15.ResumeLayout(false);
@@ -669,16 +634,13 @@ namespace ptoVenta
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtEfectivo;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txtFono;
+        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtMonto;
+        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtTeléfono;
-        private System.Windows.Forms.TextBox txtPrefijo;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Panel panel4;
-        private FontAwesome.Sharp.IconButton iconButton2;
-        private System.Windows.Forms.Panel panel6;
-        private FontAwesome.Sharp.IconButton iconButton1;
+        private System.Windows.Forms.Label label8;
     }
 }
