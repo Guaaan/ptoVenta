@@ -124,13 +124,13 @@ namespace ptoVenta
                     if (vclave.Trim() == uclave.Trim())
                     {
                         this.Close();
-                    }
+        }
                     else
                     {
                         txtRut1.Text = "";
                         txtRut1.Focus();
-                    }
-                }
+    }
+}
             }
         }
 

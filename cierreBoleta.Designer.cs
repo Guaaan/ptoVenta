@@ -35,6 +35,7 @@ namespace ptoVenta
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
             this.txtIva = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textIva = new System.Windows.Forms.TextBox();
@@ -43,11 +44,24 @@ namespace ptoVenta
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.txtChequeClave = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.txtTransferencia = new System.Windows.Forms.TextBox();
+            this.txtDepositoBanco = new System.Windows.Forms.TextBox();
+            this.txtDepositoNumero = new System.Windows.Forms.TextBox();
+            this.txtCreditoBanco = new System.Windows.Forms.TextBox();
+            this.txtCreditoNumero = new System.Windows.Forms.TextBox();
+            this.txtChequeBanco = new System.Windows.Forms.TextBox();
+            this.txtChequeNumero = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.txtCredito = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.txtDeposito = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txtCheque = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.txtEfectivo = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -131,6 +145,13 @@ namespace ptoVenta
             this.label6.Size = new System.Drawing.Size(158, 36);
             this.label6.TabIndex = 43;
             this.label6.Text = "Total Boleta";
+            // 
+            this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel8.BackColor = System.Drawing.Color.MediumOrchid;
+            this.panel8.Location = new System.Drawing.Point(95, 213);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(358, 9);
+            this.panel8.TabIndex = 75;
             // 
             // txtIva
             // 
@@ -236,6 +257,47 @@ namespace ptoVenta
             this.label3.TabIndex = 2;
             this.label3.Text = "Forma de Pago:";
             // 
+            // label19
+            // 
+            this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(788, 288);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(75, 25);
+            this.label19.TabIndex = 138;
+            this.label19.Text = "Clave:";
+            // 
+            // label18
+            // 
+            this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(619, 288);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(94, 25);
+            this.label18.TabIndex = 137;
+            this.label18.Text = "Número:";
+            // 
+            // label17
+            // 
+            this.label17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(450, 288);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(80, 25);
+            this.label17.TabIndex = 136;
+            this.label17.Text = "Banco:";
+            // 
+            // txtChequeClave
+            // 
+            this.txtChequeClave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtChequeClave.Location = new System.Drawing.Point(793, 329);
+            this.txtChequeClave.Name = "txtChequeClave";
+            this.txtChequeClave.Size = new System.Drawing.Size(163, 26);
+            this.txtChequeClave.TabIndex = 135;
+            // 
             // label16
             // 
             this.label16.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -258,6 +320,30 @@ namespace ptoVenta
             this.txtTransferencia.TabIndex = 133;
             this.txtTransferencia.TextChanged += new System.EventHandler(this.txtTransferencia_TextChanged);
             // 
+            // txtCreditoNumero
+            // 
+            this.txtCreditoNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCreditoNumero.Location = new System.Drawing.Point(624, 432);
+            this.txtCreditoNumero.Name = "txtCreditoNumero";
+            this.txtCreditoNumero.Size = new System.Drawing.Size(163, 26);
+            this.txtCreditoNumero.TabIndex = 129;
+            // 
+            // txtChequeBanco
+            // 
+            this.txtChequeBanco.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtChequeBanco.Location = new System.Drawing.Point(455, 329);
+            this.txtChequeBanco.Name = "txtChequeBanco";
+            this.txtChequeBanco.Size = new System.Drawing.Size(163, 26);
+            this.txtChequeBanco.TabIndex = 128;
+            // 
+            // txtChequeNumero
+            // 
+            this.txtChequeNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtChequeNumero.Location = new System.Drawing.Point(624, 329);
+            this.txtChequeNumero.Name = "txtChequeNumero";
+            this.txtChequeNumero.Size = new System.Drawing.Size(163, 26);
+            this.txtChequeNumero.TabIndex = 127;
+            // 
             // label15
             // 
             this.label15.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -279,6 +365,17 @@ namespace ptoVenta
             this.txtCredito.Size = new System.Drawing.Size(123, 23);
             this.txtCredito.TabIndex = 125;
             // 
+            // label13
+            // 
+            this.label13.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(81, 364);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(97, 50);
+            this.label13.TabIndex = 124;
+            this.label13.Text = "Depósito\r\nDébito:\r\n";
+            // 
             // txtDeposito
             // 
             this.txtDeposito.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -287,6 +384,25 @@ namespace ptoVenta
             this.txtDeposito.Name = "txtDeposito";
             this.txtDeposito.Size = new System.Drawing.Size(123, 23);
             this.txtDeposito.TabIndex = 123;
+            // 
+            // label14
+            // 
+            this.label14.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(81, 328);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(95, 25);
+            this.label14.TabIndex = 122;
+            this.label14.Text = "Cheque:";
+            // 
+            // txtCheque
+            // 
+            this.txtCheque.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCheque.Location = new System.Drawing.Point(286, 329);
+            this.txtCheque.Name = "txtCheque";
+            this.txtCheque.Size = new System.Drawing.Size(163, 26);
+            this.txtCheque.TabIndex = 121;
             // 
             // label11
             // 
@@ -356,6 +472,14 @@ namespace ptoVenta
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(68, 23);
             this.textBox3.TabIndex = 142;
+            // 
+            // txtMonto
+            // 
+            this.txtMonto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMonto.Location = new System.Drawing.Point(507, 19);
+            this.txtMonto.Name = "txtMonto";
+            this.txtMonto.Size = new System.Drawing.Size(89, 26);
+            this.txtMonto.TabIndex = 142;
             // 
             // label5
             // 
@@ -430,11 +554,24 @@ namespace ptoVenta
             this.ClientSize = new System.Drawing.Size(1028, 587);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.txtChequeClave);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.txtTransferencia);
+            this.Controls.Add(this.txtDepositoBanco);
+            this.Controls.Add(this.txtDepositoNumero);
+            this.Controls.Add(this.txtCreditoBanco);
+            this.Controls.Add(this.txtCreditoNumero);
+            this.Controls.Add(this.txtChequeBanco);
+            this.Controls.Add(this.txtChequeNumero);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.txtCredito);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.txtDeposito);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.txtCheque);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.txtEfectivo);
             this.Controls.Add(this.panel2);
@@ -476,11 +613,24 @@ namespace ptoVenta
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox txtChequeClave;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox txtTransferencia;
+        private System.Windows.Forms.TextBox txtDepositoBanco;
+        private System.Windows.Forms.TextBox txtDepositoNumero;
+        private System.Windows.Forms.TextBox txtCreditoBanco;
+        private System.Windows.Forms.TextBox txtCreditoNumero;
+        private System.Windows.Forms.TextBox txtChequeBanco;
+        private System.Windows.Forms.TextBox txtChequeNumero;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox txtCredito;
+        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox txtDeposito;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox txtCheque;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtEfectivo;
         private System.Windows.Forms.GroupBox groupBox1;
