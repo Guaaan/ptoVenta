@@ -472,14 +472,7 @@ namespace ptoVenta
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(68, 23);
             this.textBox3.TabIndex = 142;
-            // 
-            // txtMonto
-            // 
-            this.txtMonto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMonto.Location = new System.Drawing.Point(507, 19);
-            this.txtMonto.Name = "txtMonto";
-            this.txtMonto.Size = new System.Drawing.Size(89, 26);
-            this.txtMonto.TabIndex = 142;
+           
             // 
             // label5
             // 
