@@ -10,11 +10,11 @@ namespace ptoVenta
     {
         public Int64 IdProducto { get; set; }
         public String Nombre { get; set; }
-        public String Precio { get; set; }
+        public Double Precio { get; set; }
 
         public Productos() { }
 
-        public Productos (Int64 pIdProducto, String pNombre, String pPrecio)
+        public Productos (Int64 pIdProducto, String pNombre, Double pPrecio)
         {
             this.IdProducto = pIdProducto;
             this.Nombre = pNombre;

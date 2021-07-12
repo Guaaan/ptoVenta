@@ -155,11 +155,11 @@
     <Compile Include="form1respaldovisual.Designer.cs">
       <DependentUpon>form1respaldovisual.cs</DependentUpon>
     </Compile>
-    <Compile Include="formatoDecimal.cs">
+    <Compile Include="FormatoMoneda.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formatoDecimal.Designer.cs">
-      <DependentUpon>formatoDecimal.cs</DependentUpon>
+    <Compile Include="FormatoMoneda.Designer.cs">
+      <DependentUpon>FormatoMoneda.cs</DependentUpon>
     </Compile>
     <Compile Include="formClass.cs">
       <SubType>Form</SubType>
@@ -262,8 +262,8 @@
     <EmbeddedResource Include="form1respaldovisual.resx">
       <DependentUpon>form1respaldovisual.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formatoDecimal.resx">
-      <DependentUpon>formatoDecimal.cs</DependentUpon>
+    <EmbeddedResource Include="FormatoMoneda.resx">
+      <DependentUpon>FormatoMoneda.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formClass.resx">
       <DependentUpon>formClass.cs</DependentUpon>
