@@ -429,7 +429,7 @@ namespace ptoVenta
             txtProducto.Focus();
         }
 
-        private void btnTicketsEmitidos_Click(object sender, EventArgs e)
+        public void Cargarproducto()
         {
             ticketsEmitidos abrirTicketsEmitidos = new ticketsEmitidos();
             abrirTicketsEmitidos.ShowDialog();

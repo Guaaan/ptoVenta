@@ -234,6 +234,9 @@
     <EmbeddedResource Include="aperturaCaja.resx">
       <DependentUpon>aperturaCaja.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AgregarFoto.resx">
+      <DependentUpon>AgregarFoto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Buscar.resx">
       <DependentUpon>Buscar.cs</DependentUpon>
     </EmbeddedResource>

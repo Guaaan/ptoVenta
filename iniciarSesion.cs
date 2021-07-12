@@ -15,7 +15,9 @@ namespace ptoVenta
     public partial class iniciarSesion : Form
     {
 
+        SqlConnection cn;
         SqlCommand com;
+        string eservidor = "";
         SqlDataReader ur;
         public static string ucodigo = "";
         public static string unombre = "";
@@ -30,6 +32,19 @@ namespace ptoVenta
 
         private void iniciarSesion_Load(object sender, EventArgs e)
         {
+            llenacombobox();//llama al método llenacombobo
+        }
+
+        public void llenacombobox()
+        {
+            string[] lines = System.IO.File.ReadAllLines(@"configsql.ini");
+            foreach (string line in lines)
+            {
+                eservidor = eservidor + line;
+            }
+            cn = new SqlConnection(eservidor);
+            cn.Open();
+
             DataSet ds = new DataSet();
             SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM USUARIOS ORDER BY NOMBRE", Form1.cn);
             da.Fill(ds, "USUARIOS");
@@ -109,13 +124,13 @@ namespace ptoVenta
                     if (vclave.Trim() == uclave.Trim())
                     {
                         this.Close();
-                    }
+        }
                     else
                     {
                         txtRut1.Text = "";
                         txtRut1.Focus();
-                    }
-                }
+    }
+}
             }
         }
 
