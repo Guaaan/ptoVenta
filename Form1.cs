@@ -614,5 +614,10 @@ namespace ptoVenta
             return passed;
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            formatoDecimal abrirFormatoDecimal = new formatoDecimal();
+            abrirFormatoDecimal.Show();
+        }
     }
 }
