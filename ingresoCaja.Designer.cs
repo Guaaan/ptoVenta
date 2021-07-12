@@ -77,10 +77,10 @@ namespace ptoVenta
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel15 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.btnRegresar = new FontAwesome.Sharp.IconButton();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -556,6 +556,15 @@ namespace ptoVenta
             this.label1.TabIndex = 2;
             this.label1.Text = "Ingreso de Caja";
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.panel1.Location = new System.Drawing.Point(850, 839);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(205, 9);
+            this.panel1.TabIndex = 113;
+            // 
             // panel2
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
@@ -564,6 +573,31 @@ namespace ptoVenta
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(205, 9);
             this.panel2.TabIndex = 111;
+            // 
+            // btnRegresar
+            // 
+            this.btnRegresar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnRegresar.BackColor = System.Drawing.Color.Transparent;
+            this.btnRegresar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnRegresar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.btnRegresar.IconChar = FontAwesome.Sharp.IconChar.Share;
+            this.btnRegresar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.btnRegresar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnRegresar.IconSize = 50;
+            this.btnRegresar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRegresar.Location = new System.Drawing.Point(850, 783);
+            this.btnRegresar.Name = "btnRegresar";
+            this.btnRegresar.Size = new System.Drawing.Size(205, 65);
+            this.btnRegresar.TabIndex = 112;
+            this.btnRegresar.TabStop = false;
+            this.btnRegresar.Text = "Regresar";
+            this.btnRegresar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnRegresar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // iconButton2
             // 
@@ -589,48 +623,15 @@ namespace ptoVenta
             this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton2.UseVisualStyleBackColor = false;
             // 
-            // panel3
-            // 
-            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.panel3.Location = new System.Drawing.Point(850, 839);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(205, 9);
-            this.panel3.TabIndex = 145;
-            // 
-            // btnRegresar
-            // 
-            this.btnRegresar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnRegresar.BackColor = System.Drawing.Color.Transparent;
-            this.btnRegresar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnRegresar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.btnRegresar.IconChar = FontAwesome.Sharp.IconChar.Share;
-            this.btnRegresar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.btnRegresar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnRegresar.IconSize = 50;
-            this.btnRegresar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRegresar.Location = new System.Drawing.Point(850, 783);
-            this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(205, 65);
-            this.btnRegresar.TabIndex = 144;
-            this.btnRegresar.TabStop = false;
-            this.btnRegresar.Text = "Regresar";
-            this.btnRegresar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnRegresar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnRegresar.UseVisualStyleBackColor = false;
-            // 
             // ingresoCaja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1086, 869);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.btnRegresar);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.iconButton2);
             this.Controls.Add(this.panel15);
             this.Controls.Add(this.groupBox3);
@@ -699,9 +700,9 @@ namespace ptoVenta
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private FontAwesome.Sharp.IconButton iconButton2;
-        private System.Windows.Forms.Panel panel3;
         private FontAwesome.Sharp.IconButton btnRegresar;
+        private FontAwesome.Sharp.IconButton iconButton2;
     }
 }

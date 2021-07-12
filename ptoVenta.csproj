@@ -119,12 +119,6 @@
       <DependentUpon>clases.cs</DependentUpon>
     </Compile>
     <Compile Include="conexion.cs" />
-    <Compile Include="decimalesASql.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="decimalesASql.Designer.cs">
-      <DependentUpon>decimalesASql.cs</DependentUpon>
-    </Compile>
     <Compile Include="descripcionFarmacologica.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,12 +154,6 @@
     </Compile>
     <Compile Include="form1respaldovisual.Designer.cs">
       <DependentUpon>form1respaldovisual.cs</DependentUpon>
-    </Compile>
-    <Compile Include="formatoDecimal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="formatoDecimal.Designer.cs">
-      <DependentUpon>formatoDecimal.cs</DependentUpon>
     </Compile>
     <Compile Include="formClass.cs">
       <SubType>Form</SubType>
@@ -234,9 +222,6 @@
     <EmbeddedResource Include="aperturaCaja.resx">
       <DependentUpon>aperturaCaja.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AgregarFoto.resx">
-      <DependentUpon>AgregarFoto.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Buscar.resx">
       <DependentUpon>Buscar.cs</DependentUpon>
     </EmbeddedResource>
@@ -269,9 +254,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="form1respaldovisual.resx">
       <DependentUpon>form1respaldovisual.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="formatoDecimal.resx">
-      <DependentUpon>formatoDecimal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formClass.resx">
       <DependentUpon>formClass.cs</DependentUpon>

@@ -129,6 +129,7 @@ namespace ptoVenta
             this.label18 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.panel18.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -282,29 +283,15 @@ namespace ptoVenta
             // 
             // label1
             // 
-            this.btnDevoluciones.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDevoluciones.BackColor = System.Drawing.Color.Red;
-            this.btnDevoluciones.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnDevoluciones.FlatAppearance.BorderSize = 0;
-            this.btnDevoluciones.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnDevoluciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDevoluciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDevoluciones.ForeColor = System.Drawing.Color.White;
-            this.btnDevoluciones.IconChar = FontAwesome.Sharp.IconChar.RedoAlt;
-            this.btnDevoluciones.IconColor = System.Drawing.Color.White;
-            this.btnDevoluciones.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnDevoluciones.IconSize = 50;
-            this.btnDevoluciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDevoluciones.Location = new System.Drawing.Point(634, 53);
-            this.btnDevoluciones.Name = "btnDevoluciones";
-            this.btnDevoluciones.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnDevoluciones.Size = new System.Drawing.Size(136, 65);
-            this.btnDevoluciones.TabIndex = 50;
-            this.btnDevoluciones.TabStop = false;
-            this.btnDevoluciones.Text = "Devolucion";
-            this.btnDevoluciones.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDevoluciones.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnDevoluciones.UseVisualStyleBackColor = false;
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label1.Location = new System.Drawing.Point(1265, 406);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(69, 20);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "Precio:";
             // 
             // label2
             // 
@@ -429,7 +416,7 @@ namespace ptoVenta
             this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // btnBuscar
+            // panel5
             // 
             this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel5.BackColor = System.Drawing.Color.Transparent;
@@ -973,7 +960,7 @@ namespace ptoVenta
             // 
             this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Bauhaus 93", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
             this.label13.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.label13.Location = new System.Drawing.Point(638, 7);
@@ -1092,7 +1079,7 @@ namespace ptoVenta
             this.iconButton1.UseVisualStyleBackColor = false;
             this.iconButton1.Visible = false;
             // 
-            // LINEA1
+            // iconButton4
             // 
             this.iconButton4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.iconButton4.BackColor = System.Drawing.Color.LightSeaGreen;
@@ -1117,7 +1104,7 @@ namespace ptoVenta
             this.iconButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton4.UseVisualStyleBackColor = false;
             // 
-            // FOTO1
+            // iconButton3
             // 
             this.iconButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.iconButton3.BackColor = System.Drawing.Color.DarkOrchid;
@@ -1166,8 +1153,8 @@ namespace ptoVenta
             this.iconButton2.Text = "Cotizacion";
             this.iconButton2.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             this.iconButton2.UseVisualStyleBackColor = false;
-            this.btnDevoluciones.Click += new System.EventHandler(this.btnDevoluciones_Click);
-            this.btnDevoluciones.Click += new System.EventHandler(this.btnDevoluciones_Click);
+            // 
+            // btnEgresoCaja
             // 
             this.btnEgresoCaja.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnEgresoCaja.BackColor = System.Drawing.Color.OrangeRed;
@@ -1191,8 +1178,8 @@ namespace ptoVenta
             this.btnEgresoCaja.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             this.btnEgresoCaja.UseVisualStyleBackColor = false;
             this.btnEgresoCaja.Click += new System.EventHandler(this.btnEgresoCaja_Click);
-            this.btnEgresoCaja.UseVisualStyleBackColor = false;
-            this.btnEgresoCaja.Click += new System.EventHandler(this.btnEgresoCaja_Click);
+            // 
+            // btnTicketsEmitidos
             // 
             this.btnTicketsEmitidos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnTicketsEmitidos.BackColor = System.Drawing.Color.RoyalBlue;
@@ -1216,7 +1203,7 @@ namespace ptoVenta
             this.btnTicketsEmitidos.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             this.btnTicketsEmitidos.UseVisualStyleBackColor = false;
             this.btnTicketsEmitidos.Click += new System.EventHandler(this.btnTicketsEmitidos_Click);
-            this.btnTicketsEmitidos.UseVisualStyleBackColor = false;
+            // 
             // btnAperturaCaja
             // 
             this.btnAperturaCaja.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -1278,37 +1265,47 @@ namespace ptoVenta
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Bernard MT Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.DarkCyan;
             this.label15.Location = new System.Drawing.Point(4, 15);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(20, 22);
+            this.label15.Size = new System.Drawing.Size(17, 24);
             this.label15.TabIndex = 5;
             this.label15.Text = "*";
             // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Bernard MT Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.DarkCyan;
             this.label21.Location = new System.Drawing.Point(3, -2);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(23, 22);
+            this.label21.Size = new System.Drawing.Size(21, 24);
             this.label21.TabIndex = 3;
             this.label21.Text = "+";
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(357, 93);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 103;
+            this.button1.Text = "Abrir ";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSize = true;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
+            this.BackColor = System.Drawing.Color.White;
+            this.CausesValidation = false;
             this.ClientSize = new System.Drawing.Size(1184, 737);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.iconButton1);
-            this.Controls.Add(this.iconButton5);
-            this.Controls.Add(this.panel10);
+            this.Controls.Add(this.iconButton4);
+            this.Controls.Add(this.iconButton3);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.iconButton2);
             this.Controls.Add(this.panel18);
@@ -1319,15 +1316,10 @@ namespace ptoVenta
             this.Controls.Add(this.txtProducto);
             this.Controls.Add(this.dgvLista);
             this.Controls.Add(this.dgvGrid1);
-            this.Controls.Add(this.panel7);
+            this.Controls.Add(this.panel15);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btnTicketsEmitidos);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dgvLista);
-            this.Controls.Add(this.dgvGrid1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
@@ -1335,6 +1327,8 @@ namespace ptoVenta
             this.Name = "Form1";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "Geminis.- Softway";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).EndInit();
             this.panel18.ResumeLayout(false);
             this.panel18.PerformLayout();
@@ -1350,17 +1344,17 @@ namespace ptoVenta
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel18.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
+
+        #endregion
         private System.Windows.Forms.DataGridView dgvLista;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtProducto;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label3;
         private FontAwesome.Sharp.IconButton btnAperturaCaja;
         private FontAwesome.Sharp.IconButton btnTicketsEmitidos;
         private FontAwesome.Sharp.IconButton btnEgresoCaja;
@@ -1390,7 +1384,7 @@ namespace ptoVenta
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtRut;
         private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.Panel panel7;
+        private FontAwesome.Sharp.IconButton btnBuscar;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
@@ -1413,7 +1407,7 @@ namespace ptoVenta
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.DataGridViewTextBoxColumn LINEA;
         private System.Windows.Forms.DataGridViewImageColumn FOTO;
-        private System.Windows.Forms.DomainUpDown updownPrecio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO;
         private System.Windows.Forms.DataGridViewTextBoxColumn PRODUCTO;
         private System.Windows.Forms.DataGridViewTextBoxColumn PRINCIPIO;
         private System.Windows.Forms.DataGridViewTextBoxColumn STOCK;
@@ -1432,8 +1426,7 @@ namespace ptoVenta
         private System.Windows.Forms.DataGridViewTextBoxColumn OFERTA1;
         private System.Windows.Forms.DataGridViewTextBoxColumn TOTAL1;
         private System.Windows.Forms.DataGridViewButtonColumn DELE;
-        private System.Windows.Forms.Label label4;
-
+        private System.Windows.Forms.Button button1;
     }
 }
 

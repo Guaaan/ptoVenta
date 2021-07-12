@@ -84,7 +84,7 @@ namespace ptoVenta
                 if (Char.IsControl(e.KeyChar)) //permitir teclas de control como retroceso
                 {
                     e.Handled = false;
-        }
+                }
                 else
                 {
                     //el resto de teclas pulsadas se desactivan
@@ -327,7 +327,7 @@ namespace ptoVenta
             te = tf - (tp - te);
             txtEfectivo.Text = te.ToString();
             if (te == 0)
-        {
+            {
                 SendKeys.Send("{TAB}");
             }
         }
@@ -355,7 +355,7 @@ namespace ptoVenta
                 SendKeys.Send("{TAB}");
             }
             else
-        {
+            {
                 txtCredito.Text = tc.ToString();
             }
         }

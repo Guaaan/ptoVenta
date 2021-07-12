@@ -33,8 +33,6 @@ namespace ptoVenta
             this.panel15 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtContraseña = new System.Windows.Forms.TextBox();
-            this.cmbUsuario = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -93,26 +91,6 @@ namespace ptoVenta
             this.label5.Size = new System.Drawing.Size(142, 29);
             this.label5.TabIndex = 31;
             this.label5.Text = "Contraseña:";
-            // 
-            // txtContraseña
-            // 
-            this.txtContraseña.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContraseña.Location = new System.Drawing.Point(228, 167);
-            this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.Size = new System.Drawing.Size(198, 26);
-            this.txtContraseña.TabIndex = 30;
-            // 
-            // cmbUsuario
-            // 
-            this.cmbUsuario.AllowDrop = true;
-            this.cmbUsuario.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.cmbUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbUsuario.FormattingEnabled = true;
-            this.cmbUsuario.Location = new System.Drawing.Point(228, 121);
-            this.cmbUsuario.Name = "cmbUsuario";
-            this.cmbUsuario.Size = new System.Drawing.Size(198, 28);
-            this.cmbUsuario.TabIndex = 29;
             // 
             // label3
             // 
@@ -268,7 +246,6 @@ namespace ptoVenta
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtRut1);
             this.Controls.Add(this.panel15);
-            this.Controls.Add(this.cmbUsuario);
             this.Controls.Add(this.label3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -297,8 +274,6 @@ namespace ptoVenta
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtContraseña;
-        private System.Windows.Forms.ComboBox cmbUsuario;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox3;

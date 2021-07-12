@@ -32,17 +32,6 @@ namespace ptoVenta
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(cierreBoleta));
             this.panel15 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.txtIva = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textIva = new System.Windows.Forms.TextBox();
-            this.txtTotal = new System.Windows.Forms.TextBox();
-            this.txtSubTotal = new System.Windows.Forms.TextBox();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -95,6 +84,7 @@ namespace ptoVenta
             // 
             // panel15
             // 
+            this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
             this.panel15.Controls.Add(this.label1);
             this.panel15.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel15.Location = new System.Drawing.Point(0, 0);
@@ -335,14 +325,34 @@ namespace ptoVenta
             // panel5
             // 
             this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.panel2);
+            this.panel5.Controls.Add(this.label13);
+            this.panel5.Controls.Add(this.textBox2);
+            this.panel5.Controls.Add(this.label12);
+            this.panel5.Controls.Add(this.textBox1);
             this.panel5.Controls.Add(this.label6);
+            this.panel5.Controls.Add(this.label20);
             this.panel5.Controls.Add(this.label2);
+            this.panel5.Controls.Add(this.txtIva);
             this.panel5.Controls.Add(this.txtTotal);
             this.panel5.Controls.Add(this.txtSubTotal);
+            this.panel5.ForeColor = System.Drawing.Color.Transparent;
+            this.panel5.Location = new System.Drawing.Point(52, 122);
             this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(359, 328);
+            this.panel5.TabIndex = 164;
             // 
+            // panel2
             // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel2.BackColor = System.Drawing.Color.DarkGray;
+            this.panel2.Controls.Add(this.panel7);
+            this.panel2.Location = new System.Drawing.Point(167, 246);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(180, 2);
+            this.panel2.TabIndex = 161;
             // 
             // panel7
             // 
@@ -427,24 +437,18 @@ namespace ptoVenta
             this.label20.TabIndex = 42;
             this.label20.Text = "IVA 19%";
             // 
-            this.txtIva.AutoSize = true;
-            this.txtIva.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.txtIva.Font = new System.Drawing.Font("Calibri", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIva.ForeColor = System.Drawing.Color.MediumOrchid;
-            this.txtIva.Location = new System.Drawing.Point(2, 35);
-            this.txtIva.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.txtIva.Name = "txtIva";
-            this.txtIva.Size = new System.Drawing.Size(114, 36);
-            this.txtIva.TabIndex = 42;
-            this.txtIva.Text = "IVA 19%";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Cambria", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.DimGray;
+            this.label2.Location = new System.Drawing.Point(42, 125);
             this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(130, 34);
             this.label2.TabIndex = 38;
             this.label2.Text = "Sub-Total";
             // 
+            // txtIva
             // 
             this.txtIva.BackColor = System.Drawing.Color.White;
             this.txtIva.Enabled = false;
@@ -708,7 +712,6 @@ namespace ptoVenta
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -755,24 +758,8 @@ namespace ptoVenta
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox txtTransferencia;
-        private System.Windows.Forms.TextBox txtDepositoBanco;
-        private System.Windows.Forms.TextBox txtDepositoNumero;
-        private System.Windows.Forms.TextBox txtCreditoBanco;
-        private System.Windows.Forms.TextBox txtCreditoNumero;
-        private System.Windows.Forms.TextBox txtChequeBanco;
-        private System.Windows.Forms.TextBox txtChequeNumero;
-        private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox txtCredito;
         private System.Windows.Forms.TextBox txtDebito;
         private System.Windows.Forms.TextBox txtEfectivo;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label8;
     }
 }
