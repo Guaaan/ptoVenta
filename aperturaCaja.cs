@@ -9,14 +9,19 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.Sql;
 using System.Data.SqlClient;
+using MaterialSkin;
 
 namespace ptoVenta
 {
-    public partial class aperturaCaja : Form
+    public partial class aperturaCaja : MaterialSkin.Controls.MaterialForm
     {
         public aperturaCaja()
         {
             InitializeComponent();
+            var materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.LightBlue700, Primary.LightBlue800, Primary.LightBlue400, Accent.LightBlue100, TextShade.WHITE);
         }
 
         private void TextBox1_KeyPress(object sender, KeyPressEventArgs e)
