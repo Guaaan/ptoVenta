@@ -11,11 +11,12 @@ using System.Windows.Forms;
 using System.Data.Sql;
 using System.Data.SqlClient;
 using System.Net;
+using MaterialSkin;
 
 namespace ptoVenta
 {
 
-    public partial class ticketsEmitidos : Form
+    public partial class ticketsEmitidos : MaterialSkin.Controls.MaterialForm
     {
         SqlCommand com;
         SqlDataReader dr;
@@ -28,6 +29,11 @@ namespace ptoVenta
         public ticketsEmitidos()
         {
             InitializeComponent();
+            var materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.LightBlue700, Primary.LightBlue800, Primary.LightBlue400, Accent.LightBlue100, TextShade.WHITE);
+
         }
 
         private void iconButton3_Click(object sender, EventArgs e)

@@ -11,11 +11,11 @@ using System.Windows.Forms;
 using System.Data.Sql;
 using System.Data.SqlClient;
 using System.Net;
-
+using MaterialSkin;
 
 namespace ptoVenta
 {
-    public partial class Form1 : Form
+    public partial class Form1 : MaterialSkin.Controls.MaterialForm
     {
 
         public static SqlConnection cn;
@@ -65,6 +65,10 @@ namespace ptoVenta
         public Form1()
         {
             InitializeComponent();
+            var materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.LightBlue700, Primary.LightBlue800, Primary.LightBlue400, Accent.LightBlue100, TextShade.WHITE);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -440,8 +444,8 @@ namespace ptoVenta
         private void timer1_Tick(object sender, EventArgs e)
         {
             timer1.Stop();
-            iniciarSesion abririniciarSecion = new iniciarSesion();
-            abririniciarSecion.ShowDialog();
+            iniciarSesion abririniciarSesion = new iniciarSesion();
+            abririniciarSesion.ShowDialog();
             label14.Text = "Caja: " + iniciarSesion.ucaja.Trim() + " " + iniciarSesion.unombre.Trim();
             int position = eservidor.IndexOf(";");
             edatabase = eservidor.Substring(position+18);
@@ -614,10 +618,6 @@ namespace ptoVenta
             return passed;
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            formatoDecimal abrirFormatoDecimal = new formatoDecimal();
-            abrirFormatoDecimal.Show();
-        }
+        
     }
 }

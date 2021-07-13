@@ -9,10 +9,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.Sql;
 using System.Data.SqlClient;
+using MaterialSkin;
 
 namespace ptoVenta
 {
-    public partial class iniciarSesion : Form
+    public partial class iniciarSesion : MaterialSkin.Controls.MaterialForm
     {
 
         SqlCommand com;
@@ -25,7 +26,11 @@ namespace ptoVenta
         public iniciarSesion()
         {
             InitializeComponent();
-            this.Opacity = 0.9;
+            var materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.LightBlue700, Primary.LightBlue800, Primary.LightBlue400, Accent.LightBlue100, TextShade.WHITE);
+            //this.Opacity = 0.9;
         }
 
         private void iniciarSesion_Load(object sender, EventArgs e)

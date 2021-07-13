@@ -47,7 +47,6 @@ namespace ptoVenta
             this.Pago = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Imp = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Devolver = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.panel15 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
             this.btnSalir = new FontAwesome.Sharp.IconButton();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -55,7 +54,6 @@ namespace ptoVenta
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrid1)).BeginInit();
-            this.panel15.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvGrid1
@@ -87,7 +85,7 @@ namespace ptoVenta
             this.Pago,
             this.Imp,
             this.Devolver});
-            this.dgvGrid1.Location = new System.Drawing.Point(10, 113);
+            this.dgvGrid1.Location = new System.Drawing.Point(10, 124);
             this.dgvGrid1.Margin = new System.Windows.Forms.Padding(2);
             this.dgvGrid1.Name = "dgvGrid1";
             this.dgvGrid1.ReadOnly = true;
@@ -95,7 +93,7 @@ namespace ptoVenta
             this.dgvGrid1.RowHeadersWidth = 10;
             this.dgvGrid1.RowTemplate.Height = 25;
             this.dgvGrid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.dgvGrid1.Size = new System.Drawing.Size(1107, 485);
+            this.dgvGrid1.Size = new System.Drawing.Size(1107, 474);
             this.dgvGrid1.TabIndex = 19;
             this.dgvGrid1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGrid1_CellClick);
             // 
@@ -201,24 +199,13 @@ namespace ptoVenta
             this.Devolver.UseColumnTextForButtonValue = true;
             this.Devolver.Width = 80;
             // 
-            // panel15
-            // 
-            this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
-            this.panel15.Controls.Add(this.label12);
-            this.panel15.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel15.Location = new System.Drawing.Point(0, 0);
-            this.panel15.Margin = new System.Windows.Forms.Padding(2);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(1128, 46);
-            this.panel15.TabIndex = 109;
-            // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(466, 7);
+            this.label12.Location = new System.Drawing.Point(11, 27);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
             this.label12.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -241,7 +228,7 @@ namespace ptoVenta
             this.btnSalir.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSalir.IconSize = 40;
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSalir.Location = new System.Drawing.Point(977, 56);
+            this.btnSalir.Location = new System.Drawing.Point(978, 68);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnSalir.Size = new System.Drawing.Size(139, 49);
@@ -256,7 +243,7 @@ namespace ptoVenta
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(105, 56);
+            this.dateTimePicker1.Location = new System.Drawing.Point(105, 68);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(105, 23);
             this.dateTimePicker1.TabIndex = 165;
@@ -266,7 +253,7 @@ namespace ptoVenta
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(31, 59);
+            this.label2.Location = new System.Drawing.Point(31, 71);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 19);
             this.label2.TabIndex = 166;
@@ -276,7 +263,7 @@ namespace ptoVenta
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(21, 85);
+            this.label3.Location = new System.Drawing.Point(21, 97);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(78, 19);
             this.label3.TabIndex = 167;
@@ -285,7 +272,7 @@ namespace ptoVenta
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(105, 82);
+            this.textBox1.Location = new System.Drawing.Point(105, 94);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(77, 25);
@@ -300,13 +287,13 @@ namespace ptoVenta
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1128, 609);
             this.ControlBox = false;
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.dgvGrid1);
-            this.Controls.Add(this.panel15);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -315,8 +302,6 @@ namespace ptoVenta
             this.Load += new System.EventHandler(this.ticketsEmitidos_Load);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ticketsEmitidos_KeyPress);
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrid1)).EndInit();
-            this.panel15.ResumeLayout(false);
-            this.panel15.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -324,7 +309,6 @@ namespace ptoVenta
 
         #endregion
         private System.Windows.Forms.DataGridView dgvGrid1;
-        private System.Windows.Forms.Panel panel15;
         private FontAwesome.Sharp.IconButton btnSalir;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label2;
