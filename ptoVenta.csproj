@@ -155,12 +155,6 @@
     <Compile Include="form1respaldovisual.Designer.cs">
       <DependentUpon>form1respaldovisual.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormatoMoneda.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormatoMoneda.Designer.cs">
-      <DependentUpon>FormatoMoneda.cs</DependentUpon>
-    </Compile>
     <Compile Include="formClass.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,8 +179,6 @@
     <Compile Include="productoFaltante.Designer.cs">
       <DependentUpon>productoFaltante.cs</DependentUpon>
     </Compile>
-    <Compile Include="Productos.cs" />
-    <Compile Include="productosDAL.cs" />
     <Compile Include="productosNoVendidos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -261,9 +253,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="form1respaldovisual.resx">
       <DependentUpon>form1respaldovisual.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormatoMoneda.resx">
-      <DependentUpon>FormatoMoneda.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formClass.resx">
       <DependentUpon>formClass.cs</DependentUpon>
