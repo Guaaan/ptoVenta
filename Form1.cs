@@ -65,6 +65,7 @@ namespace ptoVenta
         public Form1()
         {
             InitializeComponent();
+            this.MaximumSize = SystemInformation.PrimaryMonitorMaximizedWindowSize;
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
@@ -618,6 +619,10 @@ namespace ptoVenta
             return passed;
         }
 
-        
+        private void btnReporte_Click(object sender, EventArgs e)
+        {
+            Reporte abrirReporte = new Reporte();
+            abrirReporte.Show();
+        }
     }
 }

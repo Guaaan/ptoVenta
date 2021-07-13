@@ -282,6 +282,10 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reporte.rdlc" />
+    <EmbeddedResource Include="Reporte.resx">
+      <DependentUpon>Reporte.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="sistema.resx">
       <DependentUpon>sistema.cs</DependentUpon>
     </EmbeddedResource>

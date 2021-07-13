@@ -21,5 +21,11 @@ namespace ptoVenta
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.LightBlue700, Primary.LightBlue800, Primary.LightBlue400, Accent.LightBlue100, TextShade.WHITE);
         }
+
+        private void Reporte_Load(object sender, EventArgs e)
+        {
+
+            this.reportViewer.RefreshReport();
+        }
     }
 }
