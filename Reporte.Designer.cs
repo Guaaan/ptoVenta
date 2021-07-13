@@ -34,7 +34,8 @@ namespace ptoVenta
             // 
             // reportViewer
             // 
-            this.reportViewer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.reportViewer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.reportViewer.LocalReport.ReportEmbeddedResource = "ptoVenta.Reporte.rdlc";
             this.reportViewer.Location = new System.Drawing.Point(0, 64);
