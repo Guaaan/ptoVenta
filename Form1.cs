@@ -13,6 +13,7 @@ using System.Data.SqlClient;
 using System.Net;
 using MaterialSkin;
 
+
 namespace ptoVenta
 {
     public partial class Form1 : MaterialSkin.Controls.MaterialForm
@@ -623,6 +624,12 @@ namespace ptoVenta
         {
             Reporte abrirReporte = new Reporte();
             abrirReporte.Show();
+        }
+
+        private void btnImprimir_Click(object sender, EventArgs e)
+        {
+            FormFactura abrirFactura = new FormFactura();
+            abrirFactura.Show();
         }
     }
 }
