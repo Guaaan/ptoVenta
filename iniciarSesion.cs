@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.Sql;
 using System.Data.SqlClient;
 using MaterialSkin;
+using System.IO;
 
 namespace ptoVenta
 {
@@ -31,8 +32,10 @@ namespace ptoVenta
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.LightBlue700, Primary.LightBlue800, Primary.LightBlue400, Accent.LightBlue100, TextShade.WHITE);
             //this.Opacity = 0.9;
-            SqlConnection connect = new SqlConnection("Server=Server-Vicuna/Vicuna database=; user=sa; password=;");
-            
+            SqlConnection connect = new SqlConnection("Server=Server-Vicuna/Vicuna database=SAES_ADMINISTRATIVOFD_TEST; user=sa; password=FG12345;");
+            SqlCommand command = new SqlCommand("Select FOTO FROM USUARIOS", connect);
+            SqlDataAdapter dp = new SqlDataAdapter(command);
+            DataSet ds = new DataSet("USUARIOS");
         }
 
         private void iniciarSesion_Load(object sender, EventArgs e)
@@ -125,9 +128,19 @@ namespace ptoVenta
 
         private void comboBox1_SelectionChangeCommitted(object sender, EventArgs e)
         {
+            SqlConnection connect = new SqlConnection("Server=Server-Vicuna/Vicuna database=SAES_ADMINISTRATIVOFD_TEST; user=sa; password=FG12345;");
+            SqlCommand command = new SqlCommand("Select FOTO FROM USUARIOS where CODIGO = 1", connect);
+            SqlDataAdapter dp = new SqlDataAdapter(command);
+            DataSet ds = new DataSet("USUARIOS");
+
             byte[] MisDatos = new byte[0];
 
-            com.
+            dp.Fill(ds, "USUARIOS");
+
+            DataRow myRow = ds.Tables["USUARIOS"].Rows[0];
+            MisDatos = (byte[])myRow["FOTO"];
+            MemoryStream ms = new MemoryStream(MisDatos);
+            pbVista.Image = Image.FromStream(ms);
         }
     }
 }

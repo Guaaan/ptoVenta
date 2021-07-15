@@ -45,14 +45,14 @@ namespace ptoVenta
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pbLista = new System.Windows.Forms.PictureBox();
+            this.pbVista = new System.Windows.Forms.PictureBox();
             this.listImages = new System.Windows.Forms.ImageList(this.components);
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLista)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbVista)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -216,15 +216,15 @@ namespace ptoVenta
             this.label2.Text = ":Contraseña";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pbLista
+            // pbVista
             // 
-            this.pbLista.Image = ((System.Drawing.Image)(resources.GetObject("pbLista.Image")));
-            this.pbLista.Location = new System.Drawing.Point(15, 71);
-            this.pbLista.Name = "pbLista";
-            this.pbLista.Size = new System.Drawing.Size(180, 180);
-            this.pbLista.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbLista.TabIndex = 122;
-            this.pbLista.TabStop = false;
+            this.pbVista.Image = ((System.Drawing.Image)(resources.GetObject("pbVista.Image")));
+            this.pbVista.Location = new System.Drawing.Point(15, 71);
+            this.pbVista.Name = "pbVista";
+            this.pbVista.Size = new System.Drawing.Size(180, 180);
+            this.pbVista.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbVista.TabIndex = 122;
+            this.pbVista.TabStop = false;
             // 
             // listImages
             // 
@@ -240,7 +240,7 @@ namespace ptoVenta
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(680, 400);
-            this.Controls.Add(this.pbLista);
+            this.Controls.Add(this.pbVista);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label1);
@@ -262,7 +262,7 @@ namespace ptoVenta
             this.panel5.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLista)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbVista)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -283,7 +283,7 @@ namespace ptoVenta
         private System.Windows.Forms.TextBox txtRut1;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pbLista;
+        private System.Windows.Forms.PictureBox pbVista;
         private System.Windows.Forms.ImageList listImages;
     }
 }
