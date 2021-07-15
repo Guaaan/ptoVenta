@@ -29,6 +29,7 @@ namespace ptoVenta
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(iniciarSesion));
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -42,15 +43,16 @@ namespace ptoVenta
             this.panel8 = new System.Windows.Forms.Panel();
             this.txtRut1 = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.pbLista = new System.Windows.Forms.PictureBox();
+            this.listImages = new System.Windows.Forms.ImageList(this.components);
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLista)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -79,7 +81,7 @@ namespace ptoVenta
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(192, 28);
             this.comboBox1.TabIndex = 1;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.comboBox1.SelectionChangeCommitted += new System.EventHandler(this.comboBox1_SelectionChangeCommitted);
             this.comboBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBox1_KeyPress);
             // 
             // panel1
@@ -182,17 +184,6 @@ namespace ptoVenta
             this.pictureBox3.TabIndex = 114;
             this.pictureBox3.TabStop = false;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Location = new System.Drawing.Point(10, 71);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(133, 290);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 112;
-            this.pictureBox1.TabStop = false;
-            // 
             // label12
             // 
             this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -225,12 +216,31 @@ namespace ptoVenta
             this.label2.Text = ":Contraseña";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pbLista
+            // 
+            this.pbLista.Image = ((System.Drawing.Image)(resources.GetObject("pbLista.Image")));
+            this.pbLista.Location = new System.Drawing.Point(15, 71);
+            this.pbLista.Name = "pbLista";
+            this.pbLista.Size = new System.Drawing.Size(180, 180);
+            this.pbLista.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbLista.TabIndex = 122;
+            this.pbLista.TabStop = false;
+            // 
+            // listImages
+            // 
+            this.listImages.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("listImages.ImageStream")));
+            this.listImages.TransparentColor = System.Drawing.Color.Transparent;
+            this.listImages.Images.SetKeyName(0, "fabian.jpg");
+            this.listImages.Images.SetKeyName(1, "alejandro.jpg");
+            this.listImages.Images.SetKeyName(2, "hugo.jpg");
+            // 
             // iniciarSesion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(680, 400);
+            this.Controls.Add(this.pbLista);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label1);
@@ -238,7 +248,6 @@ namespace ptoVenta
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtRut1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -253,7 +262,7 @@ namespace ptoVenta
             this.panel5.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLista)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -261,7 +270,6 @@ namespace ptoVenta
 
         #endregion
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Panel panel1;
@@ -275,5 +283,7 @@ namespace ptoVenta
         private System.Windows.Forms.TextBox txtRut1;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pbLista;
+        private System.Windows.Forms.ImageList listImages;
     }
 }

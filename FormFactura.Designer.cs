@@ -34,7 +34,7 @@ namespace ptoVenta
             // 
             // btn_Cobrar
             // 
-            this.btn_Cobrar.Location = new System.Drawing.Point(44, 92);
+            this.btn_Cobrar.Location = new System.Drawing.Point(42, 97);
             this.btn_Cobrar.Name = "btn_Cobrar";
             this.btn_Cobrar.Size = new System.Drawing.Size(127, 71);
             this.btn_Cobrar.TabIndex = 0;
@@ -47,7 +47,7 @@ namespace ptoVenta
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(218, 210);
             this.Controls.Add(this.btn_Cobrar);
             this.Name = "FormFactura";
             this.Text = "FormFactura";

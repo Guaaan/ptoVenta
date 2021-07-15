@@ -31,6 +31,8 @@ namespace ptoVenta
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.LightBlue700, Primary.LightBlue800, Primary.LightBlue400, Accent.LightBlue100, TextShade.WHITE);
             //this.Opacity = 0.9;
+            SqlConnection connect = new SqlConnection("Server=Server-Vicuna/Vicuna database=; user=sa; password=;");
+            
         }
 
         private void iniciarSesion_Load(object sender, EventArgs e)
@@ -47,7 +49,7 @@ namespace ptoVenta
             Screen scr = Screen.FromPoint(Location);
             int al = scr.WorkingArea.Height + 10;
             this.Height = al;
-            for (int i = Width * -1; i < -10; )
+            for (int i = Width * -1; i < -10;)
 
             {
                 i = (int)(i + 0.5);
@@ -55,10 +57,7 @@ namespace ptoVenta
             }
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            txtRut1.Focus();
-        }
+        
 
         private void comboBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -71,7 +70,7 @@ namespace ptoVenta
             {
                 txtRut1.Focus();
             }
-                
+
         }
 
         private void txtRut1_KeyPress(object sender, KeyPressEventArgs e)
@@ -98,7 +97,7 @@ namespace ptoVenta
                     uperfil = " ";
                     ucaja = " ";
 
-                    com = new SqlCommand("SELECT TOP 1 * FROM USUARIOS WHERE CODIGO = '"+vuser+"' AND DPTO = '"+vclave+"' ", Form1.cn);
+                    com = new SqlCommand("SELECT TOP 1 * FROM USUARIOS WHERE CODIGO = '" + vuser + "' AND DPTO = '" + vclave + "' ", Form1.cn);
                     com.ExecuteNonQuery();
                     ur = com.ExecuteReader();
                     while (ur.Read())
@@ -124,7 +123,11 @@ namespace ptoVenta
             }
         }
 
-     }
+        private void comboBox1_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            byte[] MisDatos = new byte[0];
 
-
- }
+            com.
+        }
+    }
+}

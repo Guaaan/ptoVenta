@@ -390,6 +390,7 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="pfPicture\" />
     <Folder Include="Reports\" />
   </ItemGroup>
   <ItemGroup>
