@@ -94,6 +94,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="aggImagen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aggImagen.Designer.cs">
+      <DependentUpon>aggImagen.cs</DependentUpon>
+    </Compile>
     <Compile Include="aperturaCaja.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -244,6 +250,9 @@
     <Compile Include="ventas.Designer.cs">
       <DependentUpon>ventas.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="aggImagen.resx">
+      <DependentUpon>aggImagen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="aperturaCaja.resx">
       <DependentUpon>aperturaCaja.cs</DependentUpon>
     </EmbeddedResource>

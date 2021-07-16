@@ -128,19 +128,7 @@ namespace ptoVenta
 
         private void comboBox1_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            SqlConnection connect = new SqlConnection("Server=Server-Vicuna/Vicuna database=SAES_ADMINISTRATIVOFD_TEST; user=sa; password=FG12345;");
-            SqlCommand command = new SqlCommand("Select FOTO FROM USUARIOS where CODIGO = 1", connect);
-            SqlDataAdapter dp = new SqlDataAdapter(command);
-            DataSet ds = new DataSet("USUARIOS");
-
-            byte[] MisDatos = new byte[0];
-
-            dp.Fill(ds, "USUARIOS");
-
-            DataRow myRow = ds.Tables["USUARIOS"].Rows[0];
-            MisDatos = (byte[])myRow["FOTO"];
-            MemoryStream ms = new MemoryStream(MisDatos);
-            pbVista.Image = Image.FromStream(ms);
+            
         }
     }
 }
