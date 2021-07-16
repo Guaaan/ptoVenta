@@ -631,5 +631,11 @@ namespace ptoVenta
             FormFactura abrirFactura = new FormFactura();
             abrirFactura.Show();
         }
+
+        private void btnAggImagen_Click(object sender, EventArgs e)
+        {
+            aggImagen abrirAgg = new aggImagen();
+            abrirAgg.Show();
+        }
     }
 }

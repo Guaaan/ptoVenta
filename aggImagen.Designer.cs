@@ -32,12 +32,12 @@ namespace ptoVenta
             this.Label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
-            this.txtArchivo = new System.Windows.Forms.TextBox();
             this.btnAddFile = new System.Windows.Forms.Button();
             this.openFile = new System.Windows.Forms.OpenFileDialog();
-            this.btnGuardar = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.cbListaFotos = new System.Windows.Forms.ComboBox();
+            this.pictureBox = new System.Windows.Forms.PictureBox();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // Label1
@@ -45,18 +45,18 @@ namespace ptoVenta
             this.Label1.AutoSize = true;
             this.Label1.Location = new System.Drawing.Point(13, 80);
             this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(44, 13);
+            this.Label1.Size = new System.Drawing.Size(63, 13);
             this.Label1.TabIndex = 0;
-            this.Label1.Text = "Nombre";
+            this.Label1.Text = "Descripcion";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 109);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 13);
+            this.label2.Size = new System.Drawing.Size(55, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Archivo";
+            this.label2.Text = "Lista fotos";
             // 
             // txtNombre
             // 
@@ -64,13 +64,6 @@ namespace ptoVenta
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(100, 20);
             this.txtNombre.TabIndex = 2;
-            // 
-            // txtArchivo
-            // 
-            this.txtArchivo.Location = new System.Drawing.Point(81, 106);
-            this.txtArchivo.Name = "txtArchivo";
-            this.txtArchivo.Size = new System.Drawing.Size(233, 20);
-            this.txtArchivo.TabIndex = 3;
             // 
             // btnAddFile
             // 
@@ -86,38 +79,52 @@ namespace ptoVenta
             // 
             this.openFile.FileName = "openFileDialog";
             // 
-            // btnGuardar
+            // cbListaFotos
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(287, 133);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(75, 23);
-            this.btnGuardar.TabIndex = 5;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.cbListaFotos.FormattingEnabled = true;
+            this.cbListaFotos.Items.AddRange(new object[] {
+            "Fabian",
+            "Hugo",
+            "Alejandro"});
+            this.cbListaFotos.Location = new System.Drawing.Point(81, 106);
+            this.cbListaFotos.Name = "cbListaFotos";
+            this.cbListaFotos.Size = new System.Drawing.Size(233, 21);
+            this.cbListaFotos.TabIndex = 6;
+            this.cbListaFotos.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // dataGridView1
+            // pictureBox
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(16, 178);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(363, 150);
-            this.dataGridView1.TabIndex = 6;
+            this.pictureBox.Location = new System.Drawing.Point(12, 133);
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.Size = new System.Drawing.Size(379, 207);
+            this.pictureBox.TabIndex = 7;
+            this.pictureBox.TabStop = false;
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.Location = new System.Drawing.Point(239, 70);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregar.TabIndex = 8;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // aggImagen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(403, 352);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.btnGuardar);
+            this.Controls.Add(this.btnAgregar);
+            this.Controls.Add(this.pictureBox);
+            this.Controls.Add(this.cbListaFotos);
             this.Controls.Add(this.btnAddFile);
-            this.Controls.Add(this.txtArchivo);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Label1);
             this.Name = "aggImagen";
             this.Text = "aggImagen";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -128,10 +135,10 @@ namespace ptoVenta
         private System.Windows.Forms.Label Label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.TextBox txtArchivo;
         private System.Windows.Forms.Button btnAddFile;
         private System.Windows.Forms.OpenFileDialog openFile;
-        private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ComboBox cbListaFotos;
+        private System.Windows.Forms.PictureBox pictureBox;
+        private System.Windows.Forms.Button btnAgregar;
     }
 }
