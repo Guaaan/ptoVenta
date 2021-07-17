@@ -277,9 +277,12 @@
     <EmbeddedResource Include="cierreBoleta.resx">
       <DependentUpon>cierreBoleta.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="cierreCaja.rdlc" />
     <EmbeddedResource Include="clases.resx">
       <DependentUpon>clases.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="cotizacion.rdlc" />
+    <EmbeddedResource Include="ticket.rdlc" />
     <EmbeddedResource Include="descripcionFarmacologica.resx">
       <DependentUpon>descripcionFarmacologica.cs</DependentUpon>
     </EmbeddedResource>
