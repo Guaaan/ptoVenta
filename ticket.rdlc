@@ -27,8 +27,8 @@
                     <TextRun>
                       <Value>FARMACIAS GEMINIS</Value>
                       <Style>
-                        <FontFamily>Arial Black</FontFamily>
                         <FontSize>14pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
                       </Style>
                     </TextRun>
                   </TextRuns>
@@ -149,8 +149,8 @@
                     <TextRun>
                       <Value>TICKET Nro:</Value>
                       <Style>
-                        <FontFamily>Arial Black</FontFamily>
                         <FontSize>12pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
                       </Style>
                     </TextRun>
                   </TextRuns>
@@ -320,8 +320,8 @@
                     <TextRun>
                       <Value>TOTAL:</Value>
                       <Style>
-                        <FontFamily>Arial Black</FontFamily>
                         <FontSize>12pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
                       </Style>
                     </TextRun>
                   </TextRuns>
@@ -353,8 +353,8 @@
                     <TextRun>
                       <Value>PAGO CON:</Value>
                       <Style>
-                        <FontFamily>Arial Black</FontFamily>
                         <FontSize>12pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
                       </Style>
                     </TextRun>
                   </TextRuns>
@@ -386,8 +386,8 @@
                     <TextRun>
                       <Value>SU CAMBIO:</Value>
                       <Style>
-                        <FontFamily>Arial Black</FontFamily>
                         <FontSize>12pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
                       </Style>
                     </TextRun>
                   </TextRuns>

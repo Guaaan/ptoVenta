@@ -20,8 +20,8 @@
                 <TextRun>
                   <Value>FARMACIAS GEMINIS</Value>
                   <Style>
-                    <FontFamily>Arial Black</FontFamily>
                     <FontSize>14pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
               </TextRuns>
@@ -142,8 +142,8 @@
                 <TextRun>
                   <Value>Cotización</Value>
                   <Style>
-                    <FontFamily>Arial Black</FontFamily>
                     <FontSize>12pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
               </TextRuns>
@@ -234,7 +234,7 @@
       </Style>
     </PageHeader>
     <PageFooter>
-      <Height>4.70958cm</Height>
+      <Height>4.49791cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -313,8 +313,8 @@
                 <TextRun>
                   <Value>TOTAL:</Value>
                   <Style>
-                    <FontFamily>Arial Black</FontFamily>
                     <FontSize>12pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
               </TextRuns>
