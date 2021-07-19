@@ -417,12 +417,14 @@
             </Border>
           </Style>
         </PageFooter>
-        <PageHeight>29.7cm</PageHeight>
-        <PageWidth>21cm</PageWidth>
-        <LeftMargin>2cm</LeftMargin>
-        <RightMargin>2cm</RightMargin>
-        <TopMargin>2cm</TopMargin>
-        <BottomMargin>2cm</BottomMargin>
+        <PageHeight>10cm</PageHeight>
+        <PageWidth>8cm</PageWidth>
+        <InteractiveHeight>10cm</InteractiveHeight>
+        <InteractiveWidth>8cm</InteractiveWidth>
+        <LeftMargin>0.1mm</LeftMargin>
+        <RightMargin>0.1mm</RightMargin>
+        <TopMargin>1cm</TopMargin>
+        <BottomMargin>1cm</BottomMargin>
         <ColumnSpacing>0.13cm</ColumnSpacing>
         <Style />
       </Page>
