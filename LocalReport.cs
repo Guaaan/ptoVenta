@@ -23,12 +23,12 @@ namespace Microsoft.Reporting.WinForms
             string deviceInfo =
                 $@"<DeviceInfo>
                     <OutputFormat>EMF</OutputFormat>
-                    <PageWidth>{pageSettings.PaperSize.Width * 100}in</PageWidth>
-                    <PageHeight>{pageSettings.PaperSize.Height * 100}in</PageHeight>
-                    <MarginTop>{pageSettings.Margins.Top * 100}in</MarginTop>
-                    <MarginLeft>{pageSettings.Margins.Left * 100}in</MarginLeft>
-                    <MarginRight>{pageSettings.Margins.Right * 100}in</MarginRight>
-                    <MarginBottom>{pageSettings.Margins.Bottom * 100}in</MarginBottom>
+                    <PageWidth>{pageSettings.PaperSize.Width * 100}mm</PageWidth>
+                    <PageHeight>{pageSettings.PaperSize.Height * 100}mm</PageHeight>
+                    <MarginTop>{pageSettings.Margins.Top * 100}mm</MarginTop>
+                    <MarginLeft>{pageSettings.Margins.Left * 100}mm</MarginLeft>
+                    <MarginRight>{pageSettings.Margins.Right * 100}mm</MarginRight>
+                    <MarginBottom>{pageSettings.Margins.Bottom * 100}mm</MarginBottom>
                 </DeviceInfo>";
             Warning[] warnings;
             var streams = new List<Stream>();

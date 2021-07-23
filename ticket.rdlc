@@ -37,7 +37,6 @@
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
               <Top>1.27cm</Top>
-              <Left>0.3175cm</Left>
               <Height>0.79693cm</Height>
               <Width>6.28354cm</Width>
               <Style>
@@ -66,7 +65,6 @@
               </Paragraphs>
               <rd:DefaultName>Textbox2</rd:DefaultName>
               <Top>2.1022cm</Top>
-              <Left>0.3175cm</Left>
               <Height>0.6cm</Height>
               <Width>2.87042cm</Width>
               <ZIndex>1</ZIndex>
@@ -95,8 +93,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>UserID</rd:DefaultName>
-              <Top>2.78334cm</Top>
-              <Left>6.02933cm</Left>
+              <Top>4.12445cm</Top>
+              <Left>0.02646cm</Left>
               <Height>0.6cm</Height>
               <Width>2.5cm</Width>
               <ZIndex>2</ZIndex>
@@ -126,7 +124,7 @@
               </Paragraphs>
               <rd:DefaultName>Textbox2</rd:DefaultName>
               <Top>0.56417cm</Top>
-              <Left>0.66146cm</Left>
+              <Left>0.34396cm</Left>
               <Height>0.6cm</Height>
               <Width>6.32671cm</Width>
               <ZIndex>3</ZIndex>
@@ -159,7 +157,7 @@
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
               <Top>4.91807cm</Top>
-              <Left>0.34396cm</Left>
+              <Left>0.02646cm</Left>
               <Height>0.79693cm</Height>
               <Width>3.29375cm</Width>
               <ZIndex>4</ZIndex>
@@ -189,7 +187,7 @@
               </Paragraphs>
               <rd:DefaultName>Textbox2</rd:DefaultName>
               <Top>2.78334cm</Top>
-              <Left>0.34396cm</Left>
+              <Left>0.02646cm</Left>
               <Height>0.6cm</Height>
               <Width>2.87042cm</Width>
               <ZIndex>5</ZIndex>
@@ -219,7 +217,7 @@
               </Paragraphs>
               <rd:DefaultName>Textbox2</rd:DefaultName>
               <Top>3.45389cm</Top>
-              <Left>0.34396cm</Left>
+              <Left>0.02646cm</Left>
               <Height>0.6cm</Height>
               <Width>2.87042cm</Width>
               <ZIndex>6</ZIndex>
@@ -290,7 +288,7 @@
               </ReportItems>
               <KeepTogether>true</KeepTogether>
               <Top>3.09245cm</Top>
-              <Left>1.86562cm</Left>
+              <Left>1.54812cm</Left>
               <Height>1.65333cm</Height>
               <Width>5.04318cm</Width>
               <Style>
@@ -301,7 +299,7 @@
             </Rectangle>
             <Line Name="Line1">
               <Top>0.31114cm</Top>
-              <Left>0.34396cm</Left>
+              <Left>0.02646cm</Left>
               <Height>0cm</Height>
               <Width>8.47641cm</Width>
               <ZIndex>1</ZIndex>
@@ -330,7 +328,7 @@
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
               <Top>0.31114cm</Top>
-              <Left>0.34396cm</Left>
+              <Left>0.02646cm</Left>
               <Height>0.79693cm</Height>
               <Width>3.29375cm</Width>
               <ZIndex>2</ZIndex>
@@ -363,7 +361,7 @@
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
               <Top>1.2139cm</Top>
-              <Left>0.34396cm</Left>
+              <Left>0.02646cm</Left>
               <Height>0.79693cm</Height>
               <Width>3.29375cm</Width>
               <ZIndex>3</ZIndex>
@@ -396,7 +394,7 @@
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
               <Top>2.08139cm</Top>
-              <Left>0.34396cm</Left>
+              <Left>0.02646cm</Left>
               <Height>0.79693cm</Height>
               <Width>3.29375cm</Width>
               <ZIndex>4</ZIndex>
@@ -421,10 +419,10 @@
         <PageWidth>8cm</PageWidth>
         <InteractiveHeight>10cm</InteractiveHeight>
         <InteractiveWidth>8cm</InteractiveWidth>
-        <LeftMargin>0.1mm</LeftMargin>
-        <RightMargin>0.1mm</RightMargin>
-        <TopMargin>1cm</TopMargin>
-        <BottomMargin>1cm</BottomMargin>
+        <LeftMargin>0cm</LeftMargin>
+        <RightMargin>0cm</RightMargin>
+        <TopMargin>0cm</TopMargin>
+        <BottomMargin>0cm</BottomMargin>
         <ColumnSpacing>0.13cm</ColumnSpacing>
         <Style />
       </Page>
