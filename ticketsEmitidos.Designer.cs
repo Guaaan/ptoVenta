@@ -207,7 +207,7 @@ namespace ptoVenta
             this.Devolver.UseColumnTextForButtonValue = true;
             this.Devolver.Width = 80;
             // 
-            // panel15
+            // textBox1
             // 
             this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(177)))), ((int)(((byte)(230)))));
             this.panel15.Controls.Add(this.label12);

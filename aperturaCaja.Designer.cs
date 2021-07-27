@@ -97,12 +97,28 @@ namespace ptoVenta
             this.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TextBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox1_KeyPress);
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(11, 22);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Name = "label12";
+            this.label12.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label12.Size = new System.Drawing.Size(230, 37);
+            this.label12.TabIndex = 112;
+            this.label12.Text = "Apertura de Caja";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // aperturaCaja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(478, 168);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.TextBox1);
             this.Controls.Add(this.panel15);
             this.Controls.Add(this.label7);
@@ -126,5 +142,6 @@ namespace ptoVenta
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox TextBox1;
+        private System.Windows.Forms.Label label12;
     }
 }
