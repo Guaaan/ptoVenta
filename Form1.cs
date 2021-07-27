@@ -21,7 +21,7 @@ using DevComponents.DotNetBar.Controls;
 
 namespace ptoVenta
 {
-    public partial class Form1 : Form
+    public partial class Form1 : MaterialSkin.Controls.MaterialForm
     {
         CultureInfo myCIintl = new CultureInfo("es-ES", false);
 

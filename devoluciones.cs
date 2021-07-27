@@ -31,6 +31,42 @@ namespace ptoVenta
         private void devoluciones_Load(object sender, EventArgs e)
         {
             txtBoletaFactura.Text = ticketsEmitidos.vnum;
+            comsql1 = "SELECT F.NUMERO,C.NOMBRE,M.FECHA,M.CODIGO,M.DESCRIP,M.CANTIDAD,M.MONTOFINAL FROM CAJAS C RIGHT JOIN FACTURAS F ON C.CODIGO = F.CAJAPERTUR ";
+            comsql2 = comsql1 + "LEFT JOIN MFACTURAS M ON M.NUMERO = F.NUMERO WHERE F.STATUS=2 AND M.NUMERO='" + ticketsEmitidos.vnum + "'  ORDER BY M.POSI ";
+            com = new SqlCommand(comsql2, Form1.cn);
+            com.ExecuteNonQuery();
+            dr = com.ExecuteReader();
+            dgvGrid1.Rows.Clear();
+            int fila = 0;
+            while (dr.Read())
+            {
+                fila++;
+                int renglon = dgvGrid1.Rows.Add();
+                dgvGrid1.Rows[renglon].Cells["Caja"].Value = Convert.ToString(dr["NOMBRE"]).Trim();
+                dgvGrid1.Rows[renglon].Cells["Fecha"].Value = Convert.ToString(dr["FECHA"]).Trim();
+                dgvGrid1.Rows[renglon].Cells["Codigo"].Value = Convert.ToString(dr["CODIGO"]).Trim();
+                dgvGrid1.Rows[renglon].Cells["Producto"].Value = Convert.ToString(dr["DESCRIP"]).Trim();
+                dgvGrid1.Rows[renglon].Cells["Cantidad"].Value = 0;
+                dgvGrid1.Rows[renglon].Cells["Precio"].Value = dr["MONTOFINAL"] == DBNull.Value ? 0 : Convert.ToDouble(dr["MONTOFINAL"]);
+                prec = Convert.ToDouble(dr["MONTOFINAL"]);
+                cant = dgvGrid1.Rows[renglon].Cells["Cantidad"].Value.GetHashCode();
+                tot = cant * prec;
+                dgvGrid1.Rows[fila - 1].Cells["Total"].Value = tot;
+                totd = totd + tot;
+            }
+            dr.Close();
+            txtMontoNota.Text = totd.ToString("N0");
+            dgvGrid1.CurrentCell = dgvGrid1.CurrentRow.Cells[5];
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void devoluciones_Load(object sender, EventArgs e)
+        {
+            txtBoletaFactura.Text = ticketsEmitidos.vnum;
             comsql1 = "SELECT F.NUMERO,C.NOMBRE,M.FECHA,M.CODIGO,M.DESCRIP,(M.CANTIDAD-M.CANTAJU) COMPRA,M.MONTOFINAL/M.CANTIDAD PRECIO,M.CODID,M.POSI FROM CAJAS C RIGHT JOIN FACTURAS F ON C.CODIGO = F.CAJAPERTUR ";
             comsql2 = comsql1 + "LEFT JOIN MFACTURAS M ON M.NUMERO = F.NUMERO WHERE F.STATUS=2 AND M.NUMERO='" + ticketsEmitidos.vnum + "'  ORDER BY M.POSI ";
             com = new SqlCommand(comsql2, Form1.cn);
