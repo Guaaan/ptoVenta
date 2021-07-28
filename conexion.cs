@@ -1,11 +1,23 @@
-﻿using System.Data.SqlClient;
+﻿using System;
+using System.IO;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Data.Sql;
+using System.Data.SqlClient;
+using System.Net;
 
 namespace ptoVenta
 {
     class Conexion
     {
 
-        public static SqlConnection conexion()
+        public static SqlConnection conexion() 
         {
             string[] lines = System.IO.File.ReadAllLines(@"configsql.ini");
             foreach (string line in lines)

@@ -31,7 +31,23 @@ namespace ptoVenta
         public ticketsEmitidos()
         {
             InitializeComponent();
+            var materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.LightBlue700, Primary.LightBlue800, Primary.LightBlue400, Accent.LightBlue100, TextShade.WHITE);
+
         }
+
+        private void ticketsEmitidos_Load(object sender, EventArgs e)
+        {
+            int anc = dgvGrid1.Width;
+            int ancp = 0;
+            for (int a = 0; a < 10; a++)
+            {
+                ancp = ancp + dgvGrid1.Columns[a].Width;
+            }
+            anc = (anc - ancp) - 100;
+            dgvGrid1.Columns[5].Width = dgvGrid1.Columns[5].Width + anc;
 
         private void ticketsEmitidos_Load(object sender, EventArgs e)
         {

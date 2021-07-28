@@ -201,15 +201,17 @@ namespace ptoVenta
             }
             else
             {
-                com = new SqlCommand("SELECT MAX(convert(int, NUMERO))+1 REXP FROM FACTURAS", Form1.cn);
-                com.ExecuteNonQuery();
-                dr = com.ExecuteReader();
-                while (dr.Read())
-                {
-                    num = Convert.ToString(dr["REXP"]);
-                }
-                dr.Close();
+            com = new SqlCommand("SELECT MAX(convert(int, NUMERO))+1 REXP FROM FACTURAS", Form1.cn);
+            com.ExecuteNonQuery();
+            dr = com.ExecuteReader();
+            while (dr.Read())
+            {
+                num = Convert.ToString(dr["REXP"]);
             }
+            dr.Close();
+            }
+
+            //calculaBoleta();
 
             string nom = Form1.nombre.Trim();
             string con = "CANCELACION DE FATURA ";
@@ -267,6 +269,7 @@ namespace ptoVenta
                     mtot = mcan * mpre;
                     mtpr = mcan * mpr1;
                     mmon = mtot;
+                    mfec = DateTime.Now;
                     mnum = num;
                     mpsi = mpre / 1.19;
 

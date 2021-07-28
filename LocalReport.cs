@@ -26,8 +26,8 @@ namespace Microsoft.Reporting.WinForms
 
 //                  < PageHeight >{ pageSettings.PaperSize.Height * 100}</ PageHeight >
 
-               string deviceInfo =
-               $@"<DeviceInfo>
+            string deviceInfo =
+                $@"<DeviceInfo>
                     <OutputFormat>EMF</OutputFormat>
                     <PageWidth>{pageSettings.PaperSize.Width * 100}</PageWidth>
                     <MarginTop>{pageSettings.Margins.Top * 100}in</MarginTop>

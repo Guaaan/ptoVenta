@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ptoVenta
 {
-    public partial class UserControl1 : UserControl
+    public partial class decimalesASql : Form
     {
-        public UserControl1()
+        public decimalesASql()
         {
             InitializeComponent();
         }
