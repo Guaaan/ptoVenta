@@ -21,6 +21,7 @@ namespace ptoVenta
             base.Dispose(disposing);
         }
 
+        
         #region Código generado por el Diseñador de Windows Forms
 
         /// <summary>

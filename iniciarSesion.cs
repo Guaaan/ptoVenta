@@ -10,6 +10,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.Sql;
 using System.Data.SqlClient;
+using MaterialSkin;
+using System.IO;
 
 namespace ptoVenta
 {
@@ -42,7 +44,7 @@ namespace ptoVenta
             foreach (string line in lines)
             {
                 sesion = line;
-            }
+        }
             int index = comboBox1.FindString(sesion);
             comboBox1.SelectedIndex = index;
             SendKeys.Send("{TAB}");
@@ -75,7 +77,7 @@ namespace ptoVenta
             }
             ur.Close();
             pictureBox1.BackgroundImage = Image.FromFile("pfp\\user.jpg");
-
+        
             if (vfoto.Trim() != "")
             {
                 if (File.Exists(vfoto))
@@ -98,7 +100,7 @@ namespace ptoVenta
             {
                 txtRut1.Focus();
             }
-                
+
         }
 
         private void txtRut1_KeyPress(object sender, KeyPressEventArgs e)
@@ -153,7 +155,11 @@ namespace ptoVenta
             }
         }
 
-     }
+        }
 
-
- }
+        private void comboBox1_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            
+        }
+    }
+}

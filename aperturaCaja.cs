@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.Sql;
 using System.Data.SqlClient;
+using MaterialSkin;
 
 namespace ptoVenta
 {
@@ -17,14 +18,21 @@ namespace ptoVenta
         public aperturaCaja()
         {
             InitializeComponent();
+            var materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.LightBlue700, Primary.LightBlue800, Primary.LightBlue400, Accent.LightBlue100, TextShade.WHITE);
         }
 
         private void TextBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == 13)
             {
-                Form1.montoape = (int)Convert.ToDouble(TextBox1.Text);
-                this.Close();
+                if ((int)Convert.ToDouble(TextBox1.Text) > 0)
+                {
+                    Form1.montoape = (int)Convert.ToDouble(TextBox1.Text);
+                    this.Close();
+                }
             }
             if (e.KeyChar == 27)
             {
